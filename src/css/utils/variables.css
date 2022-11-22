@@ -24,6 +24,6 @@
   --text-sm: 0.688rem;
 
     /* Polices de caractère */
-    --font-mono: 'Space Mono', monospace;
-    --font-sans-serif: 'Mulish', sans-serif;
+    --font-mono: 'optiedgarbold-extendedregular', bold;
+    --font-family: 'Jura', sans-serif;
 }

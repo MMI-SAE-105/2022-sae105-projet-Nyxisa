@@ -14,29 +14,30 @@ Soyez attentifs à l'ordre d'import :
 /* Les polices de caractère */
 @font-face {
     font-family: 'optiedgarbold-extendedregular';
-    src: url('optiedgarbold-extended-webfont.woff2') format('woff2'),
-         url('optiedgarbold-extended-webfont.woff') format('woff');
+    src: url('/src/fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff2') format('woff2'),
+         url('/src/fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    color: white
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
 /* Vendors */
-@import "vendors/normalize.css";
+@import "/src/css/vendors//normalize.css";
 
 /* Utils */
-@import "utils/variables.css";
+@import "/src/css/utils/variables.css";
 
 /* Base */
-@import "base/main.css";
-@import "base/media.css";
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
 
 /* Layout */
-@import "layout/header.css";
+@import "/src/css/layout/header.css";
 
 /* Composants */
-@import "components/menu.css";
+@import "/src/css/components/menu.css";
 
 body {
     color : white;

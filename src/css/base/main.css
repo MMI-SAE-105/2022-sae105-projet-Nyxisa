@@ -7,8 +7,8 @@
 
 /* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
-  font-family: var(--font-sans-serif);
-  font-size: var(--text-md);
+  font-family: 'optiedgarbold-extendedregular';
+  font-size: 'Verdana', Geneva, Tahoma, sans-serif;
   line-height: 1.6;
   background-color: var(--gray-white);
 }
