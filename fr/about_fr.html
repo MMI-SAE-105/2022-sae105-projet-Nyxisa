@@ -5,16 +5,14 @@
         <meta name = "viewport"
         content="width=device-width, initial-scale=1.0"/>
         <title>Mind_Uploading.exe</title>
-        <link rel="stylesheet" href="src/css/styles.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+        <link href="./src/css/styles.css" rel="stylesheet" media="all" type="text/css"> 
 </head> 
     <body> 
     <header x-data="{menuIsOpen : false}":class="{noscroll:menuIsOpen,}">
-        <button aria-controls="mainNav"
-        @click="menuIsOpen= ! menuIsOpen"
-        class="header_menuBtn">
-        <aria-expanded="true"menu> <img src="public/icones/menu_icon.svg">
-        </button>
+        <img src="/public/icones/menu_icon.svg" aria-controls="mainNav"
+            @click="menuIsOpen= ! menuIsOpen"
+            class="header_menuBtn">
+            <aria-expanded="true"menu>
         <img src="./public/icones/exe_logo.svg">
         <img src="/public/icones/search_icon.svg"/>
             <nav
@@ -41,7 +39,7 @@
     </header>
     <main>
         <section>
-            <a href="/index.html">Mind_Uploading.exe</a>
+            <button>Mind_Uploading.exe</button>
             <h1>ACCUEIL</h1>
             <h2>Bienvenue sur Mind_Uploading.exe !</h2>
             <p>
@@ -54,33 +52,33 @@
             <h3>LIVRE</h3>
             <img src="./public/img/preview/book.webp">
             <h4>Philip K. Dick  a écrit un des livres ayant eu le plus d’influence sur le Cyberpunk, mouvement largement inspiré de l'atmosphère sombre du roman. Entre réalité, illusions et dystopie, « Les Androïdes rêvent-ils de moutons électriques ? » se révèle être un classique de la littérature SF.</h4>
-
+            <button>LIRE LA SUITE</button>
         </section> 
         <section>
             <h3>Film</h3>
             <img src="./public/img/preview/movie.webp">
             <h4>Her est un film d’anticipation qui en dit long sur les relations humaines à l’ère du tout-connecté.</h4>
-            <a href="/fr/movie_fr.html"> LIRE LA SUITE </a>
+            <button>LIRE LA SUITE</button>
 
             <h3>MUSIQUE</h3>
             <img src="./public/img/preview/song.webp">
             <h4>Game of Love, une chanson mélancolique des Daft Punk, un groupe iconique de la scène électronique.</h4>
-            <a href="/fr/song_fr.html"> LIRE LA SUITE </a>
+            <button>LIRE LA SUITE</button>
 
             <h3>LIEU</h3>
             <img src="./public/img/preview/place.webp">
             <h4>La Cité Radieuse, un bâtiment au nom évocateur… Direction Marseille pour une visite guidée !</h4>
-            <a href="/fr/place_fr.html"> LIRE LA SUITE </a>
+            <button>LIRE LA SUITE</button>
 
             <h3>ESPOIR</h3>
             <img src="./public/img/preview/hope.webp">
             <h4>La génération Z n’est pas perdue ! Ces utopistes n’hésitent pas à défendre leurs idées.</h4>
-            <a href="/fr/hope_fr.html"> LIRE LA SUITE </a>
+            <button>LIRE LA SUITE</button>
 
             <h3>REGRET</h3>
             <img src="./public/img/preview/regret.webp">
             <h4>À l'ère du numérique, quel impact ont les réseaux sociaux sur notre perception du monde et de nous-même ?</h4>
-            <a href="/fr/regret_fr.html"> LIRE LA SUITE </a>
+            <button>LIRE LA SUITE</button>
 
     </main>
         <footer>
@@ -90,11 +88,6 @@
             
             <a href="http://mmimontbeliard.com">
             <img src="/public/icones/mmi_logo.svg" alt="Logo MMI">
-            <a href="fr/about_fr.html"> À propos
-            </a>
-            <a href="fr/contact_fr.html"> Contact
-            </a>
-            <a href="fr/otherprojects_fr.html"> Autres projets
             </a>
         </footer> 
 </body> 
