@@ -25,5 +25,5 @@
 
     /* Polices de caractère */
     --font-mono: 'optiedgarbold-extendedregular', bold;
-    --font-family: 'Jura', sans-serif;
+    font-family: 'Jura', sans-serif;
 }

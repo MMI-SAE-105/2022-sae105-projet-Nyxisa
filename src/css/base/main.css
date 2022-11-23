@@ -1,37 +1,12 @@
 /* Transforme le modèle de boite par défaut pour inclure dans la largeur et la hauteur, les marges intérieures et les bordures. */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+
 
 /* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
-  font-family: 'optiedgarbold-extendedregular';
-  font-size: 'jura';
-  line-height: 1.6;
-  background-color: var(--gray-white);
+  font-family: 'Jura', sans-serif;
 }
 
 /* Les règles typographiques générales des titres */
-h1,
-h2 {
-  font-family: var(--font-mono);
-  font-weight: normal;
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: var(--title-xxl);
-}
-
-h2 {
-  font-size: var(--title-xl);
-}
-
-h3 {
-  line-height: 1.4;
-}
 
 /* permet d'annuler la mise en forme des boutons qu'applique le navigateur. */
 button {
