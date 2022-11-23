@@ -1,103 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
-        <title>Mind_Uploading.exe</title>
-        <link rel="stylesheet" href="src/css/styles.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+    <meta charset="utf-8" />
+    <meta name = "viewport"
+    content="width=device-width, initial-scale=1.0"/>
+    <title>Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head> 
-    <body>
-        <!-- Le menu ne s'ouvre pas ?--> 
-    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <button @click="menuIsOpen= ! menuIsOpen"
-        class="header_menuBtn">
-        <aria-expanded="true"menu> <img src="public/icones/menu_icon.svg">
-        </a>
-        </button>
-        <img src="./public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
-        <img src="/public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
-            <nav
-            id="mainNav" 
-            x-show="menuIsOpen" x-transition.duration.800ms
-            class="menu">
+<body>
+    <!-- Le menu ne s'ouvre pas ?--> 
+<header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+    <button @click="menuIsOpen= ! menuIsOpen"
+    class="header_menuBtn">
+    <aria-expanded="true"menu> <img src="public/icones/menu_icon.svg">
+    </a>
+    </button>
+    <img src="./public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
+    <img src="/public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
+        <nav
+        id="mainNav" 
+        x-show="menuIsOpen" x-transition.duration.800ms
+        class="menu">
+                <ul>
+                    <li>ACCUEIL</a> 
+                    <li>ARTICLES</a> 
                     <ul>
-                        <li>ACCUEIL</a> 
-                        <li>ARTICLES</a> 
-                        <ul>
-                            <li><a href="/fr/book_fr.html">► Des androïdes et des hommes</a></li>
-                            <li><a href="/fr/movie_fr.html">► Entre amour et solitude</a></li>
-                            <li><a href="/fr/song_fr.html">► Coeur Électronique</a> 
-                            <li><a href="/fr/place_fr.html">► Vivre dans une machine</a></li>
-                            <li><a href="/fr/hope_fr.html">► Une génération engagée</a></li>
-                            <li><a href="/fr/regret_fr.html">► L’impact des réseaux sociaux</a></li>
-                        </ul>
-                        <li> <a href="/fr/about_fr.html">À PROPOS</a>
-                        <li> <a href="/fr/contact_fr.html">CONTACT</a>
+                        <li><a href="/fr/book_fr.html">► Des androïdes et des hommes</a></li>
+                        <li><a href="/fr/movie_fr.html">► Entre amour et solitude</a></li>
+                        <li><a href="/fr/song_fr.html">► Coeur Électronique</a> 
+                        <li><a href="/fr/place_fr.html">► Vivre dans une machine</a></li>
+                        <li><a href="/fr/hope_fr.html">► Une génération engagée</a></li>
+                        <li><a href="/fr/regret_fr.html">► L’impact des réseaux sociaux</a></li>
                     </ul>
-                    <ul>
-                        <li> <a href="/en/index_en.html">EN<img src="/public/icones/language_icon.svg" alt="Site en anglais"></a>
-                </nav>
-    </header>
-    <main>
-        <section>
-            <a href="/index.html">Mind_Uploading.exe</a>
-            <h1>ACCUEIL</h1>
-            <h2>Bienvenue sur Mind_Uploading.exe !</h2>
-            <p>
-                Avez-vous déjà pensé à créer votre propre capsule temporelle ? 
-                Personnellement, j’ai choisi d’en faire une sous forme de site web. 
-                Ici, vous découvrirez mon univers à travers quelques articles : livre, film, musique et plus encore !
-            </p>
-        </section>
-        <section>                
-            <h3>LIVRE</h3>
-            <img src="./public/img/preview/book.webp" alt="Couverture du livre Blade Runner">
-            <h4>Philip K. Dick  a écrit un des livres ayant eu le plus d’influence sur le Cyberpunk, mouvement largement inspiré de l'atmosphère sombre du roman. Entre réalité, illusions et dystopie, « Les Androïdes rêvent-ils de moutons électriques ? » se révèle être un classique de la littérature SF.</h4>
+                    <li> <a href="/fr/about_fr.html">À PROPOS</a>
+                    <li> <a href="/fr/contact_fr.html">CONTACT</a>
+                </ul>
+                <ul>
+                    <li> <a href="/en/index_en.html">EN<img src="/public/icones/language_icon.svg" alt="Site en anglais"></a>
+            </nav>
+</header>
+<main>
+    <section>
+        <a href="/index.html">Mind_Uploading.exe</a>
+        <h1>ACCUEIL</h1>
+        <h2>Bienvenue sur Mind_Uploading.exe !</h2>
+        <p>
+            Avez-vous déjà pensé à créer votre propre capsule temporelle ? 
+            Personnellement, j’ai choisi d’en faire une sous forme de site web. 
+            Ici, vous découvrirez mon univers à travers quelques articles : livre, film, musique et plus encore !
+        </p>
+    </section>
+    <section>                
+        <h3>LIVRE</h3>
+        <img src="./public/img/preview/book.webp" alt="Couverture du livre Blade Runner">
+        <h4>Philip K. Dick  a écrit un des livres ayant eu le plus d’influence sur le Cyberpunk, mouvement largement inspiré de l'atmosphère sombre du roman. Entre réalité, illusions et dystopie, « Les Androïdes rêvent-ils de moutons électriques ? » se révèle être un classique de la littérature SF.</h4>
 
-        </section> 
-        <section>
-            <h3>Film</h3>
-            <img src="./public/img/preview/movie.webp" alt="Affiche du film Her">
-            <h4>Her est un film d’anticipation qui en dit long sur les relations humaines à l’ère du tout-connecté.</h4>
-            <a href="/fr/movie_fr.html"> LIRE LA SUITE </a>
+    </section> 
+    <section>
+        <h3>Film</h3>
+        <img src="./public/img/preview/movie.webp" alt="Affiche du film Her">
+        <h4>Her est un film d’anticipation qui en dit long sur les relations humaines à l’ère du tout-connecté.</h4>
+        <a href="/fr/movie_fr.html"> LIRE LA SUITE </a>
 
-            <h3>MUSIQUE</h3>
-            <img src="./public/img/preview/song.webp" alt="Titre de la chanson Game of Love des Daft Punk">
-            <h4>Game of Love, une chanson mélancolique des Daft Punk, un groupe iconique de la scène électronique.</h4>
-            <a href="/fr/song_fr.html"> LIRE LA SUITE </a>
+        <h3>MUSIQUE</h3>
+        <img src="./public/img/preview/song.webp" alt="Titre de la chanson Game of Love des Daft Punk">
+        <h4>Game of Love, une chanson mélancolique des Daft Punk, un groupe iconique de la scène électronique.</h4>
+        <a href="/fr/song_fr.html"> LIRE LA SUITE </a>
 
-            <h3>LIEU</h3>
-            <img src="./public/img/preview/place.webp" alt="La Cité Radieuse du Corbusier">
-            <h4>La Cité Radieuse, un bâtiment au nom évocateur… Direction Marseille pour une visite guidée !</h4>
-            <a href="/fr/place_fr.html"> LIRE LA SUITE </a>
+        <h3>LIEU</h3>
+        <img src="./public/img/preview/place.webp" alt="La Cité Radieuse du Corbusier">
+        <h4>La Cité Radieuse, un bâtiment au nom évocateur… Direction Marseille pour une visite guidée !</h4>
+        <a href="/fr/place_fr.html"> LIRE LA SUITE </a>
 
-            <h3>ESPOIR</h3>
-            <img src="./public/img/preview/hope.webp" alt="Jeunes tenant des pancartes dans une manifestation">
-            <h4>La génération Z n’est pas perdue ! Ces utopistes n’hésitent pas à défendre leurs idées.</h4>
-            <a href="/fr/hope_fr.html"> LIRE LA SUITE </a>
+        <h3>ESPOIR</h3>
+        <img src="./public/img/preview/hope.webp" alt="Jeunes tenant des pancartes dans une manifestation">
+        <h4>La génération Z n’est pas perdue ! Ces utopistes n’hésitent pas à défendre leurs idées.</h4>
+        <a href="/fr/hope_fr.html"> LIRE LA SUITE </a>
 
-            <h3>REGRET</h3>
-            <img src="./public/img/preview/regret.webp" alt="Smartphone incrusté dans un cerveau qui saigne">
-            <h4>À l'ère du numérique, quel impact ont les réseaux sociaux sur notre perception du monde et de nous-même ?</h4>
-            <a href="/fr/regret_fr.html"> LIRE LA SUITE </a>
+        <h3>REGRET</h3>
+        <img src="./public/img/preview/regret.webp" alt="Smartphone incrusté dans un cerveau qui saigne">
+        <h4>À l'ère du numérique, quel impact ont les réseaux sociaux sur notre perception du monde et de nous-même ?</h4>
+        <a href="/fr/regret_fr.html"> LIRE LA SUITE </a>
 
-    </main>
-        <footer>
-            <h5>Lisa Cingolani MM1 - A1</h5>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-            <h5>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h5>
-            
-            <a href="http://mmimontbeliard.com">
-            <img src="/public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
-            <a href="fr/about_fr.html"> À propos
-            </a>
-            <a href="fr/contact_fr.html"> Contact
-            </a>
-            <a href="fr/otherprojects_fr.html"> Autres projets
-            </a>
-        </footer> 
+</main>
+    <footer>
+        <h5>Lisa Cingolani MM1 - A1</h5>
+        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        <h5>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h5>
+        
+        <a href="http://mmimontbeliard.com">
+        <img src="/public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+        <a href="fr/about_fr.html"> À propos
+        </a>
+        <a href="fr/contact_fr.html"> Contact
+        </a>
+        <a href="fr/otherprojects_fr.html"> Autres projets
+        </a>
+    </footer> 
 </body> 
 </html>
 

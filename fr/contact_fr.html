@@ -1,35 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
-        <title>Mind_Uploading.exe</title>
-        <link rel="stylesheet" href="../src/css/styles.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+<meta charset="utf-8" />
+<meta name = "viewport"
+content="width=device-width, initial-scale=1.0"/>
+<title>Contact - Mind_Uploading.exe</title>
+<link rel="stylesheet" href="../src/css/styles.css">
+<script defer src="https://unpkg.com/alpinejs"></script>
 </head> 
-    <body>
-                <h5>First name</h5>
-                <form action="#">
-                    <div>
-                        <label for="first-name"></label>
-                        <input type="text" name="first name" id="first-name" required>
-                    </div>
-                </form>
-              <img src="/bbrands-agency/assets/img/Line.svg">
-              <h5>Last name</h5>
-              <form action="#">
-                <div>
-                    <label for="last-name"></label>
-                    <input type="text" name="last name" id="last-name" required>
-                </div>
-              <img src="/bbrands-agency/assets/img/Line.svg">
-              <h5>Message</h5>
-              <form action="#">
-                <div>
-                    <label for="message"></label>
-                    <textarea name="message" id="message" rows="5" required></textarea>
-                </div>
+<body>
+<style>
 
-    </body> 
-    </html>
+    form {
+/* Uniquement centrer le formulaire sur la page */
+margin: 0 auto;
+width: 400px;
+
+}
+
+form div + div {
+margin-top: 1em;
+
+}
+
+label {
+/* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+display: inline-block;
+width: 90px;
+text-align: right;
+
+}
+
+input, textarea {
+/* Pour s'assurer que tous les champs texte ont la même police.
+    Par défaut, les textarea ont une police monospace */
+font: 1em sans-serif;
+/* Encadré pour voir les limites du formulaire */
+padding: 1em;
+border: 1px solid #CCC;
+border-radius: 1em;
+
+/* Pour que tous les champs texte aient la même dimension */
+width: 300px;
+box-sizing: border-box;
+
+/* Pour harmoniser le look & feel des bordures des champs texte */
+border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+/* Pour souligner légèrement les éléments actifs */
+border-color: #000;
+}
+
+textarea {
+/* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+vertical-align: top;
+
+/* Pour donner assez de place pour écrire du texte */
+height: 10em;
+}
+
+.button {
+/* Pour placer le bouton à la même position que les champs texte */
+align-items: center;
+justify-content: center; /* même taille que les étiquettes */
+}
+
+button {
+/* Cette marge supplémentaire représente grosso modo le même espace que celui
+    entre les étiquettes et les champs texte */
+margin-left: .5em;
+}
+</style>
+<header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+    <button @click="menuIsOpen= ! menuIsOpen"
+    class="header_menuBtn">
+    <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg">
+    </a>
+    </button>
+    <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
+    <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
+        <nav
+        id="mainNav" 
+        x-show="menuIsOpen" x-transition.duration.800ms
+        class="menu">
+                <ul>
+                    <li>ACCUEIL</a> 
+                    <li>ARTICLES</a> 
+                    <ul>
+                        <li><a href="book_fr.html">► Des androïdes et des hommes</a></li>
+                        <li><a href="movie_fr.html">► Entre amour et solitude</a></li>
+                        <li><a href="song_fr.html">► Coeur Électronique</a> 
+                        <li><a href="place_fr.html">► Vivre dans une machine</a></li>
+                        <li><a href="hope_fr.html">► Une génération engagée</a></li>
+                        <li><a href="regret_fr.html">► L’impact des réseaux sociaux</a></li>
+                    </ul>
+                    <li> <a href="about_fr.html">À PROPOS</a>
+                    <li> <a href="contact_fr.html">CONTACT</a>
+                </ul>
+                <ul>
+                    <li> <a href="/en/index_en.html">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
+            </nav>
+<h1>CONTACT</h1>
+
+<h5>Prénom</h5>
+<form action="#">
+    <div>
+        <label for="first-name"></label>
+        <input type="text" name="Prénom" id="first-name" required>
+    </div>
+</form>
+
+<h5>Nom</h5>
+<form action="#">
+<div>
+    <label for="last-name"></label>
+    <input type="text" name="Nom" id="last-name" required>
+</div>
+</form>
+
+<h5>Adresse e-mail</h5>
+<form action="#">
+    <div>
+        <label for="email"></label>
+        <input type="email" name="Adresse e-mail" id="email" required>
+    </div>
+</form>
+
+<h5>Objet</h5>
+<form action="#">
+    <div>
+        <label for="object"></label>
+        <input type="text" name="Objet" id="object" required>
+    </div>
+</form>
+
+<h5>Message</h5>
+<form action="#">
+<div>
+    <label for="message"></label>
+    <textarea name="Message" id="message" rows="5" required></textarea>
+</div>
+</form>
+
+
+<button>Envoyer</button>
+
+<footer>
+    <h5>Lisa Cingolani MM1 - A1</h5>
+    <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+    <h5>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h5>
+    
+    <a href="http://mmimontbeliard.com">
+    <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+    <a href="fr/about_fr.html"> À propos
+    </a>
+    <a href="fr/contact_fr.html"> Contact
+    </a>
+    <a href="fr/otherprojects_fr.html"> Autres projets
+    </a>
+</footer> 
+</body> 
+</html>
