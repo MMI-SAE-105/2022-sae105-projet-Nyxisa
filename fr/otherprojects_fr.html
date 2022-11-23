@@ -9,5 +9,50 @@
         <script defer src="https://unpkg.com/alpinejs"></script>
 </head> 
     <body>
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+                <button @click="menuIsOpen= ! menuIsOpen"
+                class="header_menuBtn">
+                <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg">
+                </a>
+                </button>
+                <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
+                <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
+                    <nav
+                    id="mainNav" 
+                    x-show="menuIsOpen" x-transition.duration.800ms
+                    class="menu">
+                            <ul>
+                                <li>ACCUEIL</a> 
+                                <li>ARTICLES</a> 
+                                <ul>
+                                    <li><a href="book_fr.html">► Des androïdes et des hommes</a></li>
+                                    <li><a href="movie_fr.html">► Entre amour et solitude</a></li>
+                                    <li><a href="song_fr.html">► Coeur Électronique</a> 
+                                    <li><a href="place_fr.html">► Vivre dans une machine</a></li>
+                                    <li><a href="hope_fr.html">► Une génération engagée</a></li>
+                                    <li><a href="regret_fr.html">► L’impact des réseaux sociaux</a></li>
+                                </ul>
+                                <li> <a href="about_fr.html">À PROPOS</a>
+                                <li> <a href="contact_fr.html">CONTACT</a>
+                            </ul>
+                            <ul>
+                                <li> <a href="/en/index_en.html">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
+                        </nav>
+        <h1>AUTRES PROJETS</h1>
+        <h4>Vous avez aimé ce site et vous souhaitez en découvrir d’autres ? 
+                Vous trouverez ci-dessous une liste des sites crées par les étudiants de mon groupe.</h4>
+        <h5>► Sweet Old Times – Jaël Amemoutou</h5>
+        <h5>► Tengu road – Lucas Bardey</h5>
+        <h5>► Rake over the ashes – Alexis Bernard</h5>
+        <h5>► Reverse Footage – Timéo Binda</h5>
+        <h5>► Dicta – Chloé Bizet</h5>
+        <h5>► Back to Back – Gaspard Bondy</h5>
+        <h5>► Wikipiece – Yannis Borel</h5>
+        <h5>► Jibun – Emilien Boucard</h5>
+        <h5>► Reminder – Lisa Bugnet</h5>
+        <h5>► Mon Nindo – Ayrton Chaves</h5>
+        <h5>► discover-e – Lucas Chippaux</h5>
+        <h5>► As Time Flies – Dalil Hammachi</h5>
+        <h5>► timeproof cybersoul – Zoé A. Vicat</h5>
     </body> 
     </html>
