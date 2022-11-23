@@ -42,9 +42,27 @@ Soyez attentifs à l'ordre d'import :
 body {
     color : white;
     background-color:black;
-    background-image:url(/public/img//background_home.png);
+
     background-attachment:fixed;
     background-repeat:no-repeat;
     
 }
+.menu {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    background: rgb(0, 0, 0);;
+    display: grid;
+    place-content: center;
+  }
+  .header_menuBtn {
+    position:relative;
+    z-index: 10;
+  }
+  .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }
 

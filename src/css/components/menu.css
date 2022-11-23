@@ -4,15 +4,18 @@
     left: 0;
     width: 100vw;
     height:100vh;
-    background: rgb(0, 0, 0);;
+    background: #fff;;
     display: grid;
     place-content: center;
-    }
-    .header_menuBtn {
+  }
+  .header_menuBtn {
     position:relative;
     z-index: 10;
-    }
-    .noscroll,
-    .noscroll body {
+  }
+  .noscroll,
+  .noscroll body {
     overflow: hidden;
-    }
+  }
+.icone1::before{
+    content: url("../../public/icones/archive.svg")
+}

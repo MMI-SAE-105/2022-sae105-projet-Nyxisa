@@ -10,18 +10,17 @@
 </head> 
     <body>
         <!-- Le menu ne s'ouvre pas ?--> 
-                <!-- Ajouter les alt text--> 
-    <header x-data="{menuIsOpen : false}" : class="{noscroll:menuIsOpen,}">
-        <a href aria-controls="mainNav"
-        @click="menuIsOpen= ! menuIsOpen"
+    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <button @click="menuIsOpen= ! menuIsOpen"
         class="header_menuBtn">
         <aria-expanded="true"menu> <img src="public/icones/menu_icon.svg">
         </a>
+        </button>
         <img src="./public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
         <img src="/public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
             <nav
             id="mainNav" 
-            x-show="menuIsOpen"x-transition.duration.800ms
+            x-show="menuIsOpen" x-transition.duration.800ms
             class="menu">
                     <ul>
                         <li>ACCUEIL</a> 
