@@ -51,7 +51,7 @@ border: 1px solid #999;
 
 input:focus, textarea:focus {
 /* Pour souligner légèrement les éléments actifs */
-border-color: #000;
+border-color: rgb(3, 218, 25);
 }
 
 textarea {
@@ -68,10 +68,10 @@ align-items: center;
 justify-content: center; /* même taille que les étiquettes */
 }
 
-button {
+.button {
 /* Cette marge supplémentaire représente grosso modo le même espace que celui
 entre les étiquettes et les champs texte */
-margin-left: .5em;
+margin-left: 5em;
 }
 </style>
 <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
@@ -110,47 +110,43 @@ class="menu">
 
 <h5>Prénom</h5>
 <form action="#">
-<div>
-<label for="first-name"></label>
-<input type="text" name="Prénom" id="first-name" required>
-</div>
-</form>
+    <div>
+        <label for="first-name"></label>
+        <input type="text" name="Prénom" id="first-name" required>
+    </div>
 
 <h5>Nom</h5>
-<form action="#">
-<div>
-<label for="last-name"></label>
-<input type="text" name="Nom" id="last-name" required>
-</div>
-</form>
+
+    <div>
+        <label for="last-name"></label>
+        <input type="text" name="Nom" id="last-name" required>
+    </div>
+
 
 <h5>Adresse e-mail</h5>
-<form action="#">
-<div>
-<label for="email"></label>
-<input type="email" name="Adresse e-mail" id="email" required>
-</div>
-</form>
+
+    <div>
+        <label for="email"></label>
+        <input type="email" name="Adresse e-mail" id="email" required>
+    </div>
+
 
 <h5>Objet</h5>
-<form action="#">
-<div>
-<label for="object"></label>
-<input type="text" name="Objet" id="object" required>
-</div>
-</form>
+
+    <div>
+        <label for="object"></label>
+        <input type="text" name="Objet" id="object" required>
+    </div>
+
 
 <h5>Message</h5>
-<form action="#">
-<div>
-<label for="message"></label>
-<textarea name="Message" id="message" rows="5" required></textarea>
-</div>
+
+    <div>
+        <label for="message"></label>
+        <textarea name="Message" id="message" rows="5" required></textarea>
+    </div>
+<button title="Valider le formulaire">ENVOYER</button>
 </form>
-
-
-<button>Envoyer</button>
-
 <footer>
 <h5>Lisa Cingolani MM1 - A1</h5>
 <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>

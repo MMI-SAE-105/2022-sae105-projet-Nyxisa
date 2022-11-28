@@ -6,13 +6,21 @@ body {
   font-family: 'Jura', sans-serif;
 }
 
+body {
+ font-family:'OPTIEdgarBold-Extended', sans-serif;
+}
+
 /* Les règles typographiques générales des titres */
 
 /* permet d'annuler la mise en forme des boutons qu'applique le navigateur. */
 button {
   appearance: none;
-  border: none;
+  border: 2px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
   background: none;
-  padding: 0;
+  background-color:#37db90;
+  padding: 8;
   cursor: pointer;
+  font-weight: bold;
 }

@@ -1,29 +1,39 @@
 :root {
-    /* Styles de couleur */
-    --brand-violet:       rgba(29, 9, 107, 1);
-    --brand-violet-light: rgba(140, 131, 197, 1);
-    --brand-saumon:       rgba(254, 170, 155, 1);
-    --brand-saumon-light: rgba(248, 211, 204, 1);
-    --gray-black:         rgba(0, 0, 0, 1);
-    --gray-800:           rgba(28, 21, 20, 1);
-    --gray-600:           rgba(152, 149, 146, 1);
-    --gray-400:           rgba(205, 202, 199, 1);
-    --gray-200:           rgba(233, 231, 228, 1);
-    --gray-100:           rgba(250, 250, 250, 1);
-    --gray-white:         rgba(255, 255, 255, 1);
-    --system-error:       rgba(255, 92, 92, 1);
-    --system-success:     rgba(33, 209, 132, 1);
+  /* fonts */
+  --font-bold: 'OPTIEdgarBold-Extended';
+  --font-sans-serif: 'Jura';
 
-  /* Tailles de police de caractère */
-  --title-xxl: 2.25rem;
-  --title-xl: 1.5rem;
-  --title-lg: 1.125rem;
-  --text-xxl: 3rem;
-  --text-xl: 1.375rem;
-  --text-md: 0.813rem;
-  --text-sm: 0.688rem;
+  /* font sizes à mettre en REM et vérfier sur maquette*/
+  --footer-size: 10px;
+  --font-size-xs: 11.52px;
+  --h1-size: 13px;
+  --body-1-size: 14px;
+  --h2-size: 16px;
 
-    /* Polices de caractère */
-    --font-mono: 'optiedgarbold-extendedregular', bold;
-    font-family: 'Jura', sans-serif;
+  /* Colors */
+  --black: #000;
+  --purple: #a97dfa;
+  --white: #fff;
+  --green: #37db90;
+
+  /* Gaps */
+  --gap-md: 5px;
+
+  /* Paddings */
+  --padding-4xs: 2px;
+  --padding-3xs: 3px;
+  --padding-2xs: 4.84567928314209px;
+  --padding-xs: 5px;
+  --padding-sm: 9.69135856628418px;
+  --padding-md: 10px;
+  --padding-lg: 14px;
+  --padding-xl: 20px;
+  --padding-2xl: 21px;
+  --padding-3xl: 25px;
+  --padding-4xl: 27px;
+
+  /* border radiuses */
+  --br-s: 2px;
+  --br-m: 2.42px;
+  --br-l: 25px;
 }

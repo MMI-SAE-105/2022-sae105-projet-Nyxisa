@@ -1,3 +1,13 @@
 .footer {
+    background-color: var(--purple);
+    padding: 1em;
+}
+
+.footer__text {
+    color: var(--gray-400);
+    text-decoration: none;
     font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--text-sm);
+    color: var(--white);
 }

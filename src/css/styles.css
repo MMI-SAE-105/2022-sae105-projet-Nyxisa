@@ -13,28 +13,36 @@ Soyez attentifs à l'ordre d'import :
 
 /* Les polices de caractère */
 
+@font-face {
+  font-family: "OPTIEdgarBold-Extended";
+  src: url("fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff2");
+  font-weight: 700;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 
 /* Vendors */
-@import "./vendors/normalize.css";
+@import "vendors/normalize.css";
 
 /* Utils */
-@import "./utils/variables.css";
+@import "utils/variables.css";
 
 /* Base */
-@import "./base/main.css";
-@import "./base/media.css";
+@import "base/main.css";
+@import "base/media.css";
 
 /* Layout */
-@import "./layout/header.css";
+@import "layout/home.css";
+@import "layout/footer.css";
+@import "layout/header.css";
 
 /* Composants */
-@import "./components/menu.css";
+@import "components/menu.css";
 
 body {
     color : white;
     background-color:black;
+    text-decoration: none;
 
     background-attachment:fixed;
     background-repeat:no-repeat;
