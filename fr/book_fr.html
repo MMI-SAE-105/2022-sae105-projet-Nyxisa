@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-        <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
-        <title>Mind_Uploading.exe</title>
-        <link rel="stylesheet" href="../src/css/styles.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <button @click="menuIsOpen= ! menuIsOpen"
-        class="header_menuBtn">
-        <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg">
-        </a>
-        </button><img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
-        <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
-        <nav
-        id="mainNav" 
-        x-show="menuIsOpen" x-transition.duration.800ms
-        class="menu">
+    <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+        <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+    </button>
+    <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
+    <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li>ARTICLES
                 <ul>
-                    <li><a href="./index.html">ACCUEIL</a></li> 
-                    <li>ARTICLES</a> 
-                    <ul>
-                        <li><a href="./book_fr.html">► Des androïdes et des hommes</a></li>
-                        <li><a href="./movie_fr.html">► Entre amour et solitude</a></li>
-                        <li><a href="./song_fr.html">► Coeur Électronique</a> 
-                        <li><a href="./place_fr.html">► Vivre dans une machine</a></li>
-                        <li><a href="./hope_fr.html">► Une génération engagée</a></li>
-                        <li><a href="./regret_fr.html">► L’impact des réseaux sociaux</a></li>
-                    </ul>
-                    <li> <a href="./about_fr.html">À PROPOS</a>
-                    <li> <a href="./contact_fr.html">CONTACT</a>
+                    <li><a href="book_fr.html">► DES ANDROÏDES ET DES HOMMES</a></li>
+                    <li><a href="movie_fr.html">► ENTRE AMOUR ET SOLITUDE</a></li>
+                    <li><a href="song_fr.html">► COEUR ÉLECTRONIQUE</a>
+                    <li><a href="place_fr.html">► VIVRE DANS UNE MACHINE</a></li>
+                    <li><a href="hope_fr.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                    <li><a href="regret_fr.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
                 </ul>
-                <ul>
-                    <li> <a href="./en/index_en.html">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
-            </nav>
-            <a href="../index.html">Mind_Uploading.exe</a>
-            
-        <a href="../index.html">Mind_Uploading.exe</a>
-        <h4>LIVRE</h4>
+            <li> <a href="about_fr.html">À PROPOS</a>
+            <li> <a href="contact_fr.html">CONTACT</a>
+        </ul>
+        <ul>
+            <li> <a href="../en/index_en.html">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
+        </ul>
+    </nav>
+    <a href="../index.html">Mind_Uploading.exe</a>
+    <h4>LIVRE</h4>
 </header>
 <main>
-    <section><h1>DES ANDROÏDES ET DES HOMMES</h1>
+    <section>
+        <h1>DES ANDROÏDES ET DES HOMMES</h1>
 
     </section>
-        <section>
+    <section>
 
-        </section>
+    </section>
 
 </main>
-    <footer>
-        <h5>Lisa Cingolani MM1 - A1</h5>
-        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-        <h5>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h5>
-        
-        <a href="http://mmimontbeliard.com">
+<footer>
+    <h5>Lisa Cingolani MM1 - A1</h5>
+    <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+    <h5>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h5>
+
+    <a href="http://mmimontbeliard.com">
         <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+    </a>
         <a href=".fr/about_fr.html"> À propos
         </a>
         <a href=".fr/contact_fr.html"> Contact
         </a>
         <a href=".fr/otherprojects_fr.html"> Autres projets
         </a>
-    </footer> 
-</body> 
+</footer>
+</body>
+
 </html>
 
 
-    <body>
-    </body> 
-    </html>
+<body>
+</body>
+
+</html>

@@ -1,84 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
-    <meta name = "viewport"
-    content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À propos - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
-</head> 
+</head>
+
 <body>
-    <!-- Le menu ne s'ouvre pas ?--> 
-<header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-    <button @click="menuIsOpen= ! menuIsOpen"
-    class="header_menuBtn">
-    <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg">
-    </a>
-    </button>
-    <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
-    <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche"/>
-    <nav
-    id="mainNav" 
-    x-show="menuIsOpen" x-transition.duration.800ms
-    class="menu">
+    <!-- Le menu ne s'ouvre pas ?-->
+    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+            <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+        </button>
+        <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
+        <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="./index.html">ACCUEIL</a></li> 
-                <li>ARTICLES</a> 
-                <ul>
-                    <li><a href="./book_fr.html">► Des androïdes et des hommes</a></li>
-                    <li><a href="./movie_fr.html">► Entre amour et solitude</a></li>
-                    <li><a href="./song_fr.html">► Coeur Électronique</a> 
-                    <li><a href="./place_fr.html">► Vivre dans une machine</a></li>
-                    <li><a href="./hope_fr.html">► Une génération engagée</a></li>
-                    <li><a href="./regret_fr.html">► L’impact des réseaux sociaux</a></li>
-                </ul>
-                <li> <a href="./about_fr.html">À PROPOS</a>
-                <li> <a href="./contact_fr.html">CONTACT</a>
+                <li><a href="../index.html">ACCUEIL</a></li>
+                <li>ARTICLES
+                    <ul>
+                        <li><a href="book_fr.html">► DES ANDROÏDES ET DES HOMMES</a></li>
+                        <li><a href="movie_fr.html">► ENTRE AMOUR ET SOLITUDE</a></li>
+                        <li><a href="song_fr.html">► COEUR ÉLECTRONIQUE</a>
+                        <li><a href="place_fr.html">► VIVRE DANS UNE MACHINE</a></li>
+                        <li><a href="hope_fr.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                        <li><a href="regret_fr.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
+                    </ul>
+                <li> <a href="about_fr.html">À PROPOS</a>
+                <li> <a href="contact_fr.html">CONTACT</a>
             </ul>
             <ul>
-                <li> <a href="./en/index_en.html">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
+                <li> <a href="../en/index_en.html">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
+            </ul>
         </nav>
         <a href="../index.html">Mind_Uploading.exe</a>
         <h4>À PROPOS</h4>
-</header>
-<main>
-    <section><h1>À PROPOS</h1>
-        <h4>« La culture, c’est ce qui reste quand on a tout oublié. »</h4>
-        <p>- Edouart Herriot</p>
-        <img src="../public/img/me_about.webp">
-    </section>
+    </header>
+    <main>
         <section>
-        <h3>On se connait ?</h3>
-        <h4>Je m’appelle Lisa Cingolani et j’ai 20 ans. Actuellement étudiante, ce site web est un projet réalisé dans le cadre de ma formation aux métiers du multimédia et de l’Internet.</h4>
-        <h3>Quel but ?</h3>
-        <h4>Ce blog est destiné à la personne que je serai devenue dans quelques dizaines d’années. J’y ai exposé des éléments culturels marquants et/ou inspirant à mes yeux.</h4>
-        <h3>Pour aller plus loin ?</h3>
-        <h4>Mind_Uploading.exe est un concept imaginé qui me semble correspondre à la problématique du sujet. 
-            En effet, « Mind » en anglais signifie l’esprit et « Uploading » est un téléchargement vers un serveur.
-            La terminaison « .exe » désigne un fichier exécutable, comme une application. Le principe est donc simple. Grâce à un logiciel, on télécharge le contenu de son esprit à un instant donné, sa mémoire.
-            Puis ces informations sont exportées vers un serveur ou autre support de stockage.
-            Ainsi, nos souvenirs et pensées ne s’effacent pas et sont accessibles à tout moment. 
-            C’est exactement ce que constitue ce blog, ma sauvegarde personnelle.</h4>
-        <h3>Bonne lecture 
-            sur Mind_Uploading.exe ! </h3>
+            <h1>À PROPOS</h1>
+            <h4>« La culture, c’est ce qui reste quand on a tout oublié. »</h4>
+            <p>- Edouart Herriot</p>
+            <img src="../public/img/me_about.webp">
+        </section>
+        <section>
+            <h3>On se connait ?</h3>
+            <h4>Je m’appelle Lisa Cingolani et j’ai 20 ans. Actuellement étudiante, ce site web est un projet réalisé
+                dans le cadre de ma formation aux métiers du multimédia et de l’Internet.</h4>
+            <h3>Quel but ?</h3>
+            <h4>Ce blog est destiné à la personne que je serai devenue dans quelques dizaines d’années. J’y ai exposé
+                des éléments culturels marquants et/ou inspirant à mes yeux.</h4>
+            <h3>Pour aller plus loin ?</h3>
+            <h4>Mind_Uploading.exe est un concept imaginé qui me semble correspondre à la problématique du sujet.
+                En effet, « Mind » en anglais signifie l’esprit et « Uploading » est un téléchargement vers un serveur.
+                La terminaison « .exe » désigne un fichier exécutable, comme une application. Le principe est donc
+                simple. Grâce à un logiciel, on télécharge le contenu de son esprit à un instant donné, sa mémoire.
+                Puis ces informations sont exportées vers un serveur ou autre support de stockage.
+                Ainsi, nos souvenirs et pensées ne s’effacent pas et sont accessibles à tout moment.
+                C’est exactement ce que constitue ce blog, ma sauvegarde personnelle.</h4>
+            <h3>Bonne lecture
+                sur Mind_Uploading.exe ! </h3>
         </section>
 
-</main>
+    </main>
     <footer>
         <h5>Lisa Cingolani MM1 - A1</h5>
         <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
         <h5>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h5>
-        
-        <a href="http://mmimontbeliard.com">
-        <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
-        <a href="fr/about_fr.html"> À propos
-        </a>
-        <a href="fr/contact_fr.html"> Contact
-        </a>
-        <a href="fr/otherprojects_fr.html"> Autres projets
-        </a>
-    </footer> 
-</body> 
-</html>
 
+        <a href="http://mmimontbeliard.com">
+            <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+        </a>
+            <a href="fr/about_fr.html"> À propos
+            </a>
+            <a href="fr/contact_fr.html"> Contact
+            </a>
+            <a href="fr/otherprojects_fr.html"> Autres projets
+            </a>
+    </footer>
+</body>
+
+</html>

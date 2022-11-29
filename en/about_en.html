@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
-        <title>Mind_Uploading.exe</title>
-        <link rel="stylesheet" href="../src/css/styles.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-  <body>
-        <!-- Le menu ne s'ouvre pas ?--> 
+
+<body>
+    <!-- Le menu ne s'ouvre pas ?-->
     <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <button @click="menuIsOpen= ! menuIsOpen"
-        class="header_menuBtn">
-        <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg">
-        </a>
+        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+            <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
         </button>
         <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
-        <img src="../public/icones/search_icon.svg" alt="Search bar icon"/>
-        <nav
-        id="mainNav" 
-        x-show="menuIsOpen" x-transition.duration.800ms
-        class="menu">
-                <ul>
-                    <li><a href="index_en.html">HOME</a></li> 
-                    <li>ARTICLES</a> 
+        <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="index_en.html">HOME</a></li>
+                <li>ARTICLES
                     <ul>
-                        <li><a href="book_en.html">► Of androids and men</a></li>
-                        <li><a href="movie_en.html">► Between love and loneliness</a></li>
-                        <li><a href="song_en.html">► Electronic Heart</a> 
+                        <li><a href="book_en.html">► OF ANDROIDS AND MEN</a></li>
+                        <li><a href="movie_en.html">► BETWEEN LOVE AND LONELINESS</a></li>
+                        <li><a href="song_en.html">► ELECTRONIC HEART</a>
                         <li><a href="place_en.html">► LIVING IN A MACHINE</a></li>
-                        <li><a href="hope_en.html">► A committed generation</a></li>
-                        <li><a href="regret_en.html">► Social networks’ impact today</a></li>
+                        <li><a href="hope_en.html">► A COMMITTED GENERATION</a></li>
+                        <li><a href="regret_en.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
                     </ul>
-                    <li> <a href="about_en.html">ABOUT</a>
-                    <li> <a href="contact_en.html">CONTACT</a>
-                </ul>
-                <ul>
-                    <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg" alt="Website in french"></a>
-            </nav>
-            <a href="index_en.html">Mind_Uploading.exe</a>
-            <h4>ABOUT</h4>
+                <li> <a href="about_en.html">ABOUT</a>
+                <li> <a href="contact_en.html">CONTACT</a>
+            </ul>
+            <ul>
+                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg" alt="Website in french"></a>
+            </ul>
+        </nav>
+        <a href="index_en.html">Mind_Uploading.exe</a>
+        <h4>ABOUT</h4>
     </header>
     <main>
-        <section><h1>ABOUT</h1>
+        <section>
+            <h1>ABOUT</h1>
             <h4>“Culture is what remains when everything has been forgotten.”</h4>
             <p>- Edouart Herriot</p>
             <img src="../public/img/me_about.webp">
         </section>
-            <section>
+        <section>
             <h3>Who am I?</h3>
-            <h4>  My name is Lisa Cingolani and I am 20 years old. Currently a student, this website is a project I'm doing as part of my education in multimedia and Internet. </h4>
+            <h4> My name is Lisa Cingolani and I am 20 years old. Currently a student, this website is a project I'm
+                doing as part of my education in multimedia and Internet. </h4>
             <h3>What’s the purpose?</h3>
-            <h4> This blog is intended for the person I will become in a few decades. 
+            <h4> This blog is intended for the person I will become in a few decades.
                 I have presented cultural elements that drew my attention and/or inspired me.</h4>
             <h3>Further information</h3>
-            <h4>  Mind_Uploading.exe is an imagined concept that, in my opinion, correspond to the problematic of the subject.
-                Indeed, "Uploading" is an upload to a server and the ".exe" ending designates an executable file, like an application.
-                Therefore, the principle is simple. Using a software, you upload the contents of your mind, your memory, at a given time.
+            <h4> Mind_Uploading.exe is an imagined concept that, in my opinion, correspond to the problematic of the
+                subject.
+                Indeed, "Uploading" is an upload to a server and the ".exe" ending designates an executable file, like
+                an application.
+                Therefore, the principle is simple. Using a software, you upload the contents of your mind, your memory,
+                at a given time.
                 This content is then exported to a server or any storage device.
-                This way, our memories and thoughts are not erased and are available at any time. 
+                This way, our memories and thoughts are not erased and are available at any time.
                 That’s exactly what this blog is, my personal backup. </h4>
             <h3>Have a good read on Mind_Uploading.exe ! </h3>
-            </section>
-    
+        </section>
+
     </main>
-        <footer>
-            <h5>Lisa Cingolani MM1 - A1</h5>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-            <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</h5>
-            
-            <a href="http://mmimontbeliard.com">
+    <footer>
+        <h5>Lisa Cingolani MM1 - A1</h5>
+        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</h5>
+
+        <a href="http://mmimontbeliard.com">
             <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
+        </a>
             <a href="about_en.html">ABOUT
             </a>
             <a href="contact_en.html">CONTACT
             </a>
             <a href="otherprojects_en.html">OTHER PROJECTS
             </a>
-        </footer> 
-    </body> 
-    </html>
-    
+    </footer>
+</body>
+
+</html>
