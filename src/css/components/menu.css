@@ -9,7 +9,7 @@
     place-content: center;
     font-family: 'Jura', sans-serif;
   }
-  .header_menuBtn {
+  .menu-btn {
     position:relative;
     z-index: 10;
   }
@@ -17,6 +17,3 @@
   .noscroll body {
     overflow: hidden;
   }
-.icone1::before{
-    content: url("../../public/icones/archive.svg")
-}
