@@ -22,49 +22,21 @@ Soyez attentifs à l'ordre d'import :
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 
 /* Vendors */
-@import "vendors/normalize.css";
+@import "./vendors/normalize.css";
 
 /* Utils */
-@import "utils/variables.css";
+@import "./utils/variables.css";
 
 /* Base */
-@import "base/main.css";
-@import "base/media.css";
+@import "./base/main.css";
+@import "./base/media.css";
 
 /* Layout */
-@import "layout/home.css";
-@import "layout/footer.css";
+@import "./layout/home.css";
+@import "./layout/footer.css";
 @import "layout/header.css";
 
 /* Composants */
-@import "components/menu.css";
-@import "components/form.css";
-
-body {
-    color : white;
-    background-color:black;
-    text-decoration: none;
-
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    
-}
-.menu {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height:100vh;
-    background: rgb(0, 0, 0);;
-    display: grid;
-    place-content: center;
-  }
-  .header_menuBtn {
-    position:relative;
-    z-index: 10;
-  }
-  .noscroll,
-  .noscroll body {
-    overflow: hidden;
-  }
+@import "./components/menu.css";
+@import "./components/form.css";
 
