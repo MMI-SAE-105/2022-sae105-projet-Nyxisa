@@ -1,15 +1,147 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
         <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
-        <title>Mind_Uploading.exe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entre amour et solitude - Mind_Uploading.exe</title>
         <link rel="stylesheet" href="../src/css/styles.css">
         <script defer src="https://unpkg.com/alpinejs"></script>
-</head> 
-    <body>
-    </body> 
-    </html>
+</head>
+<header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+                <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+        </button>
+        <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe">
+        <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                        <li><a href="../index.html">ACCUEIL</a></li>
+                        <li>ARTICLES
+                                <ul>
+                                        <li><a href="book_fr.html">► DES ANDROÏDES ET DES HOMMES</a></li>
+                                        <li><a href="movie_fr.html">► ENTRE AMOUR ET SOLITUDE</a></li>
+                                        <li><a href="song_fr.html">► COEUR ÉLECTRONIQUE</a>
+                                        <li><a href="place_fr.html">► VIVRE DANS UNE MACHINE</a></li>
+                                        <li><a href="hope_fr.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                                        <li><a href="regret_fr.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
+                                </ul>
+                        <li> <a href="about_fr.html">À PROPOS</a>
+                        <li> <a href="contact_fr.html">CONTACT</a>
+                </ul>
+                <ul>
+                        <li> <a href="../en/index_en.html">EN<img src="../public/icones/language_icon.svg"
+                                                alt="Site en anglais"></a>
+                </ul>
+        </nav>
+        <a href="../index.html">Mind_Uploading.exe</a>
+        <h4>FILM</h4>
+</header>
+<main>
+        <img src="../public/img/articles/movie/mainpic.webp">
+        <h5>Temps de lecture : 2 minutes</h5>
+        <section>
+                <h1>ENTRE AMOUR ET SOLITUDE</h1>
+                <h2>Un bâtiment construit dans un contexte particulier</h2>
+                <p> Her est un film de science-fiction et d’anticipation sorti en 2013 et réalisé par Spike Jonze.
+                        Il se déroule dans un futur proche, une société moderne et ultra-connectée.
+                        Le personnage principal, Théodore (incarné par Joachim Phoenix), est un homme solitaire et
+                        sensible.
+                        Séparé de sa femme Catherine depuis plusieurs mois, il éprouve un fort besoin de compagnie.
+                </p>
+                <figure>
+                        <img src="../public/img/articles/movie/theodore.webp">
+                        <figcaption>Théodore Twombly</figcaption>
+                </figure>
 
-    
+                <h2>Le début d’une histoire</h2>
+                <p>Lorsqu’il se retrouve face à une publicité pour un nouveau système d’exploitation avec intelligence
+                        artificielle, il décide de l’acheter.
+                </p>
+                <figure>
+                        <img src="../public/img/articles/movie/installation.webp">
+                        <figcaption>L’installation du système d’exploitation</figcaption>
+                </figure>
+                <p> Au début surpris, il va faire peu à peu la connaissance de Samantha, son OS qui n’a pas de corps
+                        mais un esprit très vif.
+                        La voix de Samantha est interprétée par Scarlett Johansson, qu’on ne verra d’ailleurs jamais à
+                        l’écran car l’OS n’a pas de présence physique.
+                        Theodore et Samantha vont rapidement devenir très complices.
+                        L’intelligence artificielle s’adapte parfaitement à Théodore et a une personnalité très riche.
+                </p>
+                <figure>
+                        <img src="../public/img/articles/movie/illustration.webp">
+                        <figcaption>Illustration reprenant le visuel de l’OS</figcaption>
+                </figure>
+                <p>Cependant, avec ce rapprochement va arriver de nombreux questionnements de la part de Samantha.
+                        De plus, Théodore va se rendre compte que l’amour de Samantha ne lui est pas uniquement destiné.
+                        En effet, elle communique simultanément avec des milliers de personnes.
+                        Et parmi celles-ci, quelques centaines d’autres partagent aussi son cœur.
+                        Cela anéanti complétement Théodore. </p>
+
+
+                <h2>Des relations altérées</h2>
+                <p> Théodore travaille dans une agence qui propose de rédiger des lettres « manuscrites ».
+                        Une lettre est censée être quelque chose de très personnel.
+                        Or ici, on embauche quelqu’un pour les écrire à notre place, qui plus est, sur ordinateur.
+                        D’ailleurs, Théodore écrit des lettres depuis si longtemps qu’il connaît les proches de ses
+                        clients parfois mieux qu’eux.
+                        Cette situation est assez cocasse, les relations humaines sont complétement dénaturées et les
+                        ordinateurs sont utilisés même pour effectuer une tâche essentiellement humaine.
+                </p>
+                <figure>
+                        <img src="../public/img/articles/movie/work.webp">
+                        <figcaption>Théodore au bureau de l’agence</figcaption>
+                </figure>
+                <h2>Un bref retour à la réalité</h2>
+                <p>Lorsque Théodore allume son ordinateur, il se rend compte que son système d’exploitation, donc
+                        Samantha, n’est pas disponible.
+                        Il regarde sur son téléphone et là, même chose, Samantha a disparu.
+                        Il se précipite alors dehors et court sans s’arrêter, complétement paniqué.
+                        Après quelques instants, Samantha est de retour : elle était simplement en train de faire une
+                        mise à jour.
+                        On voit ici la fragilité de cette relation, qui peut vaciller et même disparaître à tout moment
+                        avec une mise à jour ou un simple bug.
+
+                <h2>Le rappel de l’importance de l’autre</h2>
+                <p>Lorsque Samantha part dans « un espace au-delà du monde physique », Théodore va être amené à
+                        reconsidérer sa vie ainsi que ses relations avec ses proches.
+                        Il écrit une lettre d’excuse et de remerciements à son ex-femme Catherine.
+                        Cela rappelle son métier, mais cette fois il écrit une lettre vraiment personnelle.
+                        Également, il se rapproche de son amie de longue date, Amy.
+                        La scène de fin nous montre ces deux personnages appréciant la compagnie (réelle) de l’un et de
+                        l’autre.
+                </p>
+                <figure>
+                        <img src="../public/img/articles/movie/friends.webp">
+                        <figcaption>Scène finale avec Théodore et Amy</figcaption>
+                </figure>
+                <a href="filmography_fr.html">FILMOGRAPHIE DU RÉALISATEUR</a>
+        </section>
+        <section>
+                <button>PARTAGER SUR
+                        <a href="#"><img src="../public/icones/facebook_icon.svg"></a>
+                        <a href="#"><img src="../public/icones/twitter_icon.svg"></a>
+                </button>
+        </section>
+
+</main>
+<footer class="footer">
+        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        <h5 class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
+                Montbéliard</h5>
+
+        <a href="http://mmimontbeliard.com">
+                <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+        </a>
+        <a href="about_fr.html"> À PROPOS
+        </a>
+        <a href="contact_fr.html"> CONTACT
+        </a>
+        <a href="otherprojects_fr.html"> AUTRES PROJETS
+        </a>
+</footer>
+</body>
+
+</html>
