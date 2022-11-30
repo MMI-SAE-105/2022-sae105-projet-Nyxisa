@@ -3,37 +3,23 @@
   --font-bold: 'OPTIEdgarBold-Extended';
   --font-sans-serif: 'Jura';
 
-  /* font sizes à mettre en REM et vérfier sur maquette*/
-  --footer-size: 10px;
-  --font-size-xs: 11.52px;
-  --h1-size: 13px;
-  --body-1-size: 14px;
-  --h2-size: 16px;
+  /* Color styles */
+  --purple: rgba(169, 125, 250, 1);
+  --blue: rgba(30, 40, 217, 1);
+  --green: rgba(55, 219, 144, 1);
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
 
-  /* Colors */
-  --black: #000;
-  --purple: #a97dfa;
-  --white: #fff;
-  --green: #37db90;
-
-  /* Gaps */
-  --gap-md: 5px;
-
-  /* Paddings */
-  --padding-4xs: 2px;
-  --padding-3xs: 3px;
-  --padding-2xs: 4.84567928314209px;
-  --padding-xs: 5px;
-  --padding-sm: 9.69135856628418px;
-  --padding-md: 10px;
-  --padding-lg: 14px;
-  --padding-xl: 20px;
-  --padding-2xl: 21px;
-  --padding-3xl: 25px;
-  --padding-4xl: 27px;
-
-  /* border radiuses */
-  --br-s: 2px;
-  --br-m: 2.42px;
-  --br-l: 25px;
+  /* Text-size styles */
+  /* base size: body (14px) */
+  --title: 1.14rem;
+  --h1: 0.93rem;
+  --h2: 1.14rem;
+  --h3: 1.14rem;
+  --body: 1rem;
+  --legend: 0.86rem;
+  --small-text: 0.86rem;
+  --footer: 0.71rem;
+  --form: 1.07rem;
+  --button: 0.71rem;
 }

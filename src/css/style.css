@@ -10,3 +10,8 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+  @font-face{
+    font-family: 'OPTIEdgarBold-Extended';
+    src: url('../fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff2') format('woff2');
+    }
