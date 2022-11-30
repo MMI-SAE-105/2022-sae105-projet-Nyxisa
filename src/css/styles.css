@@ -32,11 +32,11 @@ Soyez attentifs à l'ordre d'import :
 @import "./base/media.css";
 
 /* Layout */
-@import "./layout/home.css";
+@import "./layout/header.css";
 @import "./layout/footer.css";
-@import "layout/header.css";
+@import "./layout/home.css";
 
 /* Composants */
-@import "./components/menu.css";
 @import "./components/form.css";
+@import "./components/menu.css";
 
