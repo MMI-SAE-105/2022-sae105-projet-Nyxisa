@@ -9,5 +9,22 @@
         <script defer src="https://unpkg.com/alpinejs"></script>
 </head> 
     <body>
+        <style>
+                @media (min-width:60em) {
+                        img {
+                                width: 50vw;
+                        }
+                }
+        </style>
+        <h1>test reponsive</h1>
+        <img
+    	sizes="(min-width: 30em) 28em, 100vw"
+    	srcset="https://res.cloudinary.com/dixi51lng/image/upload/v1669797725/Berlin01_s2yr9n.webp 256w,
+                https://res.cloudinary.com/dixi51lng/image/upload/v1669797725/Berlin01_s2yr9n.webp 512w,
+                https://res.cloudinary.com/dixi51lng/image/upload/v1669797725/Berlin01_s2yr9n.webp 768w,
+                https://res.cloudinary.com/dixi51lng/image/upload/v1669797725/Berlin01_s2yr9n.webp 1024w,
+                https://res.cloudinary.com/dixi51lng/image/upload/v1669797725/Berlin01_s2yr9n.webp 1280w"
+    	src="https://res.cloudinary.com/dixi51lng/image/upload/v1669797725/Berlin01_s2yr9n.webp"
+    	alt />
     </body> 
     </html>
