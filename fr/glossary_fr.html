@@ -9,8 +9,8 @@
         <script defer src="https://unpkg.com/alpinejs"></script>
         <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
-
 <body>
+        <!-- Le menu ne s'ouvre pas ?-->
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
                 <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
                         <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
@@ -40,6 +40,7 @@
                 <a href="../index.html">Mind_Uploading.exe</a>
                 <h4>GLOSSAIRE</h4>
         </header>
+        <main>
         <h1>GLOSSAIRE</h1>
         <h2>DES ANDROÏDES ET DES HOMMES</h2>
         <dl>

@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mind_Uploading.exe</title>
         <link rel="stylesheet" href="../src/css/styles.css">
         <script defer src="https://unpkg.com/alpinejs"></script>
-</head> 
-    <body>
-    </body> 
-    </html>
+</head>
+
+<body>
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+                        <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
+                <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                        <ul>
+                                <li><a href="index_en.html">HOME</a></li>
+                                <li>ARTICLES
+                                        <ul>
+                                                <li><a href="book_en.html">► OF ANDROIDS AND MEN</a></li>
+                                                <li><a href="movie_en.html">► BETWEEN LOVE AND LONELINESS</a></li>
+                                                <li><a href="song_en.html">► ELECTRONIC HEART</a>
+                                                <li><a href="place_en.html">► LIVING IN A MACHINE</a></li>
+                                                <li><a href="hope_en.html">► A COMMITTED GENERATION</a></li>
+                                                <li><a href="regret_en.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                                        </ul>
+                                <li> <a href="about_en.html">ABOUT</a>
+                                <li> <a href="contact_en.html">CONTACT</a>
+                        </ul>
+                        <ul>
+                                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg"
+                                                        alt="Website in french"></a>
+                        </ul>
+                </nav>
+                <a href="index_en.html">Mind_Uploading.exe</a>
+                <h4>GLOSSARY</h4>
+        </header>
+        <main>
+                <h1>GLOSSARY</h1>
+                <h2>OF ANDROIDS AND MEN</h2>
+                <dl>
+                        <dt>Android:</dt>
+                        <dd>A robot that looks like a human being.</dd>
+
+                        <dt>Empathy:</dt>
+                        <dd>Understanding and sympathizing with the emotions of other people.</dd>
+
+                        <dt>Martyr:</dt>
+                        <dd>A person who has suffered or died for a particular cause.</dd>
+
+                        <dt>Tetanus:</dt>
+                        <dd>A serious, often fatal disease caused by bacteria found in soil. 
+                                It enters the body through a wound and attacks the nervous system.
+                        </dd>
+
+                        <dt>Hypodermic needle:</dt>
+                        <dd>A hollow needle used with a syringe to inject or withdraw substances from the blood.</dd>
+                </dl>
+
+                <h2>LIVING IN A MACHINE</h2>
+                <dl>
+                        <dt>Brutalism:</dt>
+                        <dd>This architectural movement consists of the use of raw concrete for imposing buildings. 
+                                Another characteristic of brutalism is the repetition of elements, such as numerous windows.
+                        </dd>
+
+                        <dt>Bauhaus:</dt>
+                        <dd>It is one of the most important artistic movements of the 20th century. 
+                                Originally, it was a school that combined the learning of fine arts and crafts. 
+                                Vassily Kandinsky and Paul Klee were teachers there. 
+                                Many of modern architecture foundations come directly from the Bauhaus.</dd>
+
+                        <dt>Duplex:</dt>
+                        <dd>A two-level flat with an internal staircase. 
+                                This arrangement can be quite original and give a feeling of extra space.
+                        </dd>
+
+                        <dt>Loggia:</dt>
+                        <dd>A covered outdoor space that is set back from the facade, thus facing the interior of the building. 
+                                This space can be closed by a bay window.</dd>
+                </dl>
+                <footer class="footer">
+                        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+                        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+                        <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard
+                        </h5>
+
+                        <a href="http://mmimontbeliard.com">
+                                <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
+                        </a>
+                        <a href="about_en.html">ABOUT
+                        </a>
+                        <a href="contact_en.html">CONTACT
+                        </a>
+                        <a href="otherprojects_en.html">OTHER PROJECTS
+                        </a>
+</body>
+</footer>
+
+</html>
