@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmography - Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/exe_logo.svg">
+</head>
+
+<body>
+    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+            <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+        </button>
+        <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
+        <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="index_en.html">HOME</a></li>
+                <li>ARTICLES
+                    <ul>
+                        <li><a href="book_en.html">► OF ANDROIDS AND MEN</a></li>
+                        <li><a href="movie_en.html">► BETWEEN LOVE AND LONELINESS</a></li>
+                        <li><a href="song_en.html">► ELECTRONIC HEART</a>
+                        <li><a href="place_en.html">► LIVING IN A MACHINE</a></li>
+                        <li><a href="hope_en.html">► A COMMITTED GENERATION</a></li>
+                        <li><a href="regret_en.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                    </ul>
+                <li> <a href="about_en.html">ABOUT</a>
+                <li> <a href="contact_en.html">CONTACT</a>
+            </ul>
+            <ul>
+                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg"
+                            alt="Website in french"></a>
+            </ul>
+        </nav>
+        <a href="index_en.html">Mind_Uploading.exe</a>
+        <h4>HOME</h4>
+    </header>
+    <main>
+        <h1>FILMOGRAPHy</h1>
+        <h2>There are the different films directed by Spike Jonze, the author of the film Her.</h2>
+
+        <section aria-label="Galerie des films de Spike Jonze">
+            <div class="carousel" data-carousel>
+                <button class="carousel__buttonbef" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel__buttonaft" data-carousel-button="next">&#8658;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #1">
+                    </li>
+                    <li class="slide">
+                        <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+                    </li>
+                    <li class="slide">
+                        <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <ul>
+            <li>Where the Wild Things are</li>
+            <p>This fantasy adventure film was released in 2009.
+                Max is a little boy who has trouble dealing with his emotions.
+                After a family argument, he decides to run away to an imaginary island.
+                He will meet the Maximonsters, and become their king.
+                This experience will make him realize that he must change his attitude towards the world.
+            </p>
+            <p>With Max Records, Catherine Keener, Mark Ruffalo.</p>
+
+            <li>Being John Malkovich</li>
+            <p>This 1999 film is a dramatic and fantastic comedy.
+                Craig Schwartz has just been hired in the Lester company.
+                In his office, he finds a door, leading to the unconscious of John Malkovich for fifteen minutes.
+                This discovery will change his life.
+            </p>
+            <p>With John Cusack, Cameron Diaz, John Malkovich.</p>
+
+            <li>Adaptation</li>
+            <p>This film is a comedy-drama from 2003.
+                While working on the adaptation on screen of an original book, screenwriter Charlie Kaufman has to face
+                a major existential crisis.
+            </p>
+            <p>With Nicolas Cage, Tilda Swinton, Meryl Streep.</p>
+        </ul>
+
+
+
+        <footer class="footer">
+            <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+            <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard
+            </h5>
+    
+            <a href="http://mmimontbeliard.com">
+                    <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
+            </a>
+            <a href="about_en.html">ABOUT
+            </a>
+            <a href="contact_en.html">CONTACT
+            </a>
+            <a href="otherprojects_en.html">OTHER PROJECTS
+            </a>
+    </footer>
+</body>
+</html>
