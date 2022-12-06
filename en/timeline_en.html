@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <!-- Le menu ne s'ouvre pas ?-->
+    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+            <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+        </button>
+        <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
+        <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="index_en.html">HOME</a></li>
+                <li>ARTICLES
+                    <ul>
+                        <li><a href="book_en.html">► OF ANDROIDS AND MEN</a></li>
+                        <li><a href="movie_en.html">► BETWEEN LOVE AND LONELINESS</a></li>
+                        <li><a href="song_en.html">► ELECTRONIC HEART</a>
+                        <li><a href="place_en.html">► LIVING IN A MACHINE</a></li>
+                        <li><a href="hope_en.html">► A COMMITTED GENERATION</a></li>
+                        <li><a href="regret_en.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                    </ul>
+                <li> <a href="about_en.html">ABOUT</a>
+                <li> <a href="contact_en.html">CONTACT</a>
+            </ul>
+            <ul>
+                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg" alt="Website in french"></a>
+            </ul>
+        </nav>
+        <a href="../index.html">Mind_Uploading.exe</a>
+        <h4>TIMELINE</h4>
+    </header>
+    <main>
+        <section>
+            <h1>SIMILAR PLACES TIMELINE</h1>
+            <p>In France, the first social housing appeared during the reconstruction after the Second World War. 
+                Le Corbusier was hired by the government to build five "housing units of conforming size". 
+                These four exemplars are made from the same plans, although they have some differences.
+            </p>
+
+            <h5>1952</h5>
+            <h4>Marseille (13)</h4>
+            <li></li>
+            <ul>
+                <li>
+                    <img src="/public/img/timeline/Marseille01.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Marseille02.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Marseille03.webp" alt="">
+                </li>
+            </ul>
+            <h5>1955</h5>
+            <h4>Rezé (44)</h4>
+            <ul>
+                <li>
+                    <img src="/public/img/timeline/Reze01.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Reze02.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Reze03.webp" alt="">
+                </li>
+            </ul>
+            </li>
+
+            <h5>1957</h5>
+            <h4>Berlin (Germany)</h4>
+            <ul>
+                <li>
+                    <img src="/public/img/timeline/Berlin01.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Berlin02.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Berlin03.webp" alt="">
+                </li>
+            </ul>
+            <h5>1960</h5>
+            <h4>Briey (54)</h4>
+            <ul>
+                <li>
+                    <img src="/public/img/timeline/Briey01.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Briey02.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Briey03.webp" alt="">
+                </li>
+            </ul>
+            <h5>1967</h5>
+            <h4>Firminy (42)</h4>
+            <ul>
+                <li>
+                    <img src="/public/img/timeline/Firminy01.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Firminy02.webp" alt="">
+                </li>
+                <li>
+                    <img src="/public/img/timeline/Firminy03.webp" alt="">
+                </li>
+            </ul>
+
+            <h2>Did you know?</h2>
+            <p>The first laundromat in France is located in Firminy!</p>
+        </section>
+
+    </main>
+    <footer>
+        <h5>Lisa Cingolani MM1 - A1</h5>
+        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</h5>
+
+        <a href="http://mmimontbeliard.com">
+            <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
+        </a>
+            <a href="about_en.html">ABOUT
+            </a>
+            <a href="contact_en.html">CONTACT
+            </a>
+            <a href="otherprojects_en.html">OTHER PROJECTS
+            </a>
+    </footer>
+</body>
+
+</html>
