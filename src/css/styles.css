@@ -1,17 +1,22 @@
 @import "./base/main.css";
 @import "./base/media.css";
+
+@import "./components/caroussel.css";
 @import "./components/form.css";
 @import "./components/menu.css";
+
 @import "./layout/header.css";
 @import "./layout/footer.css";
 @import "./layout/home.css";
+
 @import "./utils/variables.css";
+
 @import "./vendors/normalize.css";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 
-  @font-face{
-    font-family: 'OPTIEdgarBold-Extended';
-    src: url('../fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff2') format('woff2');
-    }
+@font-face {
+  font-family: 'OPTIEdgarBold-Extended';
+  src: url('../fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff2') format('woff2');
+}

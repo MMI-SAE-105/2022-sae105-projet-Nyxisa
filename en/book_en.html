@@ -1,13 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="utf-8" />
-        <meta name = "viewport"
-        content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mind_Uploading.exe</title>
         <link rel="stylesheet" href="../src/css/styles.css">
         <script defer src="https://unpkg.com/alpinejs"></script>
-</head> 
-    <body>
-    </body> 
-    </html>
+</head>
+
+<body>
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
+                        <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
+                <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                        <ul>
+                                <li><a href="index_en.html">HOME</a></li>
+                                <li>ARTICLES
+                                        <ul>
+                                                <li><a href="book_en.html">► OF ANDROIDS AND MEN</a></li>
+                                                <li><a href="movie_en.html">► BETWEEN LOVE AND LONELINESS</a></li>
+                                                <li><a href="song_en.html">► ELECTRONIC HEART</a>
+                                                <li><a href="place_en.html">► LIVING IN A MACHINE</a></li>
+                                                <li><a href="hope_en.html">► A COMMITTED GENERATION</a></li>
+                                                <li><a href="regret_en.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                                        </ul>
+                                <li> <a href="about_en.html">ABOUT</a>
+                                <li> <a href="contact_en.html">CONTACT</a>
+                        </ul>
+                        <ul>
+                                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg"
+                                                        alt="Website in french"></a>
+                        </ul>
+                </nav>
+                <a href="index_en.html">Mind_Uploading.exe</a>
+                <h4>BOOK</h4>
+        </header>
+        <main>
+                <img src="../public/img/articles/book/mainpic.webp">
+                <h5>Reading Time: 5 minutes</h5>
+                <section>
+                        <h1>OF ANDROIDS AND MEN</h1>
+                        <p>"Do Androids Dream of Electric Sheep?" is a science fiction novel first published in 1968. 
+                                It was written by Philip K. Dick. 
+                                In this novel, we follow Rick Deckard, an android hunter. 
+                                The plot is supposed to take place in the early 1990s, but we now know that the world depicted there is much more futuristic than the actual one we live in. 
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/univers.webp">
+                                <figcaption>Book’s universe</figcaption>
+                        </figure>
+
+                        <h2>The world after a nuclear conflict</h2>
+                        <p> After a devastating nuclear war, the Earth is now covered with radioactive dust. 
+                                Almost the entire population has migrated to space colonies like Mars.
+                                There, everyone is entitled to their own android slave1, a near perfect replica of a human. 
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/rachael.webp">
+                                <figcaption>Rachael Rosen, an android</figcaption>
+                        </figure>
+                        <p>  The few individuals left on earth may at any time be declared “special”. 
+                                This means that their genetic heritage has been deteriorated due to the radioactive dust, and they are forbidden to have offspring. 
+                                "Emigrate or degenerate" is a sentence from the book. 
+                                Understandably, that this is a strong argument to encourage the last stubborn ones to leave the Earth.
+                        </p>
+                        <q>A humanoid robot is no different from any other machine. It can go from good to bad in the blink of an eye.
+                        </q>
+
+                        <h2>Is hunting androids a vocation?</h2>
+                        <p>Rick works on Earth and therefore cannot emigrate. 
+                                His job is to find androids that arrived on Earth after escaping from the colonies. 
+                                Then, he gets rid of them. 
+                                Rick is rather bored with his job, it's a non-interesting routine. 
+                                But when Holden, the best android hunter in the San Francisco Police Department, is sent to the hospital by an android, Rick takes a chance. 
+                                He takes over Holden's mission, hoping he will collect the bounty for eliminating not one android, but six. 
+                                However, this will require him to outdo himself, and question many aspects of his reality.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/rick.webp">
+                                <figcaption>Rick Deckard and his Spinner (a flying car)</figcaption>
+                        </figure>
+
+                        <h2>Empathy, the key to this altered world</h2>
+                        <p> What distinguish androids from humans is their inability to feel empathy2. 
+                                The Voight-Kampff is a test of empathy that Rick uses to detect androids. 
+                                Humans are also invited to cultivate their empathy. 
+                                There are two ways to do this, which we will see below.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/test.webp">
+                                <figcaption>Voight-Kampff test</figcaption>
+                        </figure>
+                        <h3>► Mercerism</h3>
+                        <p>Firstly via the empathy box, where they can connect to a mythical character, Wilbur Mercer. 
+                                Mercer has to climb an endless hill while stones are thrown at him, like a martyr3. 
+                                In this way, followers of Mercerism share his suffering and increase their capacity for empathy.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/boite.webp">
+                                <figcaption>Empathy box made by Sophia Brueckner, 2014.</figcaption>
+                        </figure>
+                        <p>Rick is brought to ask himself many existential questions, as this extract on pages 160-161 shows.
+
+                                <q>- There's an anomaly in your empathic reactions. 
+                                        Something we don't have a test for. 
+                                        Your feelings towards androids.
+                                        - Of course there's no test for that. 
+                                        - Maybe we should conceive one. 
+                                        Rick had never thought about it before. 
+                                        He himself had never felt any empathy for the androids he killed. 
+                                        He had always assumed that his subconscious perceived an android as an intelligent machine - in the same way as his conscience. 
+                                        And yet, unlike Phil Resch, the two had come to diverge. 
+                                        And he felt instinctively that he was right. 
+                                        Empathy for an artificial construct? 
+                                        For something that only pretends to live? 
+                                        But Luba Luft had seemed perfectly alive to him, without the slightest trace of simulation.</q>
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/mouton.webp">
+                                <figcaption>Electric sheep on a building roof</figcaption>
+                        </figure>
+
+                        <h3>► Sheep, electric or not</h3>
+                        <p>Secondly, by being the proud owner of an animal. 
+                                In fact, the animals have almost all disappeared, and the few remaining species are extremely expensive. 
+                                A catalogue, the Sydney, lists each month the different animals available for sale and their prices. 
+                                For the more modest ones who still want to make a good impression, a near perfect electric replica of an animal can be purchased at a lower price.
+                                At the beginning of the novel, Rick owns an electric sheep, hence the title of the book. 
+                                However, he had a real sheep before, which got sick and died. 
+                                Then, with to the bounties he received for removing six androids, he buys a real goat. 
+                                This one is then killed by Rachel Rosen, an android. 
+                                Finally, he finds an electric toad in a deserted place and decides to keep it. 
+                        </p>
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/book/sydney.webp">
+                                <figcaption>The Sydney’s catalogue</figcaption>
+                        </figure>
+                        <q>If I could have another lucky break in my job. 
+                                Like two years ago, when I managed to pin four andros in one month. 
+                                If I had known then that Groucho was going to die... 
+                                But that was before tetanus4. Before those few centimeters of scrap metal sharp as a hypodermic needle5. [...] 
+                                The bounty for the removal of five droids would do the trick, he then realized. 
+                                A thousand dollars a head, on top of my salary. 
+                                Then all I have to do is find someone willing to sell me what I want. 
+                                Even if the price is in italics in the Sydney. 
+                                Five thousand dollars - but first five androids would have to decide to arrive on Earth from one of the colonies, and that's not up to me. 
+                                And even if I could get them here, there are other bounty hunters, other police forces around the world. 
+                                Droids would have to move to Northern California, and the area's top bounty hunter, Dave Holden, would have to die or retire.
+                        </q>
+                        <figure>
+                                <img src="../public/img/articles/book/toit.webp">
+                                <figcaption>Android & human</figcaption>
+                        </figure>
+
+                        <h3>The complexity of humanity</h3>
+                        <p>Finally, through the adventure of Rick Deckard, this novel questions what makes humanity. 
+                                When such androids are among us, will an empathy test be our last resort? 
+                        </p>
+                </section>
+                <footer class="footer">
+                        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+                        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+                        <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard
+                        </h5>
+
+                        <a href="http://mmimontbeliard.com">
+                                <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
+                        </a>
+                        <a href="about_en.html">ABOUT
+                        </a>
+                        <a href="contact_en.html">CONTACT
+                        </a>
+                        <a href="otherprojects_en.html">OTHER PROJECTS
+                        </a>
+                </footer>
+</body>
+
+</html>
