@@ -12,33 +12,37 @@
 
 <body>
     <!-- Le menu ne s'ouvre pas ?-->
-    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
-            <aria-expanded="true"menu> <img src="public/icones/menu_icon.svg" alt="Menu">
-        </button>
-        <a href="index.html"> <img src="public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
-        <img src="public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li>ARTICLES
-                    <ul>
-                        <li><a href="fr/book_fr.html">► DES ANDROÏDES ET DES HOMMES</a></li>
-                        <li><a href="fr/movie_fr.html">► ENTRE AMOUR ET SOLITUDE</a></li>
-                        <li><a href="fr/song_fr.html">► COEUR ÉLECTRONIQUE</a>
-                        <li><a href="fr/place_fr.html">► VIVRE DANS UNE MACHINE</a></li>
-                        <li><a href="fr/hope_fr.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
-                        <li><a href="fr/regret_fr.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
-                    </ul>
-                <li> <a href="fr/about_fr.html">À PROPOS</a>
-                <li> <a href="fr/contact_fr.html">CONTACT</a>
-            </ul>
-            <ul>
-                <li> <a href="en/index_en.html">EN<img src="public/icones/language_icon.svg" alt="Site en anglais"></a>
-            </ul>
-        </nav>
-        <a href="index.html">Mind_Uploading.exe</a>
-        <h4>ACCUEIL</h4>
+    <header class="header" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <div class="header__center">
+            <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn">
+                <aria-expanded="true"menu> <img src="public/icones/menu_icon.svg" alt="Menu">
+            </button>
+            <a href="index.html" class="header__logo"> <img src="public/icones/exe_logo.svg"
+                    alt="Logo Mind_Uploading.exe"></a>
+            <img class="header__iconsb" src="public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                    <li class="menu__item--inactive">ARTICLES
+                        <ul class="menu_list2">
+                            <li class="menu__item2"><a href="fr/book_fr.html">► DES ANDROÏDES ET DES HOMMES</a></li>
+                            <li class="menu__item2"><a href="fr/movie_fr.html">► ENTRE AMOUR ET SOLITUDE</a></li>
+                            <li class="menu__item2"><a href="fr/song_fr.html">► COEUR ÉLECTRONIQUE</a>
+                            <li class="menu__item2"><a href="fr/place_fr.html">► VIVRE DANS UNE MACHINE</a></li>
+                            <li class="menu__item2"><a href="fr/hope_fr.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                            <li class="menu__item2"><a href="fr/regret_fr.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
+                        </ul>
+                    <li class="menu__item"> <a href="fr/about_fr.html">À PROPOS</a>
+                    <li class="menu__item"> <a href="fr/contact_fr.html">CONTACT</a>
+                </ul>
+                <ul>
+                    <li class="menu__language"> <a href="en/index_en.html">EN<img src="public/icones/language_icon.svg"
+                                alt="Site en anglais"></a>
+                </ul>
+            </nav>
+        </div class="header__center">
+        <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+        <h4 class="header__pagetitle">ACCUEIL</h4>
     </header>
     <main>
         <section>
@@ -94,12 +98,12 @@
         <a href="http://mmimontbeliard.com">
             <img src="public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
         </a>
-            <a href="fr/about_fr.html"> À PROPOS
-            </a>
-            <a href="fr/contact_fr.html"> CONTACT
-            </a>
-            <a href="fr/otherprojects_fr.html"> AUTRES PROJETS
-            </a>
+        <a href="fr/about_fr.html"> À PROPOS
+        </a>
+        <a href="fr/contact_fr.html"> CONTACT
+        </a>
+        <a href="fr/otherprojects_fr.html"> AUTRES PROJETS
+        </a>
     </footer>
 </body>
 
