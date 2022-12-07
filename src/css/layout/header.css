@@ -1,28 +1,30 @@
 .header {
-  position: relative;
-  width: 100%;
-  background-color: var(--black);
-  text-align: left;
 
 
 }
-.header__center {
-  top: 0;
-  left: 0;
-  
+.header__items {
+  display: flex;
+  justify-content: space-between;
 
-  }
+}
 .header__menubtn {
-  left: 0px;
-  position:relative;
-  z-index: 10;
+  margin-bottom: 10px;
+margin-top: 20px;
+margin-inline: 10px;
 }
 
 .header__logo {
-  position: absolute;
-  justify-content: center;
+margin-top: 15px;
   
   
+}
+
+.header__flex {
+display: flex;
+flex-direction: row;
+align-items: center;
+  
+
 }
 
 .header__maintitle {
@@ -31,19 +33,24 @@
  text-decoration: none;
  color: var(--black);
  background-color: var(--purple);
+ border-radius: 0px 25px 25px 0px;
+ padding: 5px;
 }
 
 .header__pagetitle {
+  right: 0px;
   font-size: var(--pagetitle);
-  line-height: 18px;
-  font-size: var(--fon);
   font-family: var(--font-bold);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--black);
+  background-color: var(--white);
+  padding: 8px;
+  z-index: -1;
+
+position: absolute;
 }
 
 .header__iconsb {
-  right: 0px;
+margin: 20px;
 
 }
 
