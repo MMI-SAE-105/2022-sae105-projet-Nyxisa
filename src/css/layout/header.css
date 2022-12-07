@@ -5,6 +5,7 @@
 .header__items {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid var(--white);
 
 }
 .header__menubtn {
@@ -38,15 +39,16 @@ align-items: center;
 }
 
 .header__pagetitle {
-  right: 0px;
   font-size: var(--pagetitle);
   font-family: var(--font-bold);
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--purple);
+  background-color: var(--black);
   padding: 8px;
   z-index: -1;
+  width: 100%;
+  text-align: right;
+  position: absolute;
 
-position: absolute;
 }
 
 .header__iconsb {
