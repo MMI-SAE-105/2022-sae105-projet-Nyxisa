@@ -1,0 +1,22 @@
+.articlecards {
+    font-family: var(--font-bold);
+    font-size: var(--pagetitle);
+    text-align: right;
+    padding: 15px;
+    color: var(--black);
+    background-color: var(--white);
+
+}
+
+p {
+    background-color: var(--black);
+    padding: 20px;
+    border-radius:25px 0px 0px 25px;
+    width: 90%;
+    justify-content: right;
+    margin-left: 10%;
+}
+
+img {
+    border-radius: 50%;
+}
