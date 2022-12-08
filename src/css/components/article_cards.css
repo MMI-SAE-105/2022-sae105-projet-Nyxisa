@@ -11,18 +11,24 @@
     background-color: var(--white);
 
 }
+.articlecards__block {
+
+}
 
 .articlecards__text {
     background-color: var(--black);
     padding: 20px;
+    padding-left: 50px;
     border-radius:25px 0px 0px 25px;
-    width: 90%;
+    width: 80%;
     justify-content: right;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 
 
 .articlecards img {
+    width: 120px;
+    position: absolute;
     border-radius: 50%;
 }

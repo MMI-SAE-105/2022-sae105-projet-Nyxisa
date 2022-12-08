@@ -13,6 +13,10 @@
 
 }
 
+.mainarticle__block {
+    display: flex;
+    justify-content: space-between;
+}
 .mainarticle__text {
     background-color: var(--black);
     padding: 20px;
