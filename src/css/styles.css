@@ -26,6 +26,10 @@ Soyez attentifs à l'ordre d'import :
 @import "./components/caroussel.css";
 @import "./components/form.css";
 @import "./components/menu.css";
+@import "./components/article_cards.css";
+@import "./components/main_article_card.css";
+@import "./components/article_cards.css";
+@import "./components/intro.css";
 
 @font-face {
   font-family: 'OPTIEdgarBold-Extended';
