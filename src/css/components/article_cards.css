@@ -1,4 +1,8 @@
 .articlecards {
+    
+}
+
+.articlecards__title {
     font-family: var(--font-bold);
     font-size: var(--pagetitle);
     text-align: right;
@@ -8,7 +12,7 @@
 
 }
 
-p {
+.articlecards__text {
     background-color: var(--black);
     padding: 20px;
     border-radius:25px 0px 0px 25px;
@@ -17,6 +21,8 @@ p {
     margin-left: 10%;
 }
 
-img {
+
+
+.articlecards img {
     border-radius: 50%;
 }
