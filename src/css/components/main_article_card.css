@@ -1,21 +1,21 @@
 .mainarticle {
- max-height: 289px;
+
 }
 
 .mainarticle__title {
     font-family: var(--font-bold);
     font-size: var(--pagetitle);
     text-align: right;
-    padding: 15px;
+    padding: 5px;
     color: var(--black);
     background-color: var(--white);
 
 }
 
 .mainarticle__block {
-    max-height: 250px;
+    margin-left:15px;
+    margin-right: 0px;
     max-width: 360px;
-    margin-right: 0;
     background-color: var(--black);
     padding: 20px;
     border-radius:25px 0px 0px 25px;
@@ -55,4 +55,4 @@
 .mainarticle__link {
     position: relative;
     top: 10%;
-} */
+} 

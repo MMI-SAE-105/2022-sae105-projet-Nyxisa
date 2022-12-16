@@ -6,7 +6,7 @@
     font-family: var(--font-bold);
     font-size: var(--pagetitle);
     text-align: right;
-    padding: 15px;
+    padding: 5px;
     color: var(--black);
     background-color: var(--white);
 
@@ -17,6 +17,8 @@
 }
 
 .articlecards__text {
+    margin-top: -5px;
+    margin-bottom: 25px;
     background-color: var(--black);
     padding: 10px;
     padding-left: 75px;   
