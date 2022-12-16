@@ -1,3 +1,7 @@
+.intro {
+    margin: 50px 0px;
+}
+
 .intro__title {
     color: var(--black);
     background-color: var(--white);
@@ -15,7 +19,5 @@
     width: 90%;
     justify-content: right;
     margin-left: 10%;
-    margin-bottom: 25px;
-
 }
   

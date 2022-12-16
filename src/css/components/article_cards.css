@@ -1,8 +1,14 @@
+a {/*s'occuper des liens*/
+    color: white;
+}
+
+
 .articlecards {
-    
+    margin: 75px 0px;
 }
 
 .articlecards__title {
+    height: 35px;
     font-family: var(--font-bold);
     font-size: var(--pagetitle);
     text-align: right;
@@ -17,12 +23,10 @@
 }
 
 .articlecards__text {
-    margin-top: -5px;
-    margin-bottom: 25px;
+    margin: -10px 0px 25px 16%;
     background-color: var(--black);
     padding: 10px;
     padding-left: 75px;   
-    margin-left: 15%;
     height: 120px;
 }
 
@@ -34,3 +38,24 @@
     float: left;
 }
 
+.articlecards__button{
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    max-width:fit-content;
+    background-color: var(--white);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+.articlecards__buttonline {
+    max-width: fit-content;
+
+}
+.articlecards__buttontext {
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--button);
+    font-weight: var(--semi-bold);
+}

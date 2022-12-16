@@ -23,4 +23,11 @@
   --footer: 0.71rem;
   --form: 1.07rem;
   --button: 0.71rem;
-}
+
+  /* Font weight */
+  --light:300;
+  --regular:400;
+  --medium:500;
+  --semi-bold:600;
+  --bold:700;
+ }
