@@ -34,4 +34,5 @@ Soyez attentifs à l'ordre d'import :
 @font-face {
   font-family: 'OPTIEdgarBold-Extended';
   src: url('../fonts/webfontkit-20221114-042820/optiedgarbold-extended-webfont.woff2') format('woff2');
+  font-display: swap;
 }
