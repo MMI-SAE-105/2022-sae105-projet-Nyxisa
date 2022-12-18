@@ -1,19 +1,60 @@
 .menu {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height:100vh;
-    background: #fff;;
-    display: grid;
-    place-content: center;
-    font-family: 'Jura', sans-serif;
-  }
-  .menu-btn {
-    position:relative;
-    z-index: 10;
-  }
-  .noscroll,
-  .noscroll body {
-    overflow: hidden;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  background: var(--black);
+  display: grid;
+  place-content: center;
+  font-family: 'Jura', sans-serif;
+  text-decoration: none;
+}
+
+.menu-btn {
+  position: relative;
+  z-index: 10;
+}
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+.menu__list, .menu__list > li{
+  font-family: var(--font-bold);
+  margin: 50px 0px;
+}
+
+.menu__list a:hover {
+    cursor: pointer;
+}
+
+.menu_list2 > li{
+  margin: 20px 0px;
+}
+
+.menu__item {
+  color: var(--purple);
+  font-size: var(--menu);
+}
+
+.menu__item2 {
+  color: var(--green);
+  font-size: var(--menu2);
+}
+
+.menu__item--inactive {
+  cursor: none;
+}
+
+.menu__language, .menu__language__link {
+  color: var(--white);
+  margin: 50px 0px;
+  text-align: right;
+}
+.menu__language__icon {
+  margin: 10px;
+  margin-top: 3px;
+  vertical-align:middle;
+}
