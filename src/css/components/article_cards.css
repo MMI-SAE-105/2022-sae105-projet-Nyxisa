@@ -1,23 +1,24 @@
-.articlecards {
+.articlecard {
     margin: 75px 0px;
 }
 
-.articlecards__title {
+.articlecard__title {
     height: 35px;
     font-family: var(--font-bold);
     font-size: var(--pagetitle);
     text-align: right;
     padding: 5px;
+    padding-right: 15px;
     color: var(--black);
     background-color: var(--white);
 
 }
-.articlecards__block {
+.articlecard__block {
     margin-left: 5%;
 
 }
 
-.articlecards__text {
+.articlecard__text {
     margin: -10px 0px 25px 16%;
     background-color: var(--black);
     padding: 10px;
@@ -27,13 +28,13 @@
 
 
 
-.articlecards img {
+.articlecard img {
     width: 120px;
     border-radius: 50%;
     float: left;
 }
 
-.articlecards__button{
+.articlecard__button{
     display: flex;
     text-align: center;
     gap: 5px;
@@ -44,11 +45,11 @@
     border-radius: 2px;
 
 }
-.articlecards__buttonline {
+.articlecard__buttonline {
     max-width: fit-content;
 
 }
-.articlecards__buttontext {
+.articlecard__buttontext {
     text-decoration: none;
     color: var(--black);
     font-size: var(--button);

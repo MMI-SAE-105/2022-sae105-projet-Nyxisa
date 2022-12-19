@@ -12,19 +12,19 @@
 
   /* Text-size styles */
   /* base size: body (14px) */
-  --title: 1.14rem;
-  --pagetitle:0.823rem;
-  --h1: 0.93rem;
-  --h2: 1.14rem;
-  --h3: 1.14rem;
-  --body: 1rem;
-  --legend: 0.86rem;
-  --small-text: 0.86rem;
-  --footer: 0.71rem;
-  --form: 1.07rem;
-  --button: 0.71rem;
-  --menu: 1.42rem;
-  --menu2: 0.71rem;
+  --title: 1rem;
+  --pagetitle:0.720rem;
+  --h1: 0.813rem;
+  --h2: 1rem;
+  --h3: 1rem;
+  --body: 0.875rem;
+  --legend: 0.75rem;
+  --small-text: 0.75rem;
+  --footer: 0.625rem;
+  --form: 0.938rem;
+  --button: 0.625rem;
+  --menu: 1.25rem;
+  --menu2: 0.625rem;
 
   /* Font weight */
   --light:300;

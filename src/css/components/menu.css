@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  top: 0;
+  top: 120px;
   left: 0;
   max-width: 100%;
   max-height: 100%;
@@ -11,7 +11,7 @@
   text-decoration: none;
 }
 
-.menu-btn {
+.header__menubtn {
   position: relative;
   z-index: 10;
 }
@@ -23,7 +23,7 @@
 
 .menu__list, .menu__list > li{
   font-family: var(--font-bold);
-  margin: 50px 0px;
+  margin: 35px 0px;
 }
 
 .menu__list a:hover {
@@ -31,7 +31,7 @@
 }
 
 .menu_list2 > li{
-  margin: 20px 0px;
+  margin: 25px 0px;
 }
 
 .menu__item {
