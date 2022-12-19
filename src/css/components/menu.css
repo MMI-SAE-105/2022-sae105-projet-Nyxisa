@@ -2,11 +2,9 @@
   position: fixed;
   top: 120px;
   left: 0;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   background: var(--black);
-  display: grid;
-  place-content: center;
   font-family: 'Jura', sans-serif;
   text-decoration: none;
 }
@@ -21,7 +19,11 @@
   overflow: hidden;
 }
 
-.menu__list, .menu__list > li{
+.menu__list {
+padding: 0px 20px;
+}
+
+.menu__list > li{
   font-family: var(--font-bold);
   margin: 35px 0px;
 }
@@ -30,16 +32,24 @@
     cursor: pointer;
 }
 
-.menu_list2 > li{
-  margin: 25px 0px;
+.menu__list-articles {
+  padding: 0px 15px;
 }
+
+/* .menu_list2 > li{
+
+} */
 
 .menu__item {
   color: var(--purple);
   font-size: var(--menu);
 }
 
-.menu__item2 {
+.menu__article {
+  margin: 25px 0px;
+}
+
+.menu__article-link {
   color: var(--green);
   font-size: var(--menu2);
 }
