@@ -7,13 +7,14 @@
     <title>Accueil - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <script src="../script.js"></script>
     <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
 
 <body class="background">
     <header class="header" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
         <div class="header__items">
-            <button @click="menuIsOpen= ! menuIsOpen" @click="headerChange= ! headerChange" class="header__menubtn">
+            <button @click="toggle_main_menu()" class="header__menubtn">
                 <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
             </button>
             <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"

@@ -1,6 +1,6 @@
 
 function toggle_main_menu () {
-    
+    alert("bidonattention")
 }
 
 
