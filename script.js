@@ -1,0 +1,38 @@
+
+function toggle_main_menu () {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function process_search_input() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('searchmenu_input');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("searchmenu_UL");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }

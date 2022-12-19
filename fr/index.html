@@ -13,13 +13,17 @@
 <body class="background">
     <header class="header" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
         <div class="header__items">
-            <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn">
+            <button @click="menuIsOpen= ! menuIsOpen" @click="headerChange= ! headerChange" class="header__menubtn">
                 <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
             </button>
             <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
                     alt="Logo Mind_Uploading.exe"></a>
             <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+                <div class="header__flextitles--menu"  x-show="headerChange" x-transition.duration.0ms>
+                    <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                    <h4 class="header__pagetitle--menu">MENU</h4>
+                </div>
                 <ul class="menu__list">
                     <li><a href="index.html" class="menu__item">ACCUEIL</a></li>
                     <li class="menu__item menu__item--inactive">ARTICLES
