@@ -7,28 +7,32 @@
     font-family: var(--font-bold);
     font-size: var(--pagetitle);
     text-align: right;
-    padding: 5px;
+    padding: 6px;
     padding-right: 15px;
     color: var(--black);
     background-color: var(--white);
 
 }
+
 .articlecard__block {
     margin-left: 5%;
-
 }
 
 .articlecard__text {
+    margin-bottom: 10px;
+    font-size: var(--body);
+}
+
+.articlecard__text-btn {
     margin: -10px 0px 25px 16%;
     background-color: var(--black);
-    padding: 10px;
-    padding-left: 75px;   
+    padding: 15px 20px 10px 75px;
     height: 120px;
 }
 
 
 
-.articlecard img {
+.articlecard__img {
     width: 120px;
     border-radius: 50%;
     float: left;
@@ -36,22 +40,22 @@
 
 .articlecard__button{
     display: flex;
-    text-align: center;
     gap: 5px;
     max-width:fit-content;
     background-color: var(--white);
     cursor: pointer;
-    padding: 5px;
+    padding: 2px;
     border-radius: 2px;
-
 }
+
 .articlecard__buttonline {
     max-width: fit-content;
-
 }
 .articlecard__buttontext {
     text-decoration: none;
     color: var(--black);
     font-size: var(--button);
     font-weight: var(--semi-bold);
+    margin-right: 1.5px;
+
 }
