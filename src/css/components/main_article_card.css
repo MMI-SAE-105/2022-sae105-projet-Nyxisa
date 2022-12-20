@@ -10,7 +10,6 @@
     padding: 15px;
     color: var(--black);
     background-color: var(--white);
-
 }
 
 .mainarticle__block {
@@ -20,16 +19,20 @@
     padding: 20px;
     border-radius:25px 0px 0px 25px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-
 }
 
-.mainarticle img {
+.mainarticle__img {
     width: 30%;
     height: 30%;
     border-radius: 15%;
+    float: left;
+    margin-right: 10px;
+}
+
+.mainarticle__text-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .mainarticle__text {
@@ -47,12 +50,14 @@
     cursor: pointer;
     padding: 5px;
     border-radius: 2px;
+    align-items: center;
 
 }
+
 .mainarticle__buttonline {
     max-width: fit-content;
-
 }
+
 .mainarticle__buttontext {
     text-decoration: none;
     color: var(--black);
