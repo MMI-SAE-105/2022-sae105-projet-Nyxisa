@@ -11,45 +11,60 @@
 </head>
 
 <body class="background">
-    <header class="header" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <div class="header__items">
-            <button @click="menuIsOpen= ! menuIsOpen" @click="headerChange= ! headerChange" class="header__menubtn">
-                <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
-            </button>
-            <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                    alt="Logo Mind_Uploading.exe"></a>
-            <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
-            <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
-                <div class="header__flextitles--menu"  x-show="headerChange" x-transition.duration.0ms>
-                    <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                    <h4 class="header__pagetitle--menu">MENU</h4>
-                </div>
-                <ul class="menu__list">
-                    <li><a href="index.html" class="menu__item">ACCUEIL</a></li>
-                    <li class="menu__item menu__item--inactive">ARTICLES
-                        <ul class="menu__list-articles">
-                            <li class="menu__article"><a href="book_fr.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a></li>
-                            <li class="menu__article"><a href="movie_fr.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a></li>
-                            <li class="menu__article"><a href="song_fr.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a>
-                            <li class="menu__article"><a href="place_fr.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a></li>
-                            <li class="menu__article"><a href="hope_fr.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a></li>
-                            <li class="menu__article"><a href="regret_fr.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="about_fr.html" class="menu__item">À PROPOS</a> </li>
-                    <li> <a href="contact_fr.html" class="menu__item">CONTACT</a> </li>
+    <div class="header">
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+            <div class="header__items">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn">
+                    <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                        alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg"
+                    alt="Icône de la barre de recherche" />
+                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <h4 class="header__pagetitle--menu">MENU</h4>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.400ms>
+                        <li><a href="index.html" class="menu__item">ACCUEIL</a></li>
+                        <li class="menu__item menu__item--inactive">ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article"><a href="book_fr.html" class="menu__article-link">► DES
+                                        ANDROÏDES
+                                        ET DES HOMMES</a></li>
+                                <li class="menu__article"><a href="movie_fr.html" class="menu__article-link">► ENTRE
+                                        AMOUR
+                                        ET SOLITUDE</a></li>
+                                <li class="menu__article"><a href="song_fr.html" class="menu__article-link">► COEUR
+                                        ÉLECTRONIQUE</a>
+                                <li class="menu__article"><a href="place_fr.html" class="menu__article-link">► VIVRE
+                                        DANS
+                                        UNE MACHINE</a></li>
+                                <li class="menu__article"><a href="hope_fr.html" class="menu__article-link">► UNE
+                                        GÉNÉRATION
+                                        ENGAGÉE</a></li>
+                                <li class="menu__article"><a href="regret_fr.html" class="menu__article-link">► L'IMPACT
+                                        DES
+                                        RÉSEAUX SOCIAUX</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="about_fr.html" class="menu__item">À PROPOS</a> </li>
+                        <li> <a href="contact_fr.html" class="menu__item">CONTACT</a> </li>
 
-                    <li class="menu__language"> <a href="../en/index_en.html" class="menu__language__link">EN<img
-                                src="../public/icones/language_icon.svg" alt="Site en anglais"
-                                class="menu__language__icon"></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__flextitles">
-            <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-            <h4 class="header__pagetitle">ACCUEIL</h4>
-        </div>
+                        <li class="menu__language"> <a href="../en/index.html" class="menu__language__link">EN<img
+                                    src="../public/icones/language_icon.svg" alt="Site en anglais"
+                                    class="menu__language__icon"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__flextitles">
+                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                <h4 class="header__pagetitle">ACCUEIL</h4>
+            </div>
+    </div>
     </header>
     <main>
         <article class="intro">
@@ -151,18 +166,18 @@
 
     </main>
     <footer class="footer">
-        <div class="footer__all">
-            <div class="footer__text">
-                <p>Lisa Cingolani MM1 - A1</p>
-                <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
-                    class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
-                <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de
-                    Montbéliard</p>
-            </div>
-            <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
+        <div class="footer__text">
+            <p>Lisa Cingolani MM1 - A1</p>
+            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
+                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
+        </div>
+        <div class="footer__blocks">
+            <p class="footer__legal">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de
+                Montbéliard</p>
+            <a href="http://mmimontbeliard.com" class="footer__logo">
+                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
             </a>
-            <nav class="footer__nav">
-                <div class="footer__btn">
+            <nav class="footer__btn">
                     <a href="about_fr.html" class="footer__btn-item">À PROPOS
                     </a>
                     <a href="contact_fr.html" class="footer__btn-item">CONTACT
@@ -171,8 +186,6 @@
                     </a>
             </nav>
         </div>
-        </div>
-        <a href="http://mmimontbeliard.com" class="footer_logo">
     </footer>
 </body>
 

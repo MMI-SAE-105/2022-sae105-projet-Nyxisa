@@ -1,25 +1,20 @@
 .footer {
     background-color: var(--black);
     border-bottom: 10px solid var(--purple);
-
-
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-.footer__all {
-    /* display: flex;
-    flex-direction: row; */
-    column-count: 2;
 
-}
 .footer__text {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    text-align: center;
     color: var(--white);
     text-decoration: none;
     font-family: 'Jura', sans-serif;
     text-transform: uppercase;
     font-size: var(--footer);
     color: var(--white);
+    padding-top: 25px;
 }
 
 .footer__email {
@@ -28,11 +23,29 @@
     color: var(--white);
 }
 
+.footer__blocks {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__legal {
+    width: 35%;
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--footer);
+    color: var(--white);
+    padding: 10px;
+}
+
 .footer__btn {
-    display:inline-flex;
+    display: flex;
     flex-direction: column;
-    gap: 1rem;
-    
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 .footer__btn-item {
@@ -42,9 +55,12 @@
     padding: 5px;
     border: 1px solid var(--white);
     border-radius: 3px;
-  }
-  
+}
+
 .footer__logo {
-    max-width: 30px;
-    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
 }
