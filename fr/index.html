@@ -14,8 +14,8 @@
     <div class="header">
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn">
-                    <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
                 <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
                         alt="Logo Mind_Uploading.exe"></a>
@@ -28,35 +28,24 @@
                     </div>
                     <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
                         x-transition:leave.duration.300ms>
-                        <li><a href="index.html" class="menu__item">ACCUEIL</a></li>
-                        <li class="menu__item menu__item--inactive">ARTICLES
+                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                        <li class="menu__item">ARTICLES
                             <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book_fr.html" class="menu__article-link">► DES
-                                        ANDROÏDES
-                                        ET DES HOMMES</a></li>
-                                <li class="menu__article"><a href="movie_fr.html" class="menu__article-link">► ENTRE
-                                        AMOUR
-                                        ET SOLITUDE</a></li>
-                                <li class="menu__article"><a href="song_fr.html" class="menu__article-link">► COEUR
-                                        ÉLECTRONIQUE</a>
-                                <li class="menu__article"><a href="place_fr.html" class="menu__article-link">► VIVRE
-                                        DANS
-                                        UNE MACHINE</a></li>
-                                <li class="menu__article"><a href="hope_fr.html" class="menu__article-link">► UNE
-                                        GÉNÉRATION
-                                        ENGAGÉE</a></li>
-                                <li class="menu__article"><a href="regret_fr.html" class="menu__article-link">► L'IMPACT
-                                        DES
-                                        RÉSEAUX SOCIAUX</a></li>
+                                <li class="menu__article"><a href="book_fr.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a></li>
+                                <li class="menu__article"><a href="movie_fr.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a></li>
+                                <li class="menu__article"><a href="song_fr.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a></li>
+                                <li class="menu__article"><a href="place_fr.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a></li>
+                                <li class="menu__article"><a href="hope_fr.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                                <li class="menu__article"><a href="regret_fr.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a></li>
                             </ul>
                         </li>
-                        <li> <a href="about_fr.html" class="menu__item">À PROPOS</a> </li>
-                        <li> <a href="contact_fr.html" class="menu__item">CONTACT</a> </li>
-                        </li>
+                        <li class="menu__item"> <a href="about_fr.html">À PROPOS</a> </li>
+                        <li class="menu__item"> <a href="contact_fr.html">CONTACT</a> </li>
+                        <li class="menu__language"> <a href="../en/index.html" class="menu__language__link">EN<img
+                            src="../public/icones/language_icon.svg" alt="Site en anglais"
+                            class="menu__language__icon"></a></li>
                     </ul>
-                    <li class="menu__language"> <a href="../en/index.html" class="menu__language__link">EN<img
-                        src="../public/icones/language_icon.svg" alt="Site en anglais"
-                        class="menu__language__icon"></a>
+
                 </nav>
             </div>
             <div class="header__flextitles">
@@ -78,19 +67,20 @@
         <article class="mainarticle">
             <h3 class="mainarticle__title">LIVRE</h3>
             <div class="mainarticle__block">
-                <img src="../public/img/preview/book.webp" alt="Couverture du livre Blade Runner" class="mainarticle__img">
+                <img src="../public/img/preview/book.webp" alt="Couverture du livre Blade Runner"
+                    class="mainarticle__img">
                 <div class="mainarticle__text-btn">
                     <p class="mainarticle__text">Philip K. Dick a écrit un des livres ayant eu le plus d'influence sur
                         le
                         Cyberpunk, mouvement largement
                         inspiré de l'atmosphère sombre du roman. Entre réalité, illusions et dystopie, « Les Androïdes
                         rêvent-ils de moutons électriques ? » se révèle être un classique de la littérature SF.
-                    </p>                
+                    </p>
                     <div class="mainarticle__button">
-                    <!-- Bouton en cours de création, voir pr le mettre dans div avec texte ?-->
-                    <img src="../public/icones/line_button.svg" class="mainarticle__buttonline">
-                    <a href="book_fr.html" class="mainarticle__buttontext"> LIRE LA SUITE </a>
-                </div>
+                        <!-- Bouton en cours de création, voir pr le mettre dans div avec texte ?-->
+                        <img src="../public/icones/line_button.svg" class="mainarticle__buttonline">
+                        <a href="book_fr.html" class="mainarticle__buttontext"> LIRE LA SUITE </a>
+                    </div>
                 </div>
 
             </div>
@@ -101,28 +91,31 @@
             <div class="articlecard__block">
                 <img class="articlecard__img" src="../public/img/preview/movie.webp" alt="Affiche du film Her">
                 <div class="articlecard__text-btn">
-                <p class="articlecard__text">Her est un film d'anticipation qui en dit long sur les relations humaines
-                    à l'ère du tout-connecté.</p>
-                <div class="articlecard__button">
-                    <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
-                    <a href="movie_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                    <p class="articlecard__text">Her est un film d'anticipation qui en dit long sur les relations
+                        humaines
+                        à l'ère du tout-connecté.</p>
+                    <div class="articlecard__button">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <a href="movie_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                    </div>
                 </div>
-               </div> 
             </div>
         </article>
 
         <article class="articlecard">
             <h3 class="articlecard__title">MUSIQUE</h3>
             <div class="articlecard__block">
-                <img class="articlecard__img" src="../public/img/preview/song.webp" alt="Titre de la chanson Game of Love des Daft Punk">
+                <img class="articlecard__img" src="../public/img/preview/song.webp"
+                    alt="Titre de la chanson Game of Love des Daft Punk">
                 <div class="articlecard__text-btn">
-                <p class="articlecard__text">Game of Love, une chanson mélancolique des Daft Punk, un groupe iconique
-                    de la scène électronique.</p>
-                <div class="articlecard__button">
-                    <img src="../public/icones/line_button.svg" class="articlecard__buttonline"
-                        alt="ligne du bouton « Lire la suite »">
-                    <a href="song_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
-                </div>
+                    <p class="articlecard__text">Game of Love, une chanson mélancolique des Daft Punk, un groupe
+                        iconique
+                        de la scène électronique.</p>
+                    <div class="articlecard__button">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline"
+                            alt="ligne du bouton « Lire la suite »">
+                        <a href="song_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                    </div>
                 </div>
             </div>
         </article>
@@ -130,14 +123,16 @@
         <article class="articlecard">
             <h3 class="articlecard__title">LIEU</h3>
             <div class="articlecard__block">
-                <img class="articlecard__img" src="../public/img/preview/place.webp" alt="La Cité Radieuse du Corbusier">
+                <img class="articlecard__img" src="../public/img/preview/place.webp"
+                    alt="La Cité Radieuse du Corbusier">
                 <div class="articlecard__text-btn">
-                <p class="articlecard__text">La Cité Radieuse, un bâtiment au nom évocateur… <br>Direction Marseille pour
-                    une visite guidée !</p>
-                <div class="articlecard__button">
-                    <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
-                    <a href="place_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
-                </div>
+                    <p class="articlecard__text">La Cité Radieuse, un bâtiment au nom évocateur… <br>Direction Marseille
+                        pour
+                        une visite guidée !</p>
+                    <div class="articlecard__button">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <a href="place_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                    </div>
                 </div>
             </div>
         </article>
@@ -145,14 +140,16 @@
         <article class="articlecard">
             <h3 class="articlecard__title">ESPOIR</h3>
             <div class="articlecard__block">
-                <img class="articlecard__img" src="../public/img/preview/hope.webp" alt="Jeunes tenant des pancartes dans une manifestation">
+                <img class="articlecard__img" src="../public/img/preview/hope.webp"
+                    alt="Jeunes tenant des pancartes dans une manifestation">
                 <div class="articlecard__text-btn">
-                <p class="articlecard__text">La génération Z n'est pas perdue ! Ces utopistes n'hésitent pas à défendre
-                    leurs idées.</p>
-                <div class="articlecard__button">
-                    <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
-                    <a href="hope_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
-                </div>
+                    <p class="articlecard__text">La génération Z n'est pas perdue ! Ces utopistes n'hésitent pas à
+                        défendre
+                        leurs idées.</p>
+                    <div class="articlecard__button">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <a href="hope_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                    </div>
                 </div>
             </div>
         </article>
@@ -161,14 +158,15 @@
         <article class="articlecard">
             <h3 class="articlecard__title">REGRET</h3>
             <div class="articlecard__block">
-                <img class="articlecard__img" src="../public/img/preview/regret.webp" alt="Smartphone incrusté dans un cerveau qui saigne">
+                <img class="articlecard__img" src="../public/img/preview/regret.webp"
+                    alt="Smartphone incrusté dans un cerveau qui saigne">
                 <div class="articlecard__text-btn">
-                <p class="articlecard__text">À l'ère du numérique, quel impact ont les réseaux sociaux sur notre
-                    perception du monde et de nous-même&nbsp;?</p>
-                <div class="articlecard__button">
-                    <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
-                    <a href="regret_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
-                </div>
+                    <p class="articlecard__text">À l'ère du numérique, quel impact ont les réseaux sociaux sur notre
+                        perception du monde et de nous-même&nbsp;?</p>
+                    <div class="articlecard__button">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <a href="regret_fr.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                    </div>
                 </div>
             </div>
         </article>

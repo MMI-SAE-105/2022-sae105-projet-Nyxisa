@@ -21,11 +21,7 @@
 
 .menu__list {
 padding: 0px 20px;
-}
-
-.menu__list > li{
-  font-family: var(--font-bold);
-  margin: 35px 0px;
+font-family: var(--font-bold);
 }
 
 .menu__list a:hover {
@@ -37,10 +33,10 @@ padding: 0px 20px;
   padding: 0px 15px;
 }
 
-
-.menu__item {
+.menu__item, .menu__item > a {
   color: var(--purple);
   font-size: var(--menu);
+  margin: 35px 0px;
 }
 
 .menu__article {
@@ -52,19 +48,12 @@ padding: 0px 20px;
   font-size: var(--menu2);
 }
 
-.menu__item--inactive {
-  cursor: none;
-}
-
 .menu__language {
   margin-top: 75px;
-  margin-right: 25px;
 }
 
 .menu__language, .menu__language__link {
-  font-family: var(--font-bold);
   color: var(--white);
-  font-size: var(--title);
   text-align: right;
 }
 .menu__language__icon {
