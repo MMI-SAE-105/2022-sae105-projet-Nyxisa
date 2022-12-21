@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos - Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/exe_logo.svg">
+</head>
+
+<body>
+    <div class="header">
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+            <div class="header__items">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                        alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg"
+                    alt="Icône de la barre de recherche" />
+                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <h4 class="header__pagetitle--menu">MENU</h4>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                        <li class="menu__item">ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article"><a href="book.html" class="menu__article-link">► DES
+                                        ANDROÏDES ET DES HOMMES</a></li>
+                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE
+                                        AMOUR ET SOLITUDE</a></li>
+                                <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR
+                                        ÉLECTRONIQUE</a></li>
+                                <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE
+                                        DANS UNE MACHINE</a></li>
+                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE
+                                        GÉNÉRATION ENGAGÉE</a></li>
+                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT
+                                        DES RÉSEAUX SOCIAUX</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
+                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
+                        <li class="menu__language"> <a href="../en/index.html" class="menu__language__link">EN<img
+                                    src="../public/icones/language_icon.svg" alt="Site en anglais"
+                                    class="menu__language__icon"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__flextitles">
+                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                <h4 class="header__pagetitle">À PROPOS</h4>
+            </div>
+    </div>
+
+    </header>
+    <main>
+        <section>
+            <h1>À PROPOS</h1>
+            <h4>« La culture, c’est ce qui reste quand on a tout oublié. »</h4>
+            <p>- Edouart Herriot</p>
+            <img src="../public/img/me_about.webp">
+        </section>
+        <section>
+            <h3>On se connait ?</h3>
+            <h4>Je m’appelle Lisa Cingolani et j’ai 20 ans. Actuellement étudiante, ce site web est un projet réalisé
+                dans le cadre de ma formation aux métiers du multimédia et de l’Internet.</h4>
+            <h3>Quel but ?</h3>
+            <h4>Ce blog est destiné à la personne que je serai devenue dans quelques dizaines d’années. J’y ai exposé
+                des éléments culturels marquants et/ou inspirant à mes yeux.</h4>
+            <h3>Pour aller plus loin ?</h3>
+            <h4>Mind_Uploading.exe est un concept imaginé qui me semble correspondre à la problématique du sujet.
+                En effet, « Mind » en anglais signifie l’esprit et « Uploading » est un téléchargement vers un serveur.
+                La terminaison « .exe » désigne un fichier exécutable, comme une application. Le principe est donc
+                simple. Grâce à un logiciel, on télécharge le contenu de son esprit à un instant donné, sa mémoire.
+                Puis ces informations sont exportées vers un serveur ou autre support de stockage.
+                Ainsi, nos souvenirs et pensées ne s’effacent pas et sont accessibles à tout moment.
+                C’est exactement ce que constitue ce blog, ma sauvegarde personnelle.</h4>
+            <h3>Bonne lecture
+                sur Mind_Uploading.exe ! </h3>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        <h5 class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
+            Montbéliard</h5>
+
+        <a href="http://mmimontbeliard.com">
+            <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+        </a>
+        <a href="about.html">À PROPOS
+        </a>
+        <a href="contact.html">CONTACT
+        </a>
+        <a href="otherprojects.html">AUTRES PROJETS
+        </a>
+    </footer>
+</body>
+</html>

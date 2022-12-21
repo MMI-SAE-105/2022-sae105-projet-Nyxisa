@@ -1,0 +1,21 @@
+/* CSS for the timeline */
+#timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .date {
+    font-weight: bold;
+  }
+  
+  .photos {
+    display: flex;
+  }
+  
+  .photos img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  

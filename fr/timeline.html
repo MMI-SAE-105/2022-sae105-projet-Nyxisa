@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Mind_Uploading.exe</title>
+    <title>Frise de lieux similaires - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
+
 <body>
     <!-- Le menu ne s'ouvre pas ?-->
     <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
         <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
             <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
         </button>
-        <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
-        <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
+        <a href="../index.html"> <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+        <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="index_en.html">HOME</a></li>
+                <li><a href="../index.html">ACCUEIL</a></li>
                 <li>ARTICLES
                     <ul>
-                        <li><a href="book_en.html">► OF ANDROIDS AND MEN</a></li>
-                        <li><a href="movie_en.html">► BETWEEN LOVE AND LONELINESS</a></li>
-                        <li><a href="song_en.html">► ELECTRONIC HEART</a>
-                        <li><a href="place_en.html">► LIVING IN A MACHINE</a></li>
-                        <li><a href="hope_en.html">► A COMMITTED GENERATION</a></li>
-                        <li><a href="regret_en.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                        <li><a href="book.html">► DES ANDROÏDES ET DES HOMMES</a></li>
+                        <li><a href="movie.html">► ENTRE AMOUR ET SOLITUDE</a></li>
+                        <li><a href="song.html">► COEUR ÉLECTRONIQUE</a>
+                        <li><a href="place.html">► VIVRE DANS UNE MACHINE</a></li>
+                        <li><a href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                        <li><a href="regret.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
                     </ul>
-                <li> <a href="about_en.html">ABOUT</a>
-                <li> <a href="contact_en.html">CONTACT</a>
+                <li> <a href="about.html">À PROPOS</a>
+                <li> <a href="contact.html">CONTACT</a>
             </ul>
             <ul>
-                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg" alt="Website in french"></a>
+                <li> <a href="../en/index.html">EN<img src="../public/icones/language_icon.svg"
+                            alt="Site en anglais"></a>
             </ul>
         </nav>
         <a href="../index.html">Mind_Uploading.exe</a>
-        <h4>TIMELINE</h4>
+        <h4>FRISE</h4>
     </header>
     <main>
         <section>
-            <h1>SIMILAR PLACES TIMELINE</h1>
-            <p>In France, the first social housing appeared during the reconstruction after the Second World War. 
-                Le Corbusier was hired by the government to build five "housing units of conforming size". 
-                These four exemplars are made from the same plans, although they have some differences.
+            <h1>FRISE DE LIEUX SIMILAIRES</h1>
+            <p>En France, les premiers logements sociaux apparaissent lors de la reconstruction après la Seconde Guerre
+                mondiale.
+                Le Corbusier est alors embauché par l’État pour construire cinq « unités d’habitation de grandeur
+                conforme ».
+                Ces quatre exemplaires sont réalisés à partir des mêmes plans, bien qu’ils aient quelques différences.
             </p>
 
             <h5>1952</h5>
@@ -75,7 +81,7 @@
             </li>
 
             <h5>1957</h5>
-            <h4>Berlin (Germany)</h4>
+            <h4>Berlin (Allemagne)</h4>
             <ul>
                 <li>
                     <img src="/public/img/timeline/Berlin01.webp" alt="">
@@ -114,25 +120,26 @@
                 </li>
             </ul>
 
-            <h2>Did you know?</h2>
-            <p>The first laundromat in France is located in Firminy!</p>
+            <h2>Le saviez-vous ?</h2>
+            <p>La première laverie automatique de France se trouve à Firminy !</p>
         </section>
 
     </main>
-    <footer>
-        <h5>Lisa Cingolani MM1 - A1</h5>
+    <footer class="footer">
+        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
         <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-        <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</h5>
+        <h5 class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
+            Montbéliard</h5>
 
         <a href="http://mmimontbeliard.com">
-            <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
+            <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
         </a>
-            <a href="about_en.html">ABOUT
-            </a>
-            <a href="contact_en.html">CONTACT
-            </a>
-            <a href="otherprojects_en.html">OTHER PROJECTS
-            </a>
+        <a href="about.html"> À PROPOS
+        </a>
+        <a href="contact.html"> CONTACT
+        </a>
+        <a href="otherprojects.html"> AUTRES PROJETS
+        </a>
     </footer>
 </body>
 
