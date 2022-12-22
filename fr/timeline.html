@@ -11,36 +11,48 @@
 </head>
 
 <body>
-    <!-- Le menu ne s'ouvre pas ?-->
-    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
-            <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
-        </button>
-        <a href="../index.html"> <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
-        <img src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche" />
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-                <li><a href="../index.html">ACCUEIL</a></li>
-                <li>ARTICLES
-                    <ul>
-                        <li><a href="book.html">► DES ANDROÏDES ET DES HOMMES</a></li>
-                        <li><a href="movie.html">► ENTRE AMOUR ET SOLITUDE</a></li>
-                        <li><a href="song.html">► COEUR ÉLECTRONIQUE</a>
-                        <li><a href="place.html">► VIVRE DANS UNE MACHINE</a></li>
-                        <li><a href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a></li>
-                        <li><a href="regret.html">► L’IMPACT DES RÉSEAUX SOCIAUX</a></li>
+    <div class="header">
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+            <div class="header__items">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                        alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg"
+                    alt="Icône de la barre de recherche" />
+                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <h4 class="header__pagetitle--menu">MENU</h4>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                        <li class="menu__item">ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article"><a href="book.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a></li>
+                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a></li>
+                                <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a></li>
+                                <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a></li>
+                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a></li>
+                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
+                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
+                        <li class="menu__language"> <a href="../en/timeline.html" class="menu__language__link">EN<img
+                            src="../public/icones/language_icon.svg" alt="Site en anglais"
+                            class="menu__language__icon"></a></li>
                     </ul>
-                <li> <a href="about.html">À PROPOS</a>
-                <li> <a href="contact.html">CONTACT</a>
-            </ul>
-            <ul>
-                <li> <a href="../en/index.html">EN<img src="../public/icones/language_icon.svg"
-                            alt="Site en anglais"></a>
-            </ul>
-        </nav>
-        <a href="../index.html">Mind_Uploading.exe</a>
-        <h4>FRISE</h4>
-    </header>
+                </nav>
+            </div>
+            <div class="header__flextitles">
+                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                <h4 class="header__pagetitle">FRISE</h4>
+            </div>
+        </header>
+    </div>
     <main>
         <section>
             <h1>FRISE DE LIEUX SIMILAIRES</h1>
@@ -53,7 +65,6 @@
 
             <h5>1952</h5>
             <h4>Marseille (13)</h4>
-            <li></li>
             <ul>
                 <li>
                     <img src="/public/img/timeline/Marseille01.webp" alt="">
@@ -78,7 +89,6 @@
                     <img src="/public/img/timeline/Reze03.webp" alt="">
                 </li>
             </ul>
-            </li>
 
             <h5>1957</h5>
             <h4>Berlin (Allemagne)</h4>

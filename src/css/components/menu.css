@@ -26,7 +26,6 @@ font-family: var(--font-bold);
 
 .menu__list a:hover {
     cursor: pointer;
-    color: var(--white);
 }
 
 .menu__list-articles {

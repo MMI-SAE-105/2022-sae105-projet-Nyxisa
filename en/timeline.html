@@ -8,35 +8,49 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <!-- Le menu ne s'ouvre pas ?-->
-    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <button @click="menuIsOpen= ! menuIsOpen" class="header_menuBtn">
-            <aria-expanded="true"menu> <img src="../public/icones/menu_icon.svg" alt="Menu">
-        </button>
-        <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe logo">
-        <img src="../public/icones/search_icon.svg" alt="Search bar icon" />
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li>ARTICLES
-                    <ul>
-                        <li><a href="book.html">► OF ANDROIDS AND MEN</a></li>
-                        <li><a href="movie.html">► BETWEEN LOVE AND LONELINESS</a></li>
-                        <li><a href="song.html">► ELECTRONIC HEART</a>
-                        <li><a href="place.html">► LIVING IN A MACHINE</a></li>
-                        <li><a href="hope.html">► A COMMITTED GENERATION</a></li>
-                        <li><a href="regret.html">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+</header>
+<div class="header">
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+            <div class="header__items">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                        alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg"
+                    alt="Icône de la barre de recherche" />
+                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <h4 class="header__pagetitle--menu">MENU</h4>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">HOME</a></li>
+                        <li class="menu__item">ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS AND MEN</a></li>
+                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE AND LONELINESS</a></li>
+                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC HEART</a></li>
+                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A MACHINE</a></li>
+                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED GENERATION</a></li>
+                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
+                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
+                        <li class="menu__language"> <a href="../fr/timeline.html" class="menu__language__link">FR<img
+                            src="../public/icones/language_icon.svg" alt="Site en anglais"
+                            class="menu__language__icon"></a></li>
                     </ul>
-                <li> <a href="about.html">ABOUT</a>
-                <li> <a href="contact.html">CONTACT</a>
-            </ul>
-            <ul>
-                <li> <a href="../index.html">FR<img src="../public/icones/language_icon.svg" alt="Website in french"></a>
-            </ul>
-        </nav>
-        <a href="../index.html">Mind_Uploading.exe</a>
-        <h4>TIMELINE</h4>
-    </header>
+                </nav>
+            </div>
+            <div class="header__flextitles">
+                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                <h4 class="header__pagetitle">TIMELINE</h4>
+            </div>
+        </header>
+    </div>
     <main>
         <section>
             <h1>SIMILAR PLACES TIMELINE</h1>
@@ -119,20 +133,26 @@
         </section>
 
     </main>
-    <footer>
-        <h5>Lisa Cingolani MM1 - A1</h5>
-        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-        <h5>Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</h5>
-
-        <a href="http://mmimontbeliard.com">
-            <img src="../public/icones/mmi_logo.svg" alt="MMI Montbéliard Department Logo">
-        </a>
-            <a href="about.html">ABOUT
+    <footer class="footer">
+        <div class="footer__text">
+            <p>Lisa Cingolani MM1 - A1</p>
+            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
+                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
+        </div>
+        <div class="footer__blocks">
+            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</p>
+            <a href="http://mmimontbeliard.com" class="footer__logo">
+                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
             </a>
-            <a href="contact.html">CONTACT
-            </a>
-            <a href="otherprojects.html">OTHER PROJECTS
-            </a>
+            <nav class="footer__btn">
+                <a href="about.html" class="footer__btn-item">ABOUT
+                </a>
+                <a href="contact.html" class="footer__btn-item">CONTACT
+                </a>
+                <a href="otherprojects.html" class="footer__btn-item">OTHER PROJECTS
+                </a>
+            </nav>
+        </div>
     </footer>
 </body>
 

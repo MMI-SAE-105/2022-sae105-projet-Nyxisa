@@ -14,7 +14,7 @@
     <div class="header">
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
                 <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
@@ -51,8 +51,8 @@
                 <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
                 <h4 class="header__pagetitle">ACCUEIL</h4>
             </div>
+        </header>
     </div>
-    </header>
     <main>
         <article class="intro">
             <h1 class="intro__title">Bienvenue sur Mind_Uploading.exe !</h1>
@@ -77,7 +77,7 @@
                     </p>
                     <div class="mainarticle__button">
                         <!-- Bouton en cours de création, voir pr le mettre dans div avec texte ?-->
-                        <img src="../public/icones/line_button.svg" class="mainarticle__buttonline">
+                        <img src="../public/icones/line_button.svg" class="mainarticle__buttonline" alt="">
                         <a href="book.html" class="mainarticle__buttontext"> LIRE LA SUITE </a>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                         humaines
                         à l'ère du tout-connecté.</p>
                     <div class="articlecard__button">
-                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
                         <a href="movie.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
                     </div>
                 </div>
@@ -111,8 +111,7 @@
                         iconique
                         de la scène électronique.</p>
                     <div class="articlecard__button">
-                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline"
-                            alt="ligne du bouton « Lire la suite »">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
                         <a href="song.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
                     </div>
                 </div>
@@ -129,7 +128,7 @@
                         pour
                         une visite guidée !</p>
                     <div class="articlecard__button">
-                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline"  alt="">
                         <a href="place.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
                     </div>
                 </div>
@@ -146,7 +145,7 @@
                         défendre
                         leurs idées.</p>
                     <div class="articlecard__button">
-                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
                         <a href="hope.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
                     </div>
                 </div>
@@ -163,7 +162,7 @@
                     <p class="articlecard__text">À l'ère du numérique, quel impact ont les réseaux sociaux sur notre
                         perception du monde et de nous-même&nbsp;?</p>
                     <div class="articlecard__button">
-                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
                         <a href="regret.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
                     </div>
                 </div>
@@ -194,5 +193,4 @@
         </div>
     </footer>
 </body>
-
 </html>

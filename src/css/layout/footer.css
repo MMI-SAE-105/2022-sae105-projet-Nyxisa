@@ -1,8 +1,9 @@
 .footer {
-    background-color: var(--black);
-    border-bottom: 10px solid var(--purple);
     bottom: 0;
     left: 0;
+    right: 0;
+    background-color: var(--black);
+    border-bottom: 10px solid var(--purple);
     width: 100%;
 }
 
