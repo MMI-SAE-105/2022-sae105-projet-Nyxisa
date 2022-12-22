@@ -9,142 +9,157 @@
         <script defer src="https://unpkg.com/alpinejs"></script>
         <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
+
 <body>
-<div class="header">
-        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-            <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
-                    <img src="../public/icones/menu_icon.svg" alt="Menu">
-                </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Logo Mind_Uploading.exe"></a>
-                <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                    alt="Icône de la barre de recherche">
-                <nav class="menu" id="mainNav" x-show="menuIsOpen">
-                    <div class="header__flextitles--menu">
-                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                        <h4 class="header__pagetitle--menu">MENU</h4>
-                    </div>
-                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                        x-transition:leave.duration.300ms>
-                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
-                        <li class="menu__item">ARTICLES
-                            <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
-                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../en/song.html" class="menu__language__link">EN<img
-                            src="../public/icones/language_icon.svg" alt="Site en anglais"
-                            class="menu__language__icon"></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__flextitles">
-                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-                <h4 class="header__pagetitle">MUSIQUE</h4>
-            </div>
-        </header>
-    </div>
-<main>
-        <img src="../public/img/articles/song/mainpic.webp">
-        <h5>Temps de lecture : 2 minutes</h5>
-        <section>
-                <h1>COEUR ÉLECTRONIQUE</h1>
-                <p>Game of Love est sortie en 2013, avec l'album Random Access Memories.
-                </p>
-                <h2>Un duo iconique</h2>
-                <p> Daft Punk est un groupe de musique électro français composé de deux membres.
-                        Ils ont commencé la musique en 1993 et sont célèbres dans le monde entier depuis 1995.
-                        Ils sont connus pour ne pas montrer leur visage, en portant des casques inspirés du film «
-                        Phantom of the Paradise » (réalisé par Brian de Palma).
-                        Cela les fait ressembler à des robots, l'un est argenté et l’autre est doré.
-                        L'album Random Access Memories est leur plus grand succès.
-                </p>
-                <figure>
-                        <img src="../public/img/articles/song/cover.webp">
-                        <figcaption>La pochette de l’album</figcaption>
-                </figure>
-                <h2>Le parallèle entre humain et robot</h2>
-                <p> Le nom de l'album vient de l'acronyme RAM (Random Access Memory) qui signifie mémoire vive.
-                        Cela désigne la mémoire des ordinateurs.
-                </p>
-                <figure>
-                        <img src="../public/img/articles/song/chip.webp">
-                        <figcaption>Une barrette de RAM</figcaption>
-                </figure>
-                <p>En effet, les Daft Punk pensent qu'il existe des similitudes entre un disque dur et le cerveau
-                        humain.
-                        Dans Game of Love, l'utilisation de vocodeurs donne l'impression que c'est un véritable robot
-                        qui chante.
-                        La chanson parle d'un amour perdu, et même si c'est un androïde qui chante, on peut sentir la
-                        douleur dans sa voix.
-                        Le groupe avait pour intention de produire des voix robotiques qui véhiculent tout de même des
-                        émotions.
-                </p>
-                <h2>Les artistes et l’AutoTune</h2>
-                <p>
-                        <q> Il y a ce truc aujourd'hui où la voix humaine enregistrée est traitée pour avoir l’air
-                                robotique. </q>
-                        - Thomas Bangalter (le Daft Punk argenté)
-                </p>
-                <p> Ici, Bangalter parle de l'utilisation massive de l’Autotune dans l'industrie musicale. C'est un
-                        effet utilisé à l'origine pour corriger les fausses notes. Mais désormais, la majorité des
-                        chanteurs l'utilisent, notamment les rappeurs. Il a été utilisé pour la première fois en 1998
-                        dans Believe de la chanteuse américaine Cher.
-                        L’Autotune donne un effet métallisé à la voix que l'on peut qualifier de robotique si l'effet
-                        est poussé.
-                </p>
-                <figure>
-                        <img src="../public/img/articles/song/autotune.webp">
-                        <figcaption>Le logiciel AutoTune</figcaption>
-                </figure>
-                <p> Cette chanson soulève également la question suivante : les robots peuvent-ils avoir le cœur brisé
-                        alors qu'ils sont censés n'être que des machines ?
-                        L'instrumentale est plutôt tranquille, mais l'intonation de la voix et les paroles lui ajoutent un sentiment nostalgique et triste.
-                </p>
-                <figure>
-                        <img src="../public/img/articles/song/concert.webp">
-                        <figcaption>Les Daft Punk pendant un concert</figcaption>
-                </figure>
-                <h2>Mon conseil</h2>
-                <p>Personnellement, j'ai toujours aimé Daft Punk. 
-                        Random Access Memories est l'un des premiers CD que j'ai acheté. 
-                        Toutes les musiques de cet album (et même la discographie complète des Daft Punk) sont à écouter.
-                </p>
-                <video controls="" src="https://medias.lisa-cingolani.fr/music_video.mp4"></video>
-                <a href="https://www.youtube.com/watch?v=ajGKWk0auOc">ÉCOUTER LA MUSIQUE</a>
-        </section>
-        <section>
-                <button>PARTAGER SUR
-                        <a href="#"><img src="../public/icones/facebook_icon.svg"></a>
-                        <a href="#"><img src="../public/icones/twitter_icon.svg"></a>
-                </button>
-        </section>
+        <div class="header">
+                <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+                        <div class="header__items">
+                                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" aria-controls="mainNav" aria-label="menu">
+                                        <img src="../public/icones/menu_icon.svg" alt="Menu">
+                                </button>
+                                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche">
+                                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                                        <div class="header__flextitles--menu">
+                                                <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                                                <h4 class="header__pagetitle--menu">MENU</h4>
+                                        </div>
+                                        <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms x-transition:leave.duration.300ms>
+                                                <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                                                <li class="menu__item">ARTICLES
+                                                        <ul class="menu__list-articles">
+                                                                <li class="menu__article"><a href="book.html" class="menu__article-link">► DES
+                                                                                ANDROÏDES ET DES HOMMES</a></li>
+                                                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE AMOUR
+                                                                                ET SOLITUDE</a></li>
+                                                                <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR
+                                                                                ÉLECTRONIQUE</a></li>
+                                                                <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE DANS
+                                                                                UNE MACHINE</a></li>
+                                                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE
+                                                                                GÉNÉRATION ENGAGÉE</a></li>
+                                                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT
+                                                                                DES RÉSEAUX SOCIAUX</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
+                                                <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
+                                                <li class="menu__language"> <a href="../en/song.html" class="menu__language__link">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais" class="menu__language__icon"></a></li>
+                                        </ul>
+                                </nav>
+                        </div>
+                        <div class="header__flextitles">
+                                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                                <h4 class="header__pagetitle">MUSIQUE</h4>
+                        </div>
+                </header>
+        </div>
+        <main>
+                <img src="../public/img/articles/song/mainpic.webp">
+                <h5>Temps de lecture : 2 minutes</h5>
+                <section>
+                        <h1>COEUR ÉLECTRONIQUE</h1>
+                        <p>Game of Love est sortie en 2013, avec l'album Random Access Memories.
+                        </p>
+                        <h2>Un duo iconique</h2>
+                        <p> Daft Punk est un groupe de musique électro français composé de deux membres.
+                                Ils ont commencé la musique en 1993 et sont célèbres dans le monde entier depuis 1995.
+                                Ils sont connus pour ne pas montrer leur visage, en portant des casques inspirés du film
+                                «
+                                Phantom of the Paradise » (réalisé par Brian de Palma).
+                                Cela les fait ressembler à des robots, l'un est argenté et l'autre est doré.
+                                L'album Random Access Memories est leur plus grand succès.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/song/cover.webp">
+                                <figcaption>La pochette de l'album</figcaption>
+                        </figure>
+                        <h2>Le parallèle entre humain et robot</h2>
+                        <p> Le nom de l'album vient de l'acronyme RAM (Random Access Memory) qui signifie mémoire vive.
+                                Cela désigne la mémoire des ordinateurs.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/song/chip.webp">
+                                <figcaption>Une barrette de RAM</figcaption>
+                        </figure>
+                        <p>En effet, les Daft Punk pensent qu'il existe des similitudes entre un disque dur et le
+                                cerveau
+                                humain.
+                                Dans Game of Love, l'utilisation de vocodeurs donne l'impression que c'est un véritable
+                                robot
+                                qui chante.
+                                La chanson parle d'un amour perdu, et même si c'est un androïde qui chante, on peut
+                                sentir la
+                                douleur dans sa voix.
+                                Le groupe avait pour intention de produire des voix robotiques qui véhiculent tout de
+                                même des
+                                émotions.
+                        </p>
+                        <h2>Les artistes et l'AutoTune</h2>
+                        <p>
+                                <q> Il y a ce truc aujourd'hui où la voix humaine enregistrée est traitée pour avoir
+                                        l'air
+                                        robotique. </q>
+                                - Thomas Bangalter (le Daft Punk argenté)
+                        </p>
+                        <p> Ici, Bangalter parle de l'utilisation massive de l'Autotune dans l'industrie musicale. C'est
+                                un
+                                effet utilisé à l'origine pour corriger les fausses notes. Mais désormais, la majorité
+                                des
+                                chanteurs l'utilisent, notamment les rappeurs. Il a été utilisé pour la première fois en
+                                1998
+                                dans Believe de la chanteuse américaine Cher.
+                                L'Autotune donne un effet métallisé à la voix que l'on peut qualifier de robotique si
+                                l'effet
+                                est poussé.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/song/autotune.webp">
+                                <figcaption>Le logiciel AutoTune</figcaption>
+                        </figure>
+                        <p> Cette chanson soulève également la question suivante : les robots peuvent-ils avoir le cœur
+                                brisé
+                                alors qu'ils sont censés n'être que des machines ?
+                                L'instrumentale est plutôt tranquille, mais l'intonation de la voix et les paroles lui
+                                ajoutent un sentiment nostalgique et triste.
+                        </p>
+                        <figure>
+                                <img src="../public/img/articles/song/concert.webp">
+                                <figcaption>Les Daft Punk pendant un concert</figcaption>
+                        </figure>
+                        <h2>Mon conseil</h2>
+                        <p>Personnellement, j'ai toujours aimé Daft Punk.
+                                Random Access Memories est l'un des premiers CD que j'ai acheté.
+                                Toutes les musiques de cet album (et même la discographie complète des Daft Punk) sont à
+                                écouter.
+                        </p>
+                        <video controls="" src="https://medias.lisa-cingolani.fr/music_video.mp4"></video>
+                        <a href="https://www.youtube.com/watch?v=ajGKWk0auOc">ÉCOUTER LA MUSIQUE</a>
+                </section>
+                <section>
+                        <button>PARTAGER SUR
+                                <a href="#"><img src="../public/icones/facebook_icon.svg"></a>
+                                <a href="#"><img src="../public/icones/twitter_icon.svg"></a>
+                        </button>
+                </section>
 
-</main>
-<footer class="footer">
-        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
-        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-        <h5 class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
-                Montbéliard</h5>
+        </main>
+        <footer class="footer">
+                <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+                <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+                <h5 class="footer__text">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de
+                        Montbéliard</h5>
 
-        <a href="http://mmimontbeliard.com">
-                <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
-        </a>
-        <a href="about.html"> À PROPOS
-        </a>
-        <a href="contact.html"> CONTACT
-        </a>
-        <a href="otherprojects.html"> AUTRES PROJETS
-        </a>
-</footer>
+                <a href="http://mmimontbeliard.com">
+                        <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+                </a>
+                <a href="about.html"> À PROPOS
+                </a>
+                <a href="contact.html"> CONTACT
+                </a>
+                <a href="otherprojects.html"> AUTRES PROJETS
+                </a>
+        </footer>
 </body>
 
 </html>

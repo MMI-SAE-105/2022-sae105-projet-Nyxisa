@@ -4,217 +4,226 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivre dans une machine : L’unité d’habitation de Le Corbusier - Mind_Uploading.exe</title>
+    <title>Vivre dans une machine : L'unité d'habitation de Le Corbusier - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
 
 <body>
-<div class="header">
-    <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-        <div class="header__items">
-            <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
-                <img src="../public/icones/menu_icon.svg" alt="Menu">
+    <div class="header">
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+            <div class="header__items">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" aria-controls="mainNav" aria-label="menu">
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche">
+                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <h4 class="header__pagetitle--menu">MENU</h4>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                        <li class="menu__item">ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article"><a href="book.html" class="menu__article-link">► DES ANDROÏDES
+                                        ET DES HOMMES</a></li>
+                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE AMOUR
+                                        ET SOLITUDE</a></li>
+                                <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR
+                                        ÉLECTRONIQUE</a></li>
+                                <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE DANS
+                                        UNE MACHINE</a></li>
+                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE
+                                        GÉNÉRATION ENGAGÉE</a></li>
+                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT
+                                        DES RÉSEAUX SOCIAUX</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
+                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
+                        <li class="menu__language"> <a href="../en/place.html" class="menu__language__link">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais" class="menu__language__icon"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__flextitles">
+                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                <h4 class="header__pagetitle">LIEU</h4>
+            </div>
+        </header>
+    </div>
+    <main>
+        <img src="../public/img/articles/place/mainpic.webp">
+        <h5>Temps de lecture : 4 minutes</h5>
+        <section>
+            <h1>VIVRE DANS UNE MACHINE : L'UNITÉ D'HABITATION DE LE CORBUSIER</h1>
+            <h2>Un bâtiment construit dans un contexte particulier</h2>
+            <p>Après la Seconde Guerre Mondiale, la France est dans un processus de reconstruction.
+                Les familles modestes recherchent désormais des logements modernes et confortables.
+                La Cité Radieuse constitue une des solutions à ce besoin.
+                Des services et équipements communs sont mis à disposition des habitants, dans un cadre de vie agréable.
+                Avec cet édifice, Le Corbusier met au centre la vie en communauté.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/construction.webp">
+                <figcaption>Chantier de la Cité radieuse, 1947</figcaption>
+            </figure>
+
+            <h2>Le Corbusier, un architecte radicale</h2>
+            <h3>Qui est-il ?</h3>
+            <p>Le Corbusier, de son vrai nom Charles-Édouard Jeanneret, est un architecte franco-suisse du XXème siècle
+                (1887-1965).
+                Il appartient au mouvement architectural du brutalisme.
+                Le Bauhaus a fortement influencé ses idées.
+                Bien qu'il soit parfois contesté, Le Corbusier reste une figure majeure de l'architecture pour son
+                inventivité.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/lecorbusier.webp">
+                <figcaption>Le Corbusier</figcaption>
+            </figure>
+            <p>
+                <q> L'architecture est le point de départ lorsqu'on veut conduire l'humanité vers un avenir
+                    meilleur.</q>
+                - Le Corbusier
+            </p>
+            <h3>Ses principes </h3>
+            <p>Dans l'architecture de Le Corbusier, on retrouve des principes spécifiques.
+                Ils sont nommés les « Cinq points d'une architecture nouvelle » : </p>
+            <ul>
+                <li>L'élévation sur pilotis,</li>
+                <li>Le toit-terrasse plat,</li>
+                <li>La fenêtre en bande,</li>
+                <li>La suppression de murs porteur,</li>
+                <li>La façade libre.</li>
+            </ul>
+            <p>Un autre principe important est le Modulor.
+                C'est une silhouette humaine de taille standard sur laquelle s'appuie Le Corbusier pour concevoir le
+                mobilier, la structure des habitations et le bâtiment dans son ensemble.
+                Selon Le Corbusier, le bâtiment dont il est question dans cet article est une véritable « unité
+                d'habitation
+                ».
+                Il conçoit cela comme une « machine à habiter ».
+                En effet, il adhère aux principes du fonctionnalisme, c'est-à-dire au fait qu'un bâtiment doit
+                s'affranchir
+                d'éléments décoratifs inutiles.
+                Sa construction existe uniquement pour répondre parfaitement au besoin d'habiter.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/modulor.webp">
+                <figcaption>Le Modulor</figcaption>
+            </figure>
+            <h2>Les caractéristiques de la structure</h2>
+            <p>La Cité Radieuse a été construite assez rapidement, entre 1947 et 1952.
+                Elle se trouve dans le 8ème arrondissement de Marseille, sur le Boulevard Michelet.
+                Plutôt imposant, le bâtiment mesure 137 mètres de long pour 56 mètres de haut et 24 mètres de large.
+                La structure en béton est montée sur un double rang de pilotis.
+                Cela lui donne paradoxalement une allure à la fois légère et massive.
+                L'édifice abrite plus de 300 appartements de 23 types différents, sur 9 étages.
+                La majorité sont des duplex4, il y a donc en réalité 18 niveaux.
+                Il y a aussi de véritables rues à l'intérieur, avec divers services et commerces.
+                À l'extérieur, autour de ce que ses habitants appellent le « village vertical autonome », on retrouve un
+                parc de 2.8 hectares.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/outside.webp">
+                <figcaption>Vue de la Cité Radieuse depuis le parc</figcaption>
+            </figure>
+            <h2>Des espaces de vie modulables</h2>
+            <p> Dans ce lieu singulier, l'espace est assez réduit. Les appartements sont donc modulables, notamment à
+                l'aide
+                de panneaux coulissants, pour adapter la surface à l'utilisation des habitants.
+                Tout est pensé pour être fonctionnel, confortable et toujours avec un design épuré.
+                L'ergonomie est le maître mot de Le Corbusier.
+                Il se base sur son système du Modulor pour adapter l'architecture intérieure à l'humain.
+                Les pièces sont agencées intelligemment, il y a de nombreux rangements.
+                On voit aussi apparaître les premières cuisines toutes équipées.
+                Les appartements possèdent également une loggia5.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/inside.webp">
+                <figcaption>Intérieur d'un duplex</figcaption>
+            </figure>
+            <figure>
+                <img src="../public/img/articles/place/loggia.webp">
+                <figcaption>Loggia</figcaption>
+            </figure>
+            <h2>Les particularités des différents étages</h2>
+            <p> Dans le hall d'entrée, on peut voir des petites fenêtres faites avec des blocs de verre transparents et
+                colorés.
+                On remarque aussi les ascenseurs aux portes rouges et jaunes qui nous invitent à accéder aux étages
+                supérieurs.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/exthall.webp">
+                <figcaption>Hall d'entrée vu de l'extérieur</figcaption>
+            </figure>
+            <p> Lorsqu'on arrive dans la 3ème rue, il y a des bureaux (médecins, designers), un concept-store, une
+                crèche.
+                Un banc en béton longe ce couloir lumineux, avec vue sur la mer au loin.
+                Un court escalier nous mène à la 4ème rue, où l'on trouve un hôtel-restaurant, une librairie, et
+                d'autres
+                boutiques. </p>
+            <figure>
+                <img src="../public/img/articles/place/rue.webp">
+                <figcaption>Couloir de la 3ème rue</figcaption>
+            </figure>
+            <figure>
+                <img src="../public/img/articles/place/doors.webp">
+                <figcaption>Couloir menant aux appartements</figcaption>
+            </figure>
+            <p>Au 9ème étage se trouve une école maternelle.
+                Sur le toit, un gymnase, une piste d'athlétisme et une pataugeoire. Depuis 2013, le gymnase est devenu
+                le
+                MaMo (Marseille Modulor).
+                Le designer français Ora-Ïto est à l'initiative de ce lieu d'exposition d'art contemporain.
+                Le paysage depuis le toit est panoramique, on peut y observer la mer, la ville et les collines
+                environnantes.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/toit.webp">
+                <figcaption>Le toit avec sa pataugeoire</figcaption>
+            </figure>
+            <h2>Un lieu emblématique</h2>
+            <p>En 1995, La Cité radieuse de Le Corbusier est classée monument historique.
+                Aujourd'hui, c'est le troisième monument le plus visité de Marseille.
+                Elle a longtemps été surnommée « La Maison du fada » car Le Corbusier avait une vision très
+                avant-gardiste
+                pour les années 50.
+                Désormais, la Cité Radieuse est appréciée à sa juste valeur, et ses habitants en sont ravis.
+            </p>
+            <figure>
+                <img src="../public/img/articles/place/panorama.webp">
+                <figcaption>Vue sur la mer depuis le toit</figcaption>
+            </figure>
+            <a href="timeline.html">FRISE DE LIEUX SIMILAIRES</a>
+        </section>
+        <section>
+            <button>PARTAGER SUR
+                <a href="#"><img src="../public/icones/facebook_icon.svg"></a>
+                <a href="#"><img src="../public/icones/twitter_icon.svg"></a>
             </button>
-            <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                    alt="Logo Mind_Uploading.exe"></a>
-            <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                alt="Icône de la barre de recherche">
-            <nav class="menu" id="mainNav" x-show="menuIsOpen">
-                <div class="header__flextitles--menu">
-                    <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                    <h4 class="header__pagetitle--menu">MENU</h4>
-                </div>
-                <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                    x-transition:leave.duration.300ms>
-                    <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
-                    <li class="menu__item">ARTICLES
-                        <ul class="menu__list-articles">
-                            <li class="menu__article"><a href="book.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a></li>
-                            <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a></li>
-                            <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a></li>
-                            <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a></li>
-                            <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a></li>
-                            <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
-                    <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                    <li class="menu__language"> <a href="../en/place.html" class="menu__language__link">EN<img
-                        src="../public/icones/language_icon.svg" alt="Site en anglais"
-                        class="menu__language__icon"></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__flextitles">
-            <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-            <h4 class="header__pagetitle">LIEU</h4>
-        </div>
-    </header>
-</div>
-<main>
-    <img src="../public/img/articles/place/mainpic.webp">
-    <h5>Temps de lecture : 4 minutes</h5>
-    <section>
-        <h1>VIVRE DANS UNE MACHINE : L'UNITÉ D'HABITATION DE LE CORBUSIER</h1>
-        <h2>Un bâtiment construit dans un contexte particulier</h2>
-        <p>Après la Seconde Guerre Mondiale, la France est dans un processus de reconstruction.
-            Les familles modestes recherchent désormais des logements modernes et confortables.
-            La Cité Radieuse constitue une des solutions à ce besoin.
-            Des services et équipements communs sont mis à disposition des habitants, dans un cadre de vie agréable.
-            Avec cet édifice, Le Corbusier met au centre la vie en communauté.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/construction.webp">
-            <figcaption>Chantier de la Cité radieuse, 1947</figcaption>
-        </figure>
+        </section>
 
-        <h2>Le Corbusier, un architecte radicale</h2>
-        <h3>Qui est-il ?</h3>
-        <p>Le Corbusier, de son vrai nom Charles-Édouard Jeanneret, est un architecte franco-suisse du XXème siècle
-            (1887-1965).
-            Il appartient au mouvement architectural du brutalisme.
-            Le Bauhaus a fortement influencé ses idées.
-            Bien qu’il soit parfois contesté, Le Corbusier reste une figure majeure de l’architecture pour son
-            inventivité.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/lecorbusier.webp">
-            <figcaption>Le Corbusier</figcaption>
-        </figure>
-        <p>
-            <q> L’architecture est le point de départ lorsqu’on veut conduire l’humanité vers un avenir meilleur.</q>
-            - Le Corbusier
-        </p>
-        <h3>Ses principes </h3>
-        <p>Dans l’architecture de Le Corbusier, on retrouve des principes spécifiques.
-            Ils sont nommés les « Cinq points d'une architecture nouvelle » : </p>
-        <ul>
-            <li>L’élévation sur pilotis,</li>
-            <li>Le toit-terrasse plat,</li>
-            <li>La fenêtre en bande,</li>
-            <li>La suppression de murs porteur,</li>
-            <li>La façade libre.</li>
-        </ul>
-        <p>Un autre principe important est le Modulor.
-            C’est une silhouette humaine de taille standard sur laquelle s’appuie Le Corbusier pour concevoir le
-            mobilier, la structure des habitations et le bâtiment dans son ensemble.
-            Selon Le Corbusier, le bâtiment dont il est question dans cet article est une véritable « unité d’habitation
-            ».
-            Il conçoit cela comme une « machine à habiter ».
-            En effet, il adhère aux principes du fonctionnalisme, c’est-à-dire au fait qu’un bâtiment doit s’affranchir
-            d’éléments décoratifs inutiles.
-            Sa construction existe uniquement pour répondre parfaitement au besoin d’habiter.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/modulor.webp">
-            <figcaption>Le Modulor</figcaption>
-        </figure>
-        <h2>Les caractéristiques de la structure</h2>
-        <p>La Cité Radieuse a été construite assez rapidement, entre 1947 et 1952.
-            Elle se trouve dans le 8ème arrondissement de Marseille, sur le Boulevard Michelet.
-            Plutôt imposant, le bâtiment mesure 137 mètres de long pour 56 mètres de haut et 24 mètres de large.
-            La structure en béton est montée sur un double rang de pilotis.
-            Cela lui donne paradoxalement une allure à la fois légère et massive.
-            L’édifice abrite plus de 300 appartements de 23 types différents, sur 9 étages.
-            La majorité sont des duplex4, il y a donc en réalité 18 niveaux.
-            Il y a aussi de véritables rues à l’intérieur, avec divers services et commerces.
-            À l’extérieur, autour de ce que ses habitants appellent le « village vertical autonome », on retrouve un
-            parc de 2.8 hectares.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/outside.webp">
-            <figcaption>Vue de la Cité Radieuse depuis le parc</figcaption>
-        </figure>
-        <h2>Des espaces de vie modulables</h2>
-        <p> Dans ce lieu singulier, l’espace est assez réduit. Les appartements sont donc modulables, notamment à l’aide
-            de panneaux coulissants, pour adapter la surface à l’utilisation des habitants.
-            Tout est pensé pour être fonctionnel, confortable et toujours avec un design épuré.
-            L’ergonomie est le maître mot de Le Corbusier.
-            Il se base sur son système du Modulor pour adapter l’architecture intérieure à l’humain.
-            Les pièces sont agencées intelligemment, il y a de nombreux rangements.
-            On voit aussi apparaître les premières cuisines toutes équipées.
-            Les appartements possèdent également une loggia5.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/inside.webp">
-            <figcaption>Intérieur d’un duplex</figcaption>
-        </figure>
-        <figure>
-            <img src="../public/img/articles/place/loggia.webp">
-            <figcaption>Loggia</figcaption>
-        </figure>
-        <h2>Les particularités des différents étages</h2>
-        <p> Dans le hall d’entrée, on peut voir des petites fenêtres faites avec des blocs de verre transparents et
-            colorés.
-            On remarque aussi les ascenseurs aux portes rouges et jaunes qui nous invitent à accéder aux étages
-            supérieurs.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/exthall.webp">
-            <figcaption>Hall d’entrée vu de l’extérieur</figcaption>
-        </figure>
-        <p> Lorsqu’on arrive dans la 3ème rue, il y a des bureaux (médecins, designers), un concept-store, une crèche.
-            Un banc en béton longe ce couloir lumineux, avec vue sur la mer au loin.
-            Un court escalier nous mène à la 4ème rue, où l’on trouve un hôtel-restaurant, une librairie, et d’autres
-            boutiques. </p>
-        <figure>
-            <img src="../public/img/articles/place/rue.webp">
-            <figcaption>Couloir de la 3ème rue</figcaption>
-        </figure>
-        <figure>
-            <img src="../public/img/articles/place/doors.webp">
-            <figcaption>Couloir menant aux appartements</figcaption>
-        </figure>
-        <p>Au 9ème étage se trouve une école maternelle.
-            Sur le toit, un gymnase, une piste d’athlétisme et une pataugeoire. Depuis 2013, le gymnase est devenu le
-            MaMo (Marseille Modulor).
-            Le designer français Ora-Ïto est à l’initiative de ce lieu d’exposition d’art contemporain.
-            Le paysage depuis le toit est panoramique, on peut y observer la mer, la ville et les collines
-            environnantes.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/toit.webp">
-            <figcaption>Le toit avec sa pataugeoire</figcaption>
-        </figure>
-        <h2>Un lieu emblématique</h2>
-        <p>En 1995, La Cité radieuse de Le Corbusier est classée monument historique.
-            Aujourd’hui, c’est le troisième monument le plus visité de Marseille.
-            Elle a longtemps été surnommée « La Maison du fada » car Le Corbusier avait une vision très avant-gardiste
-            pour les années 50.
-            Désormais, la Cité Radieuse est appréciée à sa juste valeur, et ses habitants en sont ravis.
-        </p>
-        <figure>
-            <img src="../public/img/articles/place/panorama.webp">
-            <figcaption>Vue sur la mer depuis le toit</figcaption>
-        </figure>
-        <a href="timeline.html">FRISE DE LIEUX SIMILAIRES</a>
-    </section>
-    <section>
-        <button>PARTAGER SUR
-            <a href="#"><img src="../public/icones/facebook_icon.svg"></a>
-            <a href="#"><img src="../public/icones/twitter_icon.svg"></a>
-        </button>
-    </section>
+    </main>
+    <footer class="footer">
+        <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
+        <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        <h5 class="footer__text">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de
+            Montbéliard</h5>
 
-</main>
-<footer class="footer">
-    <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
-    <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-    <h5 class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
-        Montbéliard</h5>
-
-    <a href="http://mmimontbeliard.com">
-        <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
-    </a>
-    <a href="about.html"> À PROPOS
-    </a>
-    <a href="contact.html"> CONTACT
-    </a>
-    <a href="otherprojects.html"> AUTRES PROJETS
-    </a>
-</footer>
+        <a href="http://mmimontbeliard.com">
+            <img src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+        </a>
+        <a href="about.html"> À PROPOS
+        </a>
+        <a href="contact.html"> CONTACT
+        </a>
+        <a href="otherprojects.html"> AUTRES PROJETS
+        </a>
+    </footer>
 </body>
 
 </html>

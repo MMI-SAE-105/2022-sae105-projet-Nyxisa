@@ -14,20 +14,17 @@
     <div class="header">
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Logo Mind_Uploading.exe"></a>
-                <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                    alt="Icône de la barre de recherche">
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche">
                 <nav class="menu" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
                         <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
                         <h4 class="header__pagetitle--menu">MENU</h4>
                     </div>
-                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                        x-transition:leave.duration.300ms>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms x-transition:leave.duration.300ms>
                         <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
                         <li class="menu__item">ARTICLES
                             <ul class="menu__list-articles">
@@ -47,9 +44,7 @@
                         </li>
                         <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
                         <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../en/about.html" class="menu__language__link">EN<img
-                                    src="../public/icones/language_icon.svg" alt="Site en anglais"
-                                    class="menu__language__icon"></a></li>
+                        <li class="menu__language"> <a href="../en/about.html" class="menu__language__link">EN<img src="../public/icones/language_icon.svg" alt="Site en anglais" class="menu__language__icon"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,31 +53,31 @@
                 <h4 class="header__pagetitle">À PROPOS</h4>
             </div>
         </header>
-        </div>
+    </div>
 
 
     <main>
         <section>
             <h1>À PROPOS</h1>
-            <h4>« La culture, c’est ce qui reste quand on a tout oublié. »</h4>
+            <h4>« La culture, c'est ce qui reste quand on a tout oublié. »</h4>
             <p>- Edouart Herriot</p>
             <img src="../public/img/me_about.webp">
         </section>
         <section>
             <h3>On se connait ?</h3>
-            <h4>Je m’appelle Lisa Cingolani et j’ai 20 ans. Actuellement étudiante, ce site web est un projet réalisé
-                dans le cadre de ma formation aux métiers du multimédia et de l’Internet.</h4>
+            <h4>Je m'appelle Lisa Cingolani et j'ai 20 ans. Actuellement étudiante, ce site web est un projet réalisé
+                dans le cadre de ma formation aux métiers du multimédia et de l'Internet.</h4>
             <h3>Quel but ?</h3>
-            <h4>Ce blog est destiné à la personne que je serai devenue dans quelques dizaines d’années. J’y ai exposé
+            <h4>Ce blog est destiné à la personne que je serai devenue dans quelques dizaines d'années. J'y ai exposé
                 des éléments culturels marquants et/ou inspirant à mes yeux.</h4>
             <h3>Pour aller plus loin ?</h3>
             <h4>Mind_Uploading.exe est un concept imaginé qui me semble correspondre à la problématique du sujet.
-                En effet, « Mind » en anglais signifie l’esprit et « Uploading » est un téléchargement vers un serveur.
+                En effet, « Mind » en anglais signifie l'esprit et « Uploading » est un téléchargement vers un serveur.
                 La terminaison « .exe » désigne un fichier exécutable, comme une application. Le principe est donc
                 simple. Grâce à un logiciel, on télécharge le contenu de son esprit à un instant donné, sa mémoire.
                 Puis ces informations sont exportées vers un serveur ou autre support de stockage.
-                Ainsi, nos souvenirs et pensées ne s’effacent pas et sont accessibles à tout moment.
-                C’est exactement ce que constitue ce blog, ma sauvegarde personnelle.</h4>
+                Ainsi, nos souvenirs et pensées ne s'effacent pas et sont accessibles à tout moment.
+                C'est exactement ce que constitue ce blog, ma sauvegarde personnelle.</h4>
             <h3>Bonne lecture
                 sur Mind_Uploading.exe ! </h3>
         </section>
@@ -91,7 +86,7 @@
     <footer class="footer">
         <h5 class="footer__text">Lisa Cingolani MM1 - A1</h5>
         <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-        <h5 class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
+        <h5 class="footer__text">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de
             Montbéliard</h5>
 
         <a href="http://mmimontbeliard.com">
@@ -105,4 +100,5 @@
         </a>
     </footer>
 </body>
+
 </html>

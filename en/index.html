@@ -2,63 +2,68 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Mind_Uploading.exe</title>
-        <link rel="stylesheet" href="../src/css/styles.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mind_Uploading.exe</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body class="background">
-        <div class="header">
-                <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-                    <div class="header__items">
-                        <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true">
-                            <img src="../public/icones/menu_icon.svg" alt="Menu">
-                        </button>
-                        <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                                alt="Logo Mind_Uploading.exe"></a>
-                        <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                            alt="Icône de la barre de recherche">
-                        <nav class="menu" id="mainNav" x-show="menuIsOpen">
-                            <div class="header__flextitles--menu">
-                                <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                                <h4 class="header__pagetitle--menu">MENU</h4>
-                            </div>
-                            <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                                x-transition:leave.duration.300ms>
-                                <li class="menu__item"><a href="index.html">HOME</a></li>
-                                <li class="menu__item">ARTICLES
-                                    <ul class="menu__list-articles">
-                                        <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS AND MEN</a></li>
-                                        <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE AND LONELINESS</a></li>
-                                        <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC HEART</a></li>
-                                        <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A MACHINE</a></li>
-                                        <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED GENERATION</a></li>
-                                        <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
-                                <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                                <li class="menu__language"> <a href="../fr/index.html" class="menu__language__link">FR<img
+    <div class="header">
+        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+            <div class="header__items">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true">
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                        alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche">
+                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <h4 class="header__pagetitle--menu">MENU</h4>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">HOME</a></li>
+                        <li class="menu__item">ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
+                                        AND MEN</a></li>
+                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE
+                                        AND LONELINESS</a></li>
+                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
+                                        HEART</a></li>
+                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
+                                        MACHINE</a></li>
+                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
+                                        GENERATION</a></li>
+                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
+                                        NETWORK'S IMPACT TODAY</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
+                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
+                        <li class="menu__language"> <a href="../fr/index.html" class="menu__language__link">FR<img
                                     src="../public/icones/language_icon.svg" alt="Site en anglais"
                                     class="menu__language__icon"></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header__flextitles">
-                        <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-                        <h4 class="header__pagetitle">HOME</h4>
-                    </div>
-                </header>
+                    </ul>
+                </nav>
             </div>
+            <div class="header__flextitles">
+                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                <h4 class="header__pagetitle">HOME</h4>
+            </div>
+        </header>
+    </div>
 
-<main>
+    <main>
         <article class="intro">
             <h1 class="intro__title">Welcome to Mind_Uploading.exe!</h1>
             <p class="intro__text">
-                Have you ever thought of creating your own time capsule? 
-                Personally, I chose to make one in the form of a website. 
+                Have you ever thought of creating your own time capsule?
+                Personally, I chose to make one in the form of a website.
                 Here, you will discover my universe through a few articles: book, film, music and more!
             </p>
         </article>
@@ -66,10 +71,12 @@
         <article class="mainarticle">
             <h3 class="mainarticle__title">BOOK</h3>
             <div class="mainarticle__block">
-                <img src="../public/img/preview/book.webp" alt="Couverture du livre Blade Runner"
+                <img src="../public/img/preview/book.webp" alt="Blade Runner book cover"
                     class="mainarticle__img">
                 <div class="mainarticle__text-btn">
-                    <p class="mainarticle__text">With Blade Runner, Philip K. Dick wrote one of the most influential books on Cyberpunk, a movement largely inspired by the dark atmosphere of the novel. Between reality, illusions and dystopia, this novel is a classic of SF literature.
+                    <p class="mainarticle__text">With Blade Runner, Philip K. Dick wrote one of the most influential
+                        books on Cyberpunk, a movement largely inspired by the dark atmosphere of the novel. Between
+                        reality, illusions and dystopia, this novel is a classic of SF literature.
                     </p>
                     <div class="mainarticle__button">
                         <!-- Bouton en cours de création, voir pr le mettre dans div avec texte ?-->
@@ -86,7 +93,8 @@
             <div class="articlecard__block">
                 <img class="articlecard__img" src="../public/img/preview/movie.webp" alt="Affiche du film Her">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">Her is an anticipation film that says a lot about human relations in the age of the all-connected.</p>
+                    <p class="articlecard__text">Her is an anticipation film that says a lot about human relations in
+                        the age of the all-connected.</p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
                         <a href="movie.html" class="articlecard__buttontext">READ MORE</a>
@@ -101,7 +109,8 @@
                 <img class="articlecard__img" src="../public/img/preview/song.webp"
                     alt="Titre de la chanson Game of Love des Daft Punk">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">Game of Love, a song by the Daft Punk, an iconic band of the electronic scene.</p>
+                    <p class="articlecard__text">Game of Love, a song by the Daft Punk, an iconic band of the electronic
+                        scene.</p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline"
                             alt="ligne du bouton « Lire la suite »">
@@ -117,7 +126,7 @@
                 <img class="articlecard__img" src="../public/img/preview/place.webp"
                     alt="La Cité Radieuse du Corbusier">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">Introducing the Cité Radieuse, an evocative name for a building... 
+                    <p class="articlecard__text">Introducing the Cité Radieuse, an evocative name for a building...
                         Head to Marseille for a guided tour!</p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
@@ -133,7 +142,8 @@
                 <img class="articlecard__img" src="../public/img/preview/hope.webp"
                     alt="Jeunes tenant des pancartes dans une manifestation">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">Generation Z is not lost! These utopians do not hesitate to defend their ideas and lauch social movements.</p>
+                    <p class="articlecard__text">Generation Z is not lost! These utopians do not hesitate to defend
+                        their ideas and lauch social movements.</p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
                         <a href="hope.html" class="articlecard__buttontext">READ MORE</a>
@@ -149,7 +159,8 @@
                 <img class="articlecard__img" src="../public/img/preview/regret.webp"
                     alt="Smartphone incrusté dans un cerveau qui saigne">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">In the digital age, networks have impacted our perception of the world, ourselves, and others.</p>
+                    <p class="articlecard__text">In the digital age, networks have impacted our perception of the world,
+                        ourselves, and others.</p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline">
                         <a href="regret.html" class="articlecard__buttontext">READ MORE</a>
@@ -166,7 +177,8 @@
                 class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
         </div>
         <div class="footer__blocks">
-            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</p>
+            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of
+                Montbéliard</p>
             <a href="http://mmimontbeliard.com" class="footer__logo">
                 <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
             </a>

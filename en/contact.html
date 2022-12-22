@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,17 @@
 </head>
 
 <body>
-</header>
-<div class="header">
+    </header>
+    <div class="header">
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" menu>
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
+                    aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
                 <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
                         alt="Logo Mind_Uploading.exe"></a>
-                <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                    alt="Icône de la barre de recherche">
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Icône de la barre de recherche">
                 <nav class="menu" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
                         <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
@@ -30,19 +31,25 @@
                         <li class="menu__item"><a href="index.html">HOME</a></li>
                         <li class="menu__item">ARTICLES
                             <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS AND MEN</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE AND LONELINESS</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC HEART</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED GENERATION</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL NETWORK'S IMPACT TODAY</a></li>
+                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
+                                        AND MEN</a></li>
+                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE
+                                        AND LONELINESS</a></li>
+                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
+                                        HEART</a></li>
+                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
+                                        MACHINE</a></li>
+                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
+                                        GENERATION</a></li>
+                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
+                                        NETWORK'S IMPACT TODAY</a></li>
                             </ul>
                         </li>
                         <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
                         <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
                         <li class="menu__language"> <a href="../fr/contact.html" class="menu__language__link">FR<img
-                            src="../public/icones/language_icon.svg" alt="Site en anglais"
-                            class="menu__language__icon"></a></li>
+                                    src="../public/icones/language_icon.svg" alt="Site en anglais"
+                                    class="menu__language__icon"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -53,47 +60,47 @@
         </header>
     </div>
     <h1>CONTACT</h1>
-<div class="form">
-    <form action="#">
-        <h5>First Name</h5>
-        <div>
-            <label for="first-name"></label>
-            <input placeholder="Type your first name here" type="text" name="First Name" id="first-name" required>
-        </div>
+    <div class="form">
+        <form action="#">
+            <h5>First Name</h5>
+            <div>
+                <label for="first-name"></label>
+                <input placeholder="Type your first name here" type="text" name="First Name" id="first-name" required>
+            </div>
 
-        <h5>Last Name</h5>
+            <h5>Last Name</h5>
 
-        <div>
-            <label for="last-name"></label>
-            <input placeholder="Type your last name here" type="text" name="Last Name" id="last-name" required>
-        </div>
-
-
-        <h5>E-mail Address</h5>
-
-        <div>
-            <label for="email"></label>
-            <input placeholder="Type your email adress here" type="email" name="E-mail Address" id="email" required>
-        </div>
+            <div>
+                <label for="last-name"></label>
+                <input placeholder="Type your last name here" type="text" name="Last Name" id="last-name" required>
+            </div>
 
 
-        <h5>Object</h5>
+            <h5>E-mail Address</h5>
 
-        <div>
-            <label for="object"></label>
-            <input placeholder="Type the object here" type="text" name="Object" id="object" required>
-        </div>
+            <div>
+                <label for="email"></label>
+                <input placeholder="Type your email adress here" type="email" name="E-mail Address" id="email" required>
+            </div>
 
 
-        <h5>Message</h5>
+            <h5>Object</h5>
 
-        <div>
-            <label for="message"></label>
-            <textarea placeholder="Type your message here" name="Message" id="message" rows="5" required></textarea>
-        </div>
-        <button class="form__button" title="Submit the form">SEND</button>
-    </form>
-</div>
+            <div>
+                <label for="object"></label>
+                <input placeholder="Type the object here" type="text" name="Object" id="object" required>
+            </div>
+
+
+            <h5>Message</h5>
+
+            <div>
+                <label for="message"></label>
+                <textarea placeholder="Type your message here" name="Message" id="message" rows="5" required></textarea>
+            </div>
+            <button class="form__button" title="Submit the form">SEND</button>
+        </form>
+    </div>
     <footer class="footer">
         <div class="footer__text">
             <p>Lisa Cingolani MM1 - A1</p>
@@ -101,7 +108,8 @@
                 class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
         </div>
         <div class="footer__blocks">
-            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of Montbéliard</p>
+            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of
+                Montbéliard</p>
             <a href="http://mmimontbeliard.com" class="footer__logo">
                 <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
             </a>
@@ -116,4 +124,5 @@
         </div>
     </footer>
 </body>
+
 </html>
