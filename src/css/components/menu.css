@@ -32,7 +32,7 @@ font-family: var(--font-bold);
   padding: 0px 15px;
 }
 
-.menu__item, .menu__item > a {
+.menu__item, .menu__item> a {
   color: var(--purple);
   font-size: var(--menu);
   margin: 35px 0px;

@@ -2,8 +2,8 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
@@ -14,13 +14,13 @@
     <div class="header">
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
                 <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
                         alt="Logo Mind_Uploading.exe"></a>
                 <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                    alt="Icône de la barre de recherche" />
+                    alt="Icône de la barre de recherche">
                 <nav class="menu" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
                         <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
