@@ -14,13 +14,13 @@
     <div class="header">
         <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" aria-controls="mainNav" aria-label="menu">
+                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
+                    aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Logo Mind_Uploading.exe"></a>
-                <img class="header__iconsb" src="../public/icones/search_icon.svg"
-                    alt="Icône de la barre de recherche">
+                <a href="index.html" class="header__logo">
+                    <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
                 <nav class="menu" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
                         <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
@@ -29,21 +29,36 @@
                     <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
                         x-transition:leave.duration.300ms>
                         <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
-                        <li class="menu__item">ARTICLES
+                        <li class="menu__item">
+                            ARTICLES
                             <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a></li>
+                                <li class="menu__article">
+                                    <a href="book.html" class="menu__article-link">► DES ANDROÏDES ET DES HOMMES</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a href="movie.html" class="menu__article-link">► ENTRE AMOUR ET SOLITUDE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a href="song.html" class="menu__article-link">► COEUR ÉLECTRONIQUE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a href="place.html" class="menu__article-link">► VIVRE DANS UNE MACHINE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a href="hope.html" class="menu__article-link">► UNE GÉNÉRATION ENGAGÉE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a href="regret.html" class="menu__article-link">► L'IMPACT DES RÉSEAUX SOCIAUX</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
-                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../en/index.html" class="menu__language__link">EN<img
-                            src="../public/icones/language_icon.svg" alt="Site en anglais"
-                            class="menu__language__icon"></a></li>
+                        <li class="menu__item"><a href="about.html">À PROPOS</a></li>
+                        <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu__language">
+                            <a href="../en/index.html" class="menu__language__link">EN<img
+                                    src="../public/icones/language_icon.svg" alt="Site en anglais"
+                                    class="menu__language__icon"></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -59,7 +74,8 @@
             <p class="intro__text">
                 Avez-vous déjà pensé à créer votre propre capsule temporelle ?
                 Personnellement, j'ai choisi d'en faire une sous forme de site web.
-                Ici, vous découvrirez mon univers à travers quelques articles : livre, film, musique et plus encore !
+                Ici, vous découvrirez mon univers à travers quelques articles : livre,
+                film, musique et plus encore !
             </p>
         </article>
 
@@ -69,19 +85,21 @@
                 <img src="../public/img/preview/book.webp" alt="Couverture du livre Blade Runner"
                     class="mainarticle__img">
                 <div class="mainarticle__text-btn">
-                    <p class="mainarticle__text">Philip K. Dick a écrit un des livres ayant eu le plus d'influence sur
-                        le
-                        Cyberpunk, mouvement largement
-                        inspiré de l'atmosphère sombre du roman. Entre réalité, illusions et dystopie, « Les Androïdes
-                        rêvent-ils de moutons électriques ? » se révèle être un classique de la littérature SF.
+                    <p class="mainarticle__text">
+                        Philip K. Dick a écrit un des livres ayant eu le plus d'influence
+                        sur le Cyberpunk, mouvement largement inspiré de l'atmosphère
+                        sombre du roman. Entre réalité, illusions et dystopie, « Les
+                        Androïdes rêvent-ils de moutons électriques ? » se révèle être un
+                        classique de la littérature SF.
                     </p>
                     <div class="mainarticle__button">
                         <!-- Bouton en cours de création, voir pr le mettre dans div avec texte ?-->
                         <img src="../public/icones/line_button.svg" class="mainarticle__buttonline" alt="">
-                        <a href="book.html" class="mainarticle__buttontext"> LIRE LA SUITE </a>
+                        <a href="book.html" class="mainarticle__buttontext">
+                            LIRE LA SUITE
+                        </a>
                     </div>
                 </div>
-
             </div>
         </article>
 
@@ -90,12 +108,15 @@
             <div class="articlecard__block">
                 <img class="articlecard__img" src="../public/img/preview/movie.webp" alt="Affiche du film Her">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">Her est un film d'anticipation qui en dit long sur les relations
-                        humaines
-                        à l'ère du tout-connecté.</p>
+                    <p class="articlecard__text">
+                        Her est un film d'anticipation qui en dit long sur les relations
+                        humaines à l'ère du tout-connecté.
+                    </p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
-                        <a href="movie.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                        <a href="movie.html" class="articlecard__buttontext">
+                            LIRE LA SUITE
+                        </a>
                     </div>
                 </div>
             </div>
@@ -107,12 +128,15 @@
                 <img class="articlecard__img" src="../public/img/preview/song.webp"
                     alt="Titre de la chanson Game of Love des Daft Punk">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">Game of Love, une chanson mélancolique des Daft Punk, un groupe
-                        iconique
-                        de la scène électronique.</p>
+                    <p class="articlecard__text">
+                        Game of Love, une chanson mélancolique des Daft Punk, un groupe
+                        iconique de la scène électronique.
+                    </p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
-                        <a href="song.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                        <a href="song.html" class="articlecard__buttontext">
+                            LIRE LA SUITE
+                        </a>
                     </div>
                 </div>
             </div>
@@ -122,14 +146,17 @@
             <h3 class="articlecard__title">LIEU</h3>
             <div class="articlecard__block">
                 <img class="articlecard__img" src="../public/img/preview/place.webp"
-                    alt="La Cité Radieuse du Corbusier">
+                    alt="La Cité Radieuse de Le Corbusier">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">La Cité Radieuse, un bâtiment au nom évocateur… <br>Direction Marseille
-                        pour
-                        une visite guidée !</p>
+                    <p class="articlecard__text">
+                        La Cité Radieuse, un bâtiment au nom évocateur… <br>Direction
+                        Marseille pour une visite guidée !
+                    </p>
                     <div class="articlecard__button">
-                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline"  alt="">
-                        <a href="place.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                        <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
+                        <a href="place.html" class="articlecard__buttontext">
+                            LIRE LA SUITE
+                        </a>
                     </div>
                 </div>
             </div>
@@ -141,17 +168,19 @@
                 <img class="articlecard__img" src="../public/img/preview/hope.webp"
                     alt="Jeunes tenant des pancartes dans une manifestation">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">La génération Z n'est pas perdue ! Ces utopistes n'hésitent pas à
-                        défendre
-                        leurs idées.</p>
+                    <p class="articlecard__text">
+                        La génération Z n'est pas perdue ! Ces utopistes n'hésitent pas à
+                        défendre leurs idées.
+                    </p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
-                        <a href="hope.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                        <a href="hope.html" class="articlecard__buttontext">
+                            LIRE LA SUITE
+                        </a>
                     </div>
                 </div>
             </div>
         </article>
-
 
         <article class="articlecard">
             <h3 class="articlecard__title">REGRET</h3>
@@ -159,16 +188,19 @@
                 <img class="articlecard__img" src="../public/img/preview/regret.webp"
                     alt="Smartphone incrusté dans un cerveau qui saigne">
                 <div class="articlecard__text-btn">
-                    <p class="articlecard__text">À l'ère du numérique, quel impact ont les réseaux sociaux sur notre
-                        perception du monde et de nous-même&nbsp;?</p>
+                    <p class="articlecard__text">
+                        À l'ère du numérique, quel impact ont les réseaux sociaux sur
+                        notre perception du monde et de nous-même&nbsp;?
+                    </p>
                     <div class="articlecard__button">
                         <img src="../public/icones/line_button.svg" class="articlecard__buttonline" alt="">
-                        <a href="regret.html" class="articlecard__buttontext"> LIRE LA SUITE </a>
+                        <a href="regret.html" class="articlecard__buttontext">
+                            LIRE LA SUITE
+                        </a>
                     </div>
                 </div>
             </div>
         </article>
-
     </main>
     <footer class="footer">
         <div class="footer__text">
@@ -177,20 +209,21 @@
                 class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
         </div>
         <div class="footer__blocks">
-            <p class="footer__legal">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de
-                Montbéliard</p>
+            <p class="footer__legal">
+                Projet réalisé dans le cadre d'un exercice pédagogique au département
+                MMI de Montbéliard
+            </p>
             <a href="http://mmimontbeliard.com" class="footer__logo">
                 <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
             </a>
             <nav class="footer__btn">
-                <a href="about.html" class="footer__btn-item">À PROPOS
-                </a>
-                <a href="contact.html" class="footer__btn-item">CONTACT
-                </a>
+                <a href="about.html" class="footer__btn-item">À PROPOS </a>
+                <a href="contact.html" class="footer__btn-item">CONTACT </a>
                 <a href="otherprojects.html" class="footer__btn-item">AUTRES PROJETS
                 </a>
             </nav>
         </div>
     </footer>
 </body>
+
 </html>
