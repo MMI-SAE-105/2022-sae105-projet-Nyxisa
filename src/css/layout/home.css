@@ -2,6 +2,7 @@
     background-image: url(/public/img/background_home.webp);
     background-repeat: no-repeat;
     background-attachment:fixed;
+    width: 100%;
     top: 0;
     left: 0;
     background-size: cover;
