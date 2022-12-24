@@ -12,7 +12,7 @@
 
 <body>
     <div class="header">
-        <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+        <header x-data="{menuIsOpen : false}">
             <div class="header__items">
                 <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
                     aria-controls="mainNav" aria-label="menu">
@@ -21,7 +21,7 @@
                 <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
                         alt="Logo Mind_Uploading.exe"></a>
                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
-                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
                         <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
                         <h4 class="header__pagetitle--menu">MENU</h4>
@@ -47,9 +47,12 @@
                         </li>
                         <li class="menu__item"> <a href="about.html">À PROPOS</a> </li>
                         <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../en/timeline.html" class="menu__language__link">EN<img
-                                    src="../public/icones/language_icon.svg" alt="Site en anglais"
-                                    class="menu__language__icon"></a></li>
+                        <li class="menu__language">
+                            <a href="../en/timeline.html" class="menu__language__link">EN
+                                <img src="../public/icones/language_icon.svg" alt="Site en anglais"
+                                    class="menu__language__icon">
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

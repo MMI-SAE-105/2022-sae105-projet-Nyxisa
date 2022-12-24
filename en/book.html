@@ -13,39 +13,53 @@
 <body>
         </header>
         <div class="header">
-                <header x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+                <header x-data="{menuIsOpen : false}">
                         <div class="header__items">
-                                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true" aria-controls="mainNav" aria-label="menu">
+                                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
+                                        aria-controls="mainNav" aria-label="menu">
                                         <img src="../public/icones/menu_icon.svg" alt="Menu">
                                 </button>
-                                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe Logo"></a>
+                                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                                                alt="Mind_Uploading.exe Logo"></a>
                                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Search">
-                                <nav class="menu" id="mainNav" x-show="menuIsOpen">
+                                <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                                         <div class="header__flextitles--menu">
-                                                <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                                                <a class="header__maintitle--menu"
+                                                        href="index.html">Mind_Uploading.exe</a>
                                                 <h4 class="header__pagetitle--menu">MENU</h4>
                                         </div>
-                                        <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms x-transition:leave.duration.300ms>
+                                        <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                                                x-transition:leave.duration.300ms>
                                                 <li class="menu__item"><a href="index.html">HOME</a></li>
                                                 <li class="menu__item">ARTICLES
                                                         <ul class="menu__list-articles">
-                                                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
+                                                                <li class="menu__article"><a href="book.html"
+                                                                                class="menu__article-link">► OF ANDROIDS
                                                                                 AND MEN</a></li>
-                                                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN
+                                                                <li class="menu__article"><a href="movie.html"
+                                                                                class="menu__article-link">► BETWEEN
                                                                                 LOVE AND LONELINESS</a></li>
-                                                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
+                                                                <li class="menu__article"><a href="song.html"
+                                                                                class="menu__article-link">► ELECTRONIC
                                                                                 HEART</a></li>
-                                                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
+                                                                <li class="menu__article"><a href="place.html"
+                                                                                class="menu__article-link">► LIVING IN A
                                                                                 MACHINE</a></li>
-                                                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
+                                                                <li class="menu__article"><a href="hope.html"
+                                                                                class="menu__article-link">► A COMMITTED
                                                                                 GENERATION</a></li>
-                                                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
+                                                                <li class="menu__article"><a href="regret.html"
+                                                                                class="menu__article-link">► SOCIAL
                                                                                 NETWORK'S IMPACT TODAY</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
                                                 <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                                                <li class="menu__language"> <a href="../fr/book.html" class="menu__language__link">FR<img src="../public/icones/language_icon.svg" alt="Website in French" class="menu__language__icon"></a>
+                                                <li class="menu__language"> <a href="../fr/book.html"
+                                                                class="menu__language__link">FR<img
+                                                                        src="../public/icones/language_icon.svg"
+                                                                        alt="Website in French"
+                                                                        class="menu__language__icon"></a>
                                                 </li>
                                         </ul>
                                 </nav>
@@ -68,7 +82,8 @@
                                 depicted there is much more futuristic than the actual one we live in.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/book/univers.webp" alt="Man standing in a futuristic world surrounded by two flying cars">
+                                <img src="../public/img/articles/book/univers.webp"
+                                        alt="Man standing in a futuristic world surrounded by two flying cars">
                                 <figcaption>Book's universe</figcaption>
                         </figure>
 
@@ -79,7 +94,8 @@
                                 human.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/book/rachael.webp" alt="Illustration of a young woman holding a firearm in a dark city">
+                                <img src="../public/img/articles/book/rachael.webp"
+                                        alt="Illustration of a young woman holding a firearm in a dark city">
                                 <figcaption>Rachael Rosen, an android</figcaption>
                         </figure>
                         <p> The few individuals left on earth may at any time be declared “special”.
@@ -106,7 +122,8 @@
                                 reality.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/book/rick.webp" alt="Man under the rain with buildings behind. He's standing next to a flying car and pointing a gun in front of him">
+                                <img src="../public/img/articles/book/rick.webp"
+                                        alt="Man under the rain with buildings behind. He's standing next to a flying car and pointing a gun in front of him">
                                 <figcaption>Rick Deckard and his Spinner (a flying car)</figcaption>
                         </figure>
 
@@ -117,7 +134,8 @@
                                 There are two ways to do this, which we will see below.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/book/test.webp" alt="Complex measure instrument with a screen displaying an eye">
+                                <img src="../public/img/articles/book/test.webp"
+                                        alt="Complex measure instrument with a screen displaying an eye">
                                 <figcaption>Voight-Kampff test</figcaption>
                         </figure>
                         <h3>► Mercerism</h3>
@@ -127,7 +145,8 @@
                                 empathy.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/book/boite.webp" alt="Two arms holding a rectangular box equipped with handles and a touchscreen">
+                                <img src="../public/img/articles/book/boite.webp"
+                                        alt="Two arms holding a rectangular box equipped with handles and a touchscreen">
                                 <figcaption>Empathy box made by Sophia Brueckner, 2014.</figcaption>
                         </figure>
                         <p>Rick is brought to ask himself many existential questions, as this extract on pages 160-161
@@ -150,7 +169,8 @@
                                 simulation.</q>
                         </blockquote>
                         <figure>
-                                <img src="../public/img/articles/book/mouton.webp" alt="Two sheep on a roof under the rain, with a human silhouette in the background">
+                                <img src="../public/img/articles/book/mouton.webp"
+                                        alt="Two sheep on a roof under the rain, with a human silhouette in the background">
                                 <figcaption>Electric sheep on a building roof</figcaption>
                         </figure>
 
@@ -170,7 +190,8 @@
                         </p>
                         </p>
                         <figure>
-                                <img src="../public/img/articles/book/sydney.webp" alt="Hands holding a catalogue which features a birds’ illustration">
+                                <img src="../public/img/articles/book/sydney.webp"
+                                        alt="Hands holding a catalogue which features a birds’ illustration">
                                 <figcaption>The Sydney's catalogue</figcaption>
                         </figure>
                         <blockquote>If I could have another lucky break in my job.
@@ -190,7 +211,8 @@
                                 Holden, would have to die or retire.
                         </blockquote>
                         <figure>
-                                <img src="../public/img/articles/book/toit.webp" alt="A man and an android woman face to face on a roof at night, with colored lights in the background">
+                                <img src="../public/img/articles/book/toit.webp"
+                                        alt="A man and an android woman face to face on a roof at night, with colored lights in the background">
                                 <figcaption>Android & human</figcaption>
                         </figure>
 
@@ -202,13 +224,15 @@
                 <footer class="footer">
                         <div class="footer__text">
                                 <p>Lisa Cingolani MM1 - A1</p>
-                                <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr" class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
+                                <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
+                                        class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
                         </div>
                         <div class="footer__blocks">
                                 <p class="footer__legal">Project carried out as part of a pedagogical exercise in the
                                         MMI department of Montbéliard</p>
                                 <a href="http://mmimontbeliard.com" class="footer__logo">
-                                        <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Montbéliard MMI Department Logo">
+                                        <img src="../public/icones/mmi_logo.svg" class="footer__logo"
+                                                alt="Montbéliard MMI Department Logo">
                                 </a>
                                 <nav class="footer__btn">
                                         <a href="about.html" class="footer__btn-item">ABOUT
