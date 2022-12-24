@@ -73,3 +73,36 @@ blockquote::before {
 blockquote::after {
     content:close-quote;
 }
+
+.bottom-line {
+    border-top: 1px solid var(--white);
+    margin: 50px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share {
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+.share__text {
+    font-family: var(--font-bold);
+    font-size: var(--button);
+
+}
+
+.scroll-top {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+.scroll-top__img {
+    width: 30px;
+}
