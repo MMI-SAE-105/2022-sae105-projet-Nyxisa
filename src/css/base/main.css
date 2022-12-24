@@ -1,29 +1,31 @@
 /* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
-  font-weight: 300;
+  font-size: var(--body);
+  font-weight: var(--light);
   font-family: var(--font-sans-serif);
   color: var(--white);
   background-color: var(--black);
   text-decoration: none;
   line-height: 1.15;
 }
+
 /* Les règles typographiques générales des titres */
 h1 {
-font-family: var(--font-bold) ;
-text-transform: uppercase;
-font-size: var(--h1);
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+  font-size: var(--h1);
 }
 
 h2 {
   font-family: var(--font-sans-serif);
   font-size: var(--h2);
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 h3 {
   font-family: var(--font-sans-serif);
   font-size: var(--h3);
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 /* permet d'annuler la mise en forme des boutons qu'applique le navigateur. */

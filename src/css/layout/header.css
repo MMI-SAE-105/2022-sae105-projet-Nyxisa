@@ -26,6 +26,7 @@
 .header__iconsb {
   padding: 5px;
   margin: 30px 10px 5px;
+  height: 100%;
 }
 
 .header__flextitles {
