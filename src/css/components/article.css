@@ -33,6 +33,13 @@
     text-indent: 1em;
 }
 
+.article__text__list {
+margin-bottom: 1em;
+}
+.article__text__list > li {
+    list-style: disc;
+}
+
 .article__img {
     margin: 30px 0px;
     border-radius: 15px;
