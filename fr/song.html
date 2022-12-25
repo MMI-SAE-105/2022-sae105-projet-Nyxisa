@@ -16,10 +16,10 @@
                         <div class="header__items">
                                 <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
                                         aria-controls="mainNav" aria-label="menu">
-                                        <img src="../public/icones/menu_icon.svg" alt="Menu">
+                                        <img class="visual__img" src="../public/icones/menu_icon.svg" alt="Menu">
                                 </button>
-                                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                                                alt="Logo Mind_Uploading.exe"></a>
+                                <a href="index.html" class="header__logo"> <img class="visual__img"
+                                                src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
                                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
                                 <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                                         <div class="header__flextitles--menu">
@@ -69,87 +69,110 @@
                 </header>
         </div>
         <main>
-                <img src="../public/img/articles/song/mainpic.webp"
-                        alt="Game Of Love en typographie manuscrite blanche sur fond noir">
-                <h5>Temps de lecture : 2 minutes</h5>
-                <section>
-                        <h1>CŒUR ÉLECTRONIQUE</h1>
-                        <p>Game of Love est sortie en 2013, avec l'album Random Access Memories.
+                <div class="visual">
+                        <img class="visual__img" src="../public/img/articles/song/mainpic.webp"
+                                alt="Game Of Love en typographie manuscrite blanche sur fond noir">
+                        <span class="visual__reading-time">Temps de lecture : 2 minutes</h5>
+                </div>
+                <section class="article">
+                        <h1 class="article__main-title">CŒUR ÉLECTRONIQUE</h1>
+                        <p class="article__text">Game of Love est sortie en 2013, avec l'album Random Access Memories.
                         </p>
-                        <h2>Un duo iconique</h2>
-                        <p> Daft Punk est un groupe de musique électro français composé de deux membres.
-                                Ils ont commencé la musique en 1993 et sont célèbres dans le monde entier depuis 1995.
-                                Ils sont connus pour ne pas montrer leur visage, en portant des casques inspirés du film
+                        <h2 class="article__title-h2">Un duo iconique</h2>
+                        <p class="article__text"> Daft Punk est un groupe de musique électro français composé de deux
+                                membres.
+                                Ils ont commencé la musique en 1993 et sont célèbres dans le monde entier depuis
+                                1995.
+                                Ils sont connus pour ne pas montrer leur visage, en portant des casques inspirés
+                                du film
                                 «
                                 Phantom of the Paradise » (réalisé par Brian de Palma).
                                 Cela les fait ressembler à des robots, l'un est argenté et l'autre est doré.
                                 L'album Random Access Memories est leur plus grand succès.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/song/cover.webp"
+                                <img class="visual__img" src="../public/img/articles/song/cover.webp"
                                         alt="Deux moitiés de casque futuristes assemblées, avec le titre de l'album « Random Access Memories »">
-                                <figcaption>La pochette de l'album</figcaption>
+                                <figcaption class="article__figure-legend">La pochette de l'album</figcaption>
                         </figure>
-                        <h2>Le parallèle entre humain et robot</h2>
-                        <p> Le nom de l'album vient de l'acronyme RAM (Random Access Memory) qui signifie mémoire vive.
+                        <h2 class="article__title-h2">Le parallèle entre humain et robot</h2>
+                        <p class="article__text"> Le nom de l'album vient de l'acronyme RAM (Random Access Memory) qui
+                                signifie
+                                mémoire vive.
                                 Cela désigne la mémoire des ordinateurs.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/song/chip.webp"
+                                <img class="visual__img" src="../public/img/articles/song/chip.webp"
                                         alt="Une barrette de RAM tenue par une main">
-                                <figcaption>Une barrette de RAM</figcaption>
+                                <figcaption class="article__figure-legend">Une barrette de RAM</figcaption>
                         </figure>
-                        <p>En effet, les Daft Punk pensent qu'il existe des similitudes entre un disque dur et le
+                        <p class="article__text">En effet, les Daft Punk pensent qu'il existe des similitudes entre un
+                                disque dur et
+                                le
                                 cerveau
                                 humain.
-                                Dans Game of Love, l'utilisation de vocodeurs donne l'impression que c'est un véritable
+                                Dans Game of Love, l'utilisation de vocodeurs donne l'impression que c'est un
+                                véritable
                                 robot
                                 qui chante.
-                                La chanson parle d'un amour perdu, et même si c'est un androïde qui chante, on peut
+                                La chanson parle d'un amour perdu, et même si c'est un androïde qui chante, on
+                                peut
                                 sentir la
                                 douleur dans sa voix.
-                                Le groupe avait pour intention de produire des voix robotiques qui véhiculent tout de
+                                Le groupe avait pour intention de produire des voix robotiques qui véhiculent
+                                tout de
                                 même des
                                 émotions.
                         </p>
-                        <h2>Les artistes et l'AutoTune</h2>
-                        <p>
-                                <q> Il y a ce truc aujourd'hui où la voix humaine enregistrée est traitée pour avoir
+                        <h2 class="article__title-h2">Les artistes et l'AutoTune</h2>
+                        <p class="article__text">
+                                <q class="article__quote"> Il y a ce truc aujourd'hui où la voix humaine enregistrée est
+                                        traitée pour
+                                        avoir
                                         l'air
                                         robotique. </q>
                                 - Thomas Bangalter (le Daft Punk argenté)
                         </p>
-                        <p> Ici, Bangalter parle de l'utilisation massive de l'Autotune dans l'industrie musicale. C'est
+                        <p class="article__text"> Ici, Bangalter parle de l'utilisation massive de l'Autotune dans
+                                l'industrie
+                                musicale. C'est
                                 un
-                                effet utilisé à l'origine pour corriger les fausses notes. Mais désormais, la majorité
+                                effet utilisé à l'origine pour corriger les fausses notes. Mais désormais, la
+                                majorité
                                 des
-                                chanteurs l'utilisent, notamment les rappeurs. Il a été utilisé pour la première fois en
+                                chanteurs l'utilisent, notamment les rappeurs. Il a été utilisé pour la première
+                                fois en
                                 1998
                                 dans Believe de la chanteuse américaine Cher.
-                                L'Autotune donne un effet métallisé à la voix que l'on peut qualifier de robotique si
+                                L'Autotune donne un effet métallisé à la voix que l'on peut qualifier de
+                                robotique si
                                 l'effet
                                 est poussé.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/song/autotune.webp"
+                                <img class="visual__img" src="../public/img/articles/song/autotune.webp"
                                         alt="Interface du logiciel Autotune, touches de piano et boutons réglables sur fond gris foncé">
-                                <figcaption>Le logiciel AutoTune</figcaption>
+                                <figcaption class="article__figure-legend">Le logiciel AutoTune</figcaption>
                         </figure>
-                        <p> Cette chanson soulève également la question suivante : les robots peuvent-ils avoir le cœur
+                        <p class="article__text"> Cette chanson soulève également la question suivante : les robots
+                                peuvent-ils avoir
+                                le cœur
                                 brisé
                                 alors qu'ils sont censés n'être que des machines ?
-                                L'instrumentale est plutôt tranquille, mais l'intonation de la voix et les paroles lui
+                                L'instrumentale est plutôt tranquille, mais l'intonation de la voix et les
+                                paroles lui
                                 ajoutent un sentiment nostalgique et triste.
                         </p>
                         <figure>
-                                <img src="../public/img/articles/song/concert.webp"
+                                <img class="visual__img" src="../public/img/articles/song/concert.webp"
                                         alt="Les Daft Punk en costard cravate scintillants sous une lumière bleue">
-                                <figcaption>Les Daft Punk pendant un concert</figcaption>
+                                <figcaption class="article__figure-legend">Les Daft Punk pendant un concert</figcaption>
                         </figure>
-                        <h2>Mon conseil</h2>
-                        <p>Personnellement, j'ai toujours aimé Daft Punk.
+                        <h2 class="article__title-h2">Mon conseil</h2>
+                        <p class="article__text">Personnellement, j'ai toujours aimé Daft Punk.
                                 Random Access Memories est l'un des premiers CD que j'ai acheté.
-                                Toutes les musiques de cet album (et même la discographie complète des Daft Punk) sont à
+                                Toutes les musiques de cet album (et même la discographie complète des Daft
+                                Punk) sont à
                                 écouter.
                         </p>
                         <video controls="" src="https://medias.lisa-cingolani.fr/music_video.mp4"></video>
@@ -159,11 +182,11 @@
                         <div class="share">
                                 <p class="share__text">PARTAGER SUR</p>
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://minduploadingexe.lisa-cingolani.fr/fr/song.html"
-                                        class="share__link"><img src="../public/icones/facebook_icon.svg"
-                                                alt="Logo Facebook"></a>
+                                        class="share__link"><img class="visual__img"
+                                                src="../public/icones/facebook_icon.svg" alt="Logo Facebook"></a>
                                 <a href="https://twitter.com/intent/tweet?url=https://minduploadingexe.lisa-cingolani.fr/fr/song.html&text=C%C5%93ur%20%C3%89lectronique%20-%20Mind_Uploading.exe"
-                                        class="share__link"><img src="../public/icones/twitter_icon.svg"
-                                                alt="Logo Twitter"></a>
+                                        class="share__link"><img class="visual__img"
+                                                src="../public/icones/twitter_icon.svg" alt="Logo Twitter"></a>
                         </div>
                         <div class="scroll-top">
                                 <a href="#top"><img class="scroll-top__img" src="/public/icones/top_icon.svg"
@@ -174,7 +197,7 @@
         </main>
         <footer class="footer">
                 <div class="footer__text">
-                        <p>Lisa Cingolani MM1 - A1</p>
+                        <p class="article__text">Lisa Cingolani MM1 - A1</p>
                         <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
                                 class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
                 </div>
@@ -184,7 +207,7 @@
                                 MMI de Montbéliard
                         </p>
                         <a href="http://mmimontbeliard.com" class="footer__logo">
-                                <img src="../public/icones/mmi_logo.svg" class="footer__logo"
+                                <img class="visual__img" src="../public/icones/mmi_logo.svg" class="footer__logo"
                                         alt="Logo du département MMI Montbéliard">
                         </a>
                         <nav class="footer__nav">
