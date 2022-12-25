@@ -6,7 +6,9 @@
 
 .visual__img {
     border-radius: 15% 0% 0% 15%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
 }
 
 .visual__reading-time {
@@ -76,12 +78,12 @@ blockquote::before {
 }
 
 blockquote::after {
-    content:close-quote;
+    content: close-quote;
 }
 
 .bottom-line {
     border-top: 1px solid var(--white);
-    margin: 50px 25px;
+    margin: 25px 25px;
     display: flex;
     justify-content: space-between;
 }

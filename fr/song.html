@@ -16,10 +16,10 @@
                         <div class="header__items">
                                 <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
                                         aria-controls="mainNav" aria-label="menu">
-                                        <img class="visual__img" src="../public/icones/menu_icon.svg" alt="Menu">
+                                        <img src="../public/icones/menu_icon.svg" alt="Menu">
                                 </button>
-                                <a href="index.html" class="header__logo"> <img class="visual__img"
-                                                src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
+                                                alt="Logo Mind_Uploading.exe"></a>
                                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
                                 <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                                         <div class="header__flextitles--menu">
@@ -91,7 +91,7 @@
                                 L'album Random Access Memories est leur plus grand succès.
                         </p>
                         <figure>
-                                <img class="visual__img" src="../public/img/articles/song/cover.webp"
+                                <img class="article__figure-img" src="../public/img/articles/song/cover.webp"
                                         alt="Deux moitiés de casque futuristes assemblées, avec le titre de l'album « Random Access Memories »">
                                 <figcaption class="article__figure-legend">La pochette de l'album</figcaption>
                         </figure>
@@ -102,7 +102,7 @@
                                 Cela désigne la mémoire des ordinateurs.
                         </p>
                         <figure>
-                                <img class="visual__img" src="../public/img/articles/song/chip.webp"
+                                <img class="article__figure-img" src="../public/img/articles/song/chip.webp"
                                         alt="Une barrette de RAM tenue par une main">
                                 <figcaption class="article__figure-legend">Une barrette de RAM</figcaption>
                         </figure>
@@ -126,8 +126,7 @@
                         </p>
                         <h2 class="article__title-h2">Les artistes et l'AutoTune</h2>
                         <p class="article__text">
-                                <q class="article__quote"> Il y a ce truc aujourd'hui où la voix humaine enregistrée est
-                                        traitée pour
+                                <q> Il y a ce truc aujourd'hui où la voix humaine enregistrée est traitée pour
                                         avoir
                                         l'air
                                         robotique. </q>
@@ -150,7 +149,7 @@
                                 est poussé.
                         </p>
                         <figure>
-                                <img class="visual__img" src="../public/img/articles/song/autotune.webp"
+                                <img class="article__figure-img" src="../public/img/articles/song/autotune.webp"
                                         alt="Interface du logiciel Autotune, touches de piano et boutons réglables sur fond gris foncé">
                                 <figcaption class="article__figure-legend">Le logiciel AutoTune</figcaption>
                         </figure>
@@ -164,7 +163,7 @@
                                 ajoutent un sentiment nostalgique et triste.
                         </p>
                         <figure>
-                                <img class="visual__img" src="../public/img/articles/song/concert.webp"
+                                <img class="article__figure-img" src="../public/img/articles/song/concert.webp"
                                         alt="Les Daft Punk en costard cravate scintillants sous une lumière bleue">
                                 <figcaption class="article__figure-legend">Les Daft Punk pendant un concert</figcaption>
                         </figure>
@@ -177,22 +176,22 @@
                         </p>
                         <video controls="" src="https://medias.lisa-cingolani.fr/music_video.mp4"></video>
                         <a href="https://www.youtube.com/watch?v=ajGKWk0auOc">ÉCOUTER LA MUSIQUE</a>
-                </section>
-                <div class="bottom-line">
-                        <div class="share">
-                                <p class="share__text">PARTAGER SUR</p>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://minduploadingexe.lisa-cingolani.fr/fr/song.html"
-                                        class="share__link"><img class="visual__img"
-                                                src="../public/icones/facebook_icon.svg" alt="Logo Facebook"></a>
-                                <a href="https://twitter.com/intent/tweet?url=https://minduploadingexe.lisa-cingolani.fr/fr/song.html&text=C%C5%93ur%20%C3%89lectronique%20-%20Mind_Uploading.exe"
-                                        class="share__link"><img class="visual__img"
-                                                src="../public/icones/twitter_icon.svg" alt="Logo Twitter"></a>
-                        </div>
-                        <div class="scroll-top">
-                                <a href="#top"><img class="scroll-top__img" src="/public/icones/top_icon.svg"
-                                                alt="Retourner en haut de la page"></a>
-                        </div>
                         </section>
+                        <div class="bottom-line">
+                                <div class="share">
+                                        <p class="share__text">PARTAGER SUR</p>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://minduploadingexe.lisa-cingolani.fr/fr/song.html"
+                                                class="share__link"><img src="../public/icones/facebook_icon.svg"
+                                                        alt="Logo Facebook"></a>
+                                        <a href="https://twitter.com/intent/tweet?url=https://minduploadingexe.lisa-cingolani.fr/fr/song.html&text=C%C5%93ur%20%C3%89lectronique%20-%20Mind_Uploading.exe"
+                                                class="share__link"><img src="../public/icones/twitter_icon.svg"
+                                                        alt="Logo Twitter"></a>
+                                </div>
+                                <div class="scroll-top">
+                                        <a href="#top"><img class="scroll-top__img" src="/public/icones/top_icon.svg"
+                                                        alt="Retourner en haut de la page"></a>
+                                </div>
+                                </section>
 
         </main>
         <footer class="footer">
@@ -207,7 +206,7 @@
                                 MMI de Montbéliard
                         </p>
                         <a href="http://mmimontbeliard.com" class="footer__logo">
-                                <img class="visual__img" src="../public/icones/mmi_logo.svg" class="footer__logo"
+                                <img src="../public/icones/mmi_logo.svg" class="footer__logo"
                                         alt="Logo du département MMI Montbéliard">
                         </a>
                         <nav class="footer__nav">
