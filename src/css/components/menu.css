@@ -3,7 +3,8 @@
   top: 80px;
   left: 0;
   width: 100%;
-  height:calc(100% - 80px); /* nécessité car top: 80px */
+  height: calc(100% - 80px);
+  /* nécessité car top= 80px */
   background: var(--black);
   text-decoration: none;
   z-index: 2;
@@ -11,6 +12,15 @@
 
 .menu__scroll {
   overflow: scroll;
+}
+
+.menu__scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.menu__scroll::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 15px;
 }
 
 .header__menubtn {
