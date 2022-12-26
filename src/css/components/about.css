@@ -1,0 +1,56 @@
+.about {
+    margin: 8%;
+}
+
+.about__visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.about__visual__text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.about__visual__img {
+    width: 50%;
+}
+
+.about__main-title {
+    color: var(--white);
+    line-height: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.about__quote {
+    color: var(--green);
+    font-weight: var(--semi-bold);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.about__quote-caption {
+    font-weight: var(--semi-bold);
+    font-size: 0.625rem;
+}
+
+.about__title-h2 {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.about__text {
+    margin-bottom: 1em;
+    text-indent: 1em;
+}
+
+.about__gradient {
+    background-image:linear-gradient(to bottom, var(--black), #222222);
+    border-radius: 15px;
+    padding: 0 25px;
+    padding-bottom: 1rem;
+}
