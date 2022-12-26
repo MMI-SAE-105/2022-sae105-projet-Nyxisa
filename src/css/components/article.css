@@ -1,25 +1,33 @@
 .visual {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+}
+
+.visual__size {
     width: 95%;
     margin-top: 30px;
-    margin-left: 5%;
+    margin-left: auto;
 }
 
 .visual__img {
     border-radius: 15% 0% 0% 15%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-top: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
+    display: block;
+    margin-left: auto;
 }
 
 .visual__reading-time {
     font-size: var(--small-text);
     font-weight: var(--semi-bold);
     text-transform: uppercase;
-    margin: 10px;
+    margin: 8%;
 }
 
 .article {
-    margin: 30px;
+    margin: 8%;
 }
 
 .article__main-title {
@@ -47,6 +55,7 @@ margin-bottom: 1em;
 
 figure {
     margin: 30px 0px;
+    width: fit-content;
 }
 
 .article__figure-img {
