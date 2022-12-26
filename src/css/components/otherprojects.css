@@ -1,10 +1,24 @@
-.page-title {}
+.other-projects {
+    margin: 30px 10%;
+}
 
-.other-projects__text {}
+.other-projects__text {
+    font-family: var(--font-sans-serif);
+    font-size: var(--h2);
+    font-weight: var(--bold);
+    margin-bottom: 1rem;
+}
 
-.other-projects_list {}
+.other-projects__list {
+    padding: 0;
+    margin-bottom: 1rem;
+}
 
-.other-projects__item {}
+.other-projects__item {
+    font-family: var(--font-sans-serif);
+        font-size: var(--h3);
+        font-weight: var(--regular);
+}
 
 .laserbeam {
     background-color: var(--black);

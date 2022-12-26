@@ -58,6 +58,15 @@ a {
   margin: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
+.page-margin {
+  margin: 40px 10%;
+}
+
 .page-title {
-  margin: 40px;
+  margin-bottom: 30px;
+  color: var(--white);
 }

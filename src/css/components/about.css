@@ -1,5 +1,5 @@
 .about {
-    margin: 10%;
+    margin: 30px 10%;
 }
 
 .about__visual {
@@ -20,13 +20,6 @@
     margin: 0;
 }
 
-.about__main-title {
-    color: var(--white);
-    line-height: 2rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
 .about__quote {
     color: var(--green);
     font-weight: var(--semi-bold);
@@ -45,7 +38,7 @@
 }
 
 .about__text {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     text-indent: 1em;
 }
 
