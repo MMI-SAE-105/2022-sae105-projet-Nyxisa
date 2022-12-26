@@ -13,12 +13,12 @@
 }
 
 .mainarticle__block {
-    margin: -20px 0px 0px 15px;
-    max-width: 360px;
+    margin: -20px 0 0 4%;
+    max-width: 96%;
     background-color: var(--black);
     padding: 20px;
     border-radius:25px 0px 0px 25px;
-    width: 100%;
+    display: flex;
 }
 
 .mainarticle__img {
@@ -26,7 +26,7 @@
     height: 30%;
     border-radius: 15%;
     float: left;
-    margin-right: 10px;
+    margin-right: 3.75%;
 }
 
 .mainarticle__text-btn {
