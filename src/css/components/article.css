@@ -42,9 +42,10 @@
 }
 
 .article__text__list {
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
-.article__text__list > li {
+
+.article__text__list>li {
     list-style: disc;
 }
 
@@ -78,9 +79,9 @@ margin-bottom: 1rem;
     margin: 2rem auto;
 }
 
-.article__quote-block > figcaption {
+.article__quote-block>figcaption {
     text-align: right;
-} 
+}
 
 .article__quote {
     display: block;
@@ -145,4 +146,19 @@ blockquote::after {
 
 .scroll-top__img {
     width: 30px;
+}
+
+.article__btn {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.article__btn-link {
+    font-family: var(--font-bold);
+    font-size: var(--button);
+    text-align: center;
+    background-color: var(--green);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 2px;
 }
