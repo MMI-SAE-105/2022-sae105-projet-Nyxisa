@@ -1,0 +1,44 @@
+.page-title {}
+
+.other-projects__text {}
+
+.other-projects_list {}
+
+.other-projects__item {}
+
+.laserbeam {
+    background-color: var(--black);
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fromhell {
+    background-color: var(--purple);
+    background-image: radial-gradient(circle 10px, var(--black), rgb(100 50 160) 50%, var(--purple) 85%, var(--black));
+    height: 100%;
+    width: 25px;
+
+    -webkit-animation: 8s linear 0s infinite animation;
+    animation: 8s linear 0s infinite animation;
+}
+
+@-webkit-keyframes animation {
+    from {
+        margin-left: -75%;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animation {
+    from {
+        margin-left: -75%;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}

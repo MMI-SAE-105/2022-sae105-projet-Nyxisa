@@ -59,126 +59,137 @@
             </div>
         </header>
     </div>
-    <h1>FILMOGRAPHIE</h1>
+    <h1 class="page-title">FILMOGRAPHIE</h1>
     <p>Voici les différents films réalisés par Spike Jonze, l'auteur du film Her.</p>
 
-    <section aria-label="Galerie des films de Spike Jonze">
-        <div class="carousel" data-carousel>
-            <button class="carousel__buttonbef" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel__buttonaft" data-carousel-button="next">&#8658;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #1">
-                </li>
-                <li class="slide">
-                    <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
-                </li>
-                <li class="slide">
-                    <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
-                </li>
-            </ul>
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accueil</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="//unpkg.com/alpinejs" defer></script>
+    </head>
+
+    <body>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précédent"
+                @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><
+        </button>
+
+                    <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                        @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+
+                    <div class="carrousel_parent-ecrans" x-ref="parent"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
+                                <figcaption>Écran 1</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
+                                <figcaption>Écran 2</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
+                                <figcaption>Écran 3</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
+                                <figcaption>Écran 4</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
+                                <figcaption>Écran 5</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <ul class="caroussel_liste-liens">
+                        <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">Écran
+                                1</a>
+                        </li>
+                        <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">Écran
+                                2</a>
+                        </li>
+                        <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">Écran
+                                3</a>
+                        </li>
+                        <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">Écran
+                                4</a>
+                        </li>
+                        <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">Écran
+                                5</a>
+                        </li>
+                    </ul>
         </div>
-    </section>
-    <!-- adapter carrousel alpine suivant-->
-    <!-- <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
 
-                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précédent" 
-                @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
-    
-                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" 
-                @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
-    
-                <div class="carrousel_parent-ecrans" x-ref="parent"
-                @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                    <div id="ecran-1" class="carrousel_ecran">
-                        <figure>
-                            <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
-                            <figcaption>Écran 1</figcaption>
-                        </figure>
+
+        <ul>
+            <li>Max et les Maximonstres</li>
+            <p> Ce film d'aventure fantastique est sorti en 2009.
+                Max, un petit garçon qui a du mal à gérer ses émotions, décide de s'enfuir sur une île imaginaire après
+                une
+                dispute familiale. Il va faire la rencontre des Maximonstres, et devenir leur roi. Cette expérience va
+                lui
+                faire prendre conscience qu'il doit changer d'attitude vis-à-vis du monde.</p>
+            <p>Avec Max Records, Catherine Keener, Mark Ruffalo.</p>
+
+            <li>Dans la peau de John Malkovich</li>
+            <p>Ce film de 1999 est une comédie dramatique et fantastique.
+                Craig Schwartz vient d'être embauché dans l'entreprise Lester.
+                Il va trouver dans son bureau une porte conduisant dans l'inconscient de John Malkovich pour une durée
+                de
+                quinze minutes.
+                Cette découverte va changer sa vie.</p>
+            <p>Avec John Cusack, Cameron Diaz, John Malkovich.</p>
+
+            <li>Adaptation</li>
+            <p>Ce film est une comédie dramatique datant de 2003.
+                Alors qu'il se voit confier l'adaptation d'un livre original à l'écran, le scénariste Charlie Kaufman
+                doit
+                faire face à une crise existentielle majeure.</p>
+            <p>Avec Nicolas Cage, Tilda Swinton, Meryl Streep.</p>
+        </ul>
+
+
+
+        <footer class="footer">
+            <div class="footer__text">
+                <p>Lisa Cingolani MM1 - A1</p>
+                <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
+                    class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
+            </div>
+            <div class="footer__blocks">
+                <p class="footer__legal">
+                    Projet réalisé dans le cadre d'un exercice pédagogique au département
+                    MMI de Montbéliard
+                </p>
+                <a href="http://mmimontbeliard.com" class="footer__logo">
+                    <img src="../public/icones/mmi_logo.svg" class="footer__logo"
+                        alt="Logo du département MMI Montbéliard">
+                </a>
+                <nav class="footer__nav">
+                    <div class="footer__btn">
+                        <a href="about.html" class="footer__btn-item">À PROPOS </a>
+                        <a href="contact.html" class="footer__btn-item">CONTACT </a>
+                        <a href="otherprojects.html" class="footer__btn-item">AUTRES PROJETS
+                        </a>
                     </div>
-                    <div id="ecran-2" class="carrousel_ecran">
-                        <figure>
-                            <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
-                            <figcaption>Écran 2</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-3" class="carrousel_ecran">
-                        <figure>
-                            <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
-                            <figcaption>Écran 3</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-4" class="carrousel_ecran">
-                        <figure>
-                            <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
-                            <figcaption>Écran 4</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-5" class="carrousel_ecran">
-                        <figure>
-                            <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
-                            <figcaption>Écran 5</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <ul class="caroussel_liste-liens">
-                    <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">Écran 1</a></li>
-                    <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">Écran 2</a></li>
-                    <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">Écran 3</a></li>
-                    <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">Écran 4</a></li>
-                    <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">Écran 5</a></li>
-                </ul>
-            </div> -->
+                </nav>
+            </div>
+        </footer>
+    </body>
 
-    <ul>
-        <li>Max et les Maximonstres</li>
-        <p> Ce film d'aventure fantastique est sorti en 2009.
-            Max, un petit garçon qui a du mal à gérer ses émotions, décide de s'enfuir sur une île imaginaire après une
-            dispute familiale. Il va faire la rencontre des Maximonstres, et devenir leur roi. Cette expérience va lui
-            faire prendre conscience qu'il doit changer d'attitude vis-à-vis du monde.</p>
-        <p>Avec Max Records, Catherine Keener, Mark Ruffalo.</p>
-
-        <li>Dans la peau de John Malkovich</li>
-        <p>Ce film de 1999 est une comédie dramatique et fantastique.
-            Craig Schwartz vient d'être embauché dans l'entreprise Lester.
-            Il va trouver dans son bureau une porte conduisant dans l'inconscient de John Malkovich pour une durée de
-            quinze minutes.
-            Cette découverte va changer sa vie.</p>
-        <p>Avec John Cusack, Cameron Diaz, John Malkovich.</p>
-
-        <li>Adaptation</li>
-        <p>Ce film est une comédie dramatique datant de 2003.
-            Alors qu'il se voit confier l'adaptation d'un livre original à l'écran, le scénariste Charlie Kaufman doit
-            faire face à une crise existentielle majeure.</p>
-        <p>Avec Nicolas Cage, Tilda Swinton, Meryl Streep.</p>
-    </ul>
-
-
-
-    <footer class="footer">
-        <div class="footer__text">
-            <p>Lisa Cingolani MM1 - A1</p>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
-                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
-        </div>
-        <div class="footer__blocks">
-            <p class="footer__legal">
-                Projet réalisé dans le cadre d'un exercice pédagogique au département
-                MMI de Montbéliard
-            </p>
-            <a href="http://mmimontbeliard.com" class="footer__logo">
-                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Logo du département MMI Montbéliard">
-            </a>
-            <nav class="footer__nav">
-                <div class="footer__btn">
-                    <a href="about.html" class="footer__btn-item">À PROPOS </a>
-                    <a href="contact.html" class="footer__btn-item">CONTACT </a>
-                    <a href="otherprojects.html" class="footer__btn-item">AUTRES PROJETS
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </footer>
-</body>
-
-</html>
+    </html>

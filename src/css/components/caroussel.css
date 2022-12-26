@@ -1,74 +1,125 @@
-*::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  .carousel {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
-  
-  .carousel> ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 200ms opacity ease-in-out;
-    transition-delay: 200ms;
-  }
-  
-  .slide> img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .slide[data-active] {
-    opacity: 1;
-    z-index: 1;
-    transition-delay: 0ms;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
-    cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
-  }
-  
-  .carousel-button:hover,
-  .carousel-button:focus {
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
-  }
-  
-  .carousel-button:focus {
-    outline: 1px solid black;
-  }
-  
-  .carousel-button.prev {
-    left: 1rem;
-  }
-  
-  .carousel-button.next {
-    right: 1rem;
-  }
+.attentiondiv {
+  overflow: auto;
+}
+
+/* Global */
+div::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+
+}
+
+/* Ascenseur */
+div::-webkit-scrollbar-thumb {
+  background: rgba(165, 116, 235, 0.5);
+  border-radius: 15px;
+}
+
+.àachangercarful img {
+  /* image responsive, largeur maxi */
+  max-width: 100%;
+  /* hauteur "auto" */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.carrousel_parent-ecrans {
+  /* aligne horizontalement les enfants */
+  display: flex;
+  /* largeur du parent */
+  width: 100%;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  /* animation de défilement */
+  scroll-snap-type: x mandatory;
+  /* permet de scroller par blocs */
+  overflow-x: scroll;
+  /* permet de scroller horizontalement */
+
+
+
+}
+
+.carrousel_ecran {
+  /* largeur du parent pour chaque enfant */
+  width: 100%;
+  /* permet de garder toute la largeur du parent */
+  flex: none;
+  scroll-snap-align: start;
+  /* aligne les enfants par blocs */
+
+}
+
+.carrousel_ecran figure {
+  /* enlève les marges par défaut */
+  margin: 0;
+
+}
+
+.carrousel {
+  position: relative;
+
+}
+
+.carrousel_btn {
+  position: absolute;
+  top: 50%;
+  /* centre verticalement */
+  transform: translateY(-50%);
+  /* methode du point mort */
+  width: 2rem;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-content: center;
+  color: #fff;
+}
+
+.carrousel_btn-avant {
+  left: 0;
+}
+
+.carrousel_btn-apres {
+  right: 0;
+}
+
+
+.caroussel_liste-liens {
+  /* aligne horizontalement les enfants */
+  display: flex;
+  /* centre horizontalement les enfants */
+  justify-content: center;
+  /* enlève les marges par défaut */
+  margin: 0;
+  /* enlève les padding par défaut */
+  padding: 0;
+  /* enlève les puces par défaut */
+  list-style: none;
+  /* espace entre les enfants */
+  gap: 1rem;
+
+  padding: 10px;
+
+
+}
+
+.attentionchangerfigcaption {
+  text-align: center;
+  padding: 5px;
+}
+
+.caroussel_lien {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+
+}
+
+.bidulechangeractif {
+  color: rgb(165, 116, 235);
+  font-size: larger;
+}
