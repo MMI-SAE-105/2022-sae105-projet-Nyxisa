@@ -2,15 +2,11 @@
     margin: 30px 10%;
 }
 
-.other-projects__text {
-    font-family: var(--font-sans-serif);
-    font-size: var(--h2);
-    font-weight: var(--bold);
-    margin-bottom: 2rem;
-}
+
 
 .other-projects__list {
     padding: 0;
+    margin-top: 2rem;
 
 }
 

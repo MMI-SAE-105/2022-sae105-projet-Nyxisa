@@ -62,11 +62,18 @@ html {
   font-size: 100%;
 }
 
-.page-margin {
+.page__margin {
   margin: 40px 10%;
 }
 
-.page-title {
+.page__title {
   margin-bottom: 30px;
   color: var(--white);
+}
+
+.page__text {
+  font-family: var(--font-sans-serif);
+  font-size: var(--h2);
+  font-weight: var(--bold);
+  margin-bottom: 1rem;
 }

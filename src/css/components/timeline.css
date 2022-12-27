@@ -1,21 +1,57 @@
 /* CSS for the timeline */
-#timeline {
-    display: flex;
+.timeline__margin {
+  margin: 40px 8%;
+}
+
+.timeline {
+height: 41.95rem;
+}
+
+.timeline__content {
+  display: flex;
     flex-direction: column;
-  }
-  
-  .date {
-    font-weight: bold;
-  }
-  
-  .photos {
-    display: flex;
-  }
-  
-  .photos img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.timeline__line {
+  border-left: 5px solid var(--green);
+  position: absolute;
+  top: 0px;
+  height: 100%;
+}
+
+.timeline__date {
+  font-size: var(--h2);
+  font-weight: var(--bold);
+  color: var(--green);
+  padding-left: 0.2em;
+  border-bottom: 5px solid var(--green);
+  display: inline;
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline h4 {
+text-align: center;
+text-transform: uppercase;
+color: var(--green);
+font-size: var(--h2);
+font-weight: var(--semi-bold);
+margin-bottom: 5px;
+}
+.timeline__title-h2 {
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+.place>li {
+  padding: 5px;
+}
+
+.place img {
+  border-radius: 5px;
+}
