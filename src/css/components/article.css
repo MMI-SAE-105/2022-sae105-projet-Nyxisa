@@ -55,7 +55,7 @@
 }
 
 .article__figure {
-    margin: 30px 0px;
+    margin: 30px auto;
     width: fit-content;
 }
 
