@@ -17,21 +17,21 @@
   flex-direction: row;
 }
 
-.timeline__level-3 {
+.timeline__level-3__date {
+  width: fit-content;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  align-self: center;
+}
+
+.timeline__level-3__content {
   width: 70%;
 }
 
 .timeline__level-4 {
   display: flex;
   padding: 0;
-}
-
-.timeline__dates {
-  width: fit-content;
-  display: flex;
-  height: 50px;
-  align-items: center;
-  align-self: center;
 }
 
 .place__date {
