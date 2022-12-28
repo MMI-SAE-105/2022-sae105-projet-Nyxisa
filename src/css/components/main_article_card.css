@@ -10,6 +10,7 @@
     padding: 15px;
     color: var(--black);
     background-color: var(--white);
+    margin: 0;
 }
 
 .mainarticle__block {

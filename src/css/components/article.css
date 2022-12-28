@@ -70,11 +70,6 @@
     text-align: center;
 }
 
-.article__title-h2,
-.article__title-h3 {
-    margin-bottom: 1rem;
-}
-
 .article__quote-block {
     margin: 2rem auto;
 }

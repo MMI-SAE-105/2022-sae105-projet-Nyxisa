@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
 /* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
   font-size: var(--body);
@@ -20,12 +29,14 @@ h2 {
   font-family: var(--font-sans-serif);
   font-size: var(--h2);
   font-weight: var(--bold);
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-family: var(--font-sans-serif);
   font-size: var(--h3);
   font-weight: var(--regular);
+  margin-bottom: 1rem;
 }
 
 /* permet d'annuler la mise en forme des boutons qu'applique le navigateur. */
@@ -52,16 +63,6 @@ a {
   color: var(--black);
 }
 
-/*box-sizing: border-box;*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  font-size: 100%;
-}
-
 .page__margin {
   margin: 40px 10%;
 }
@@ -69,6 +70,11 @@ html {
 .page__title {
   margin-bottom: 30px;
   color: var(--white);
+}
+
+.page__title-h2 {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .page__text {
