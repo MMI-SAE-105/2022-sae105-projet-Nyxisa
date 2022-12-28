@@ -1,72 +1,37 @@
-/* CSS for the timeline
-
-
 .timeline {
-display: flex;
-flex-direction: row;
-}
-
-.timeline__content {
   display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+  flex-direction: column;
 }
 
 .timeline__line {
   border-left: 5px solid var(--green);
-  height: 100%;
 }
 
-.timeline__date {
-  font-size: var(--h2);
-  font-weight: var(--bold);
-  color: var(--green);
-  padding-left: 0.2em;
-  border-bottom: 5px solid var(--green);
-  display: inline;
-}
-
-.place {
+.timeline__level-1 {
   display: flex;
   flex-direction: row;
 }
 
-.timeline h4 {
-text-align: center;
-text-transform: uppercase;
-color: var(--green);
-font-size: var(--h2);
-font-weight: var(--semi-bold);
-margin-bottom: 5px;
-}
-.timeline__title-h2 {
-  margin-bottom: 1rem;
-  margin-top: 10rem;
-}
-.place>li {
-  padding: 5px;
+.timeline__level-2 {
+  display: flex;
+  flex-direction: row;
 }
 
-.place img {
-  border-radius: 5px;
-} */
-
-.timeline__margin {
-  margin: 40px 10%;
+.timeline__level-3 {
+  width: 70%;
 }
 
-.timeline {
- 
+.timeline__level-4 {
+  display: flex;
+  padding: 0;
 }
 
-.timeline__content {
-
-}
-
-.timeline__line {
-  border-left: 5px solid var(--green);
-  
+.timeline__dates {
+  width: fit-content;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  align-self: center;
 }
 
 .place__date {
@@ -86,32 +51,8 @@ margin-bottom: 5px;
   font-weight: var(--semi-bold);
   margin-bottom: 5px;
 }
-.place__name-pics {
-  width: 70%;
-}
-
-.place__block {
-  display: flex;
-  flex-direction: row;
-align-items: center;
-}
-.timeline__line {
-
-}
-.timeline__dates {
-width: fit-content;
-  display: flex;
-  height: 50px;
-  align-items: center;
-}
-
 
 .place__img {
-border-radius: 10px;
-padding: 5px;
-}
-
-.place__pictures {
-  display: flex;
-  padding: 0;
+  border-radius: 10px;
+  padding: 5px;
 }
