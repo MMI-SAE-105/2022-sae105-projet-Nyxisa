@@ -146,6 +146,11 @@
     margin-bottom: 0.5rem;
 }
 
+.glossary__term:target {
+    padding-top: 9rem;
+    margin-top: -9rem;
+}
+
 .glossary__def {
     margin-bottom: 1.5rem;
 }
