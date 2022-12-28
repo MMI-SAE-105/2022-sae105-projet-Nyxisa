@@ -61,14 +61,14 @@
 
 .other-projects__item {
     font-family: var(--font-sans-serif);
-        font-size: var(--h3);
-        font-weight: var(--regular);
-            margin-bottom: 1rem;
+    font-size: var(--h3);
+    font-weight: var(--regular);
+    margin-bottom: 1rem;
 
 }
 
 .other-projects__links {
- color: var(--green);
+    color: var(--green);
 }
 
 .laserbeam {
@@ -133,4 +133,19 @@
     font-family: var(--font-bold);
     text-transform: uppercase;
     font-size: var(--h1);
+}
+
+.glossary__list {
+    margin-bottom: 30px;
+
+}
+
+.glossary__term {
+    font-size: var(--h2);
+    font-weight: var(--bold);
+    margin-bottom: 0.5rem;
+}
+
+.glossary__def {
+    margin-bottom: 1.5rem;
 }
