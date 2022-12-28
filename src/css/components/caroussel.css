@@ -15,18 +15,14 @@ div::-webkit-scrollbar-thumb {
   border-radius: 15px;
 }
 
-.àachangercarful img {
-  /* image responsive, largeur maxi */
-  max-width: 100%;
-  /* hauteur "auto" */
-  height: auto;
+ .carrousel__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-.carrousel_parent-ecrans {
+.carrousel__top-display {
   /* aligne horizontalement les enfants */
   display: flex;
   /* largeur du parent */
@@ -43,7 +39,7 @@ div::-webkit-scrollbar-thumb {
 
 }
 
-.carrousel_ecran {
+.carrousel__display {
   /* largeur du parent pour chaque enfant */
   width: 100%;
   /* permet de garder toute la largeur du parent */
@@ -53,7 +49,7 @@ div::-webkit-scrollbar-thumb {
 
 }
 
-.carrousel_ecran figure {
+.carrousel__display figure {
   /* enlève les marges par défaut */
   margin: 0;
 
@@ -66,26 +62,23 @@ div::-webkit-scrollbar-thumb {
 
 .carrousel_btn {
   position: absolute;
-  top: 50%;
-  /* centre verticalement */
-  transform: translateY(-50%);
-  /* methode du point mort */
+  top: 40%;
+  /*transform: translateY(-100%); */
   width: 2rem;
   height: 2rem;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   border: none;
-  display: grid;
-  place-content: center;
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .carrousel_btn-avant {
-  left: 0;
+  left: 5px;
 }
 
 .carrousel_btn-apres {
-  right: 0;
+  right: 5px;
 }
 
 
@@ -122,4 +115,15 @@ div::-webkit-scrollbar-thumb {
 .bidulechangeractif {
   color: rgb(165, 116, 235);
   font-size: larger;
+}
+
+.arrow {
+
+}
+
+.arrow--left{
+  padding-right: 4px;
+}
+.arrow--right {
+  padding-left: 4px;
 }

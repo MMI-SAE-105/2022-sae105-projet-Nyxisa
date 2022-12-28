@@ -24,7 +24,6 @@ Soyez attentifs à l'ordre d'import :
 @import "layout/home.css";
 
 @import "components/pages.css";
-@import "components/about.css";
 @import "components/timeline.css";
 @import "components/caroussel.css";
 @import "components/form.css";

@@ -154,3 +154,14 @@
 .glossary__def {
     margin-bottom: 1.5rem;
 }
+
+
+/* FILMOGRAPHY */
+
+.filmo__details {
+    padding: 0;
+}
+
+.filmo__actors {
+margin-bottom: 2rem;
+}
