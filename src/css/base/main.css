@@ -60,7 +60,8 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--purple);
+  font-weight: var(--semi-bold);
 }
 
 .page__margin {

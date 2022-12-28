@@ -46,7 +46,7 @@
 }
 
 .article__text__list>li {
-    list-style: disc;
+    list-style: square;
 }
 
 .article__img {
@@ -151,9 +151,14 @@ blockquote::after {
 .article__btn-link {
     font-family: var(--font-bold);
     font-size: var(--button);
+    color: var(--black);
     text-align: center;
     background-color: var(--green);
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 2px;
+}
+
+.annotation:hover {
+        color: var(--green);
 }
