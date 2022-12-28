@@ -23,17 +23,16 @@ Soyez attentifs à l'ordre d'import :
 @import "layout/footer.css";
 @import "layout/home.css";
 
-@import "components/otherprojects.css";
+@import "components/pages.css";
 @import "components/about.css";
-@import "components/article.css";
 @import "components/timeline.css";
 @import "components/caroussel.css";
 @import "components/form.css";
+@import "components/articles.css";
 @import "components/menu.css";
 @import "components/article_cards.css";
 @import "components/main_article_card.css";
-@import "components/article_cards.css";
-@import "components/intro.css";
+
 
 @font-face {
   font-family: 'OPTIEdgarBold-Extended';
