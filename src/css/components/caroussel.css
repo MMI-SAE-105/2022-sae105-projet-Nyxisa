@@ -1,68 +1,32 @@
-.attentiondiv {
-  overflow: auto;
-}
-
-/* Global */
-div::-webkit-scrollbar {
-  width: 2px;
-  height: 5px;
-
-}
-
-/* Ascenseur */
-div::-webkit-scrollbar-thumb {
-  background: rgba(165, 116, 235, 0.5);
-  border-radius: 15px;
+.carrousel {
+  position: relative;
+  margin: 1rem 0;
 }
 
 .carrousel__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .carrousel__top-display {
-  /* aligne horizontalement les enfants */
   display: flex;
-  /* largeur du parent */
   width: 100%;
   gap: 1rem;
   scroll-behavior: smooth;
-  /* animation de défilement */
   scroll-snap-type: x mandatory;
-  /* permet de scroller par blocs */
   overflow-x: scroll;
-  /* permet de scroller horizontalement */
-
-
-
 }
 
 .carrousel__display {
-  /* largeur du parent pour chaque enfant */
   width: 100%;
-  /* permet de garder toute la largeur du parent */
   flex: none;
   scroll-snap-align: start;
-  /* aligne les enfants par blocs */
-}
-
-.carrousel__display figure {
-  /* enlève les marges par défaut */
-  margin: 0;
-
-}
-
-.carrousel {
-  position: relative;
-
 }
 
 .carrousel_btn {
   position: absolute;
-  top: 40%;
-  /*transform: translateY(-100%); */
+  top: 45%;
   width: 2rem;
   height: 2rem;
   background: rgba(0, 0, 0, 0.5);
@@ -72,51 +36,13 @@ div::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-.carrousel_btn-avant {
+.carrousel_btn--left {
   left: 5px;
 }
 
-.carrousel_btn-apres {
+.carrousel_btn--right {
   right: 5px;
 }
-
-
-.caroussel_liste-liens {
-  /* aligne horizontalement les enfants */
-  display: flex;
-  /* centre horizontalement les enfants */
-  justify-content: center;
-  /* enlève les marges par défaut */
-  margin: 0;
-  /* enlève les padding par défaut */
-  padding: 0;
-  /* enlève les puces par défaut */
-  list-style: none;
-  /* espace entre les enfants */
-  gap: 1rem;
-
-  padding: 10px;
-
-
-}
-
-.attentionchangerfigcaption {
-  text-align: center;
-  padding: 5px;
-}
-
-.caroussel_link {
-  text-decoration: none;
-  color: rgb(226, 226, 226);
-
-}
-
-.actif {
-  color: var(--purple);
-  transition: all 0.5s ease-out 0.1s;
-}
-
-.arrow {}
 
 .arrow--left {
   padding-right: 4px;
@@ -125,3 +51,19 @@ div::-webkit-scrollbar-thumb {
 .arrow--right {
   padding-left: 4px;
 }
+
+.carrousel__display__title {
+  text-align: center;
+  font-size: var(--legend);
+  padding: 5px;
+}
+
+.caroussel__link {
+  color:var(--white);
+}
+
+.actif {
+  color: var(--purple);
+  transition: all 0.3s ease-out 0.1s;
+}
+

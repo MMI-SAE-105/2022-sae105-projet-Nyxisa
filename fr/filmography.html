@@ -64,13 +64,13 @@
         <p class="page__text">Voici les différents films réalisés par Spike Jonze, l'auteur du film Her.</p>
 
         <body>
-            <div x-data="{hrefCourant: '#ecran-1',}">
+            <div x-data="{hrefCourant: '#screen-1',}">
 <div class="carrousel">
-                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précédent"
+                <button class="carrousel_btn carrousel_btn--left" aria-label="Image précédente"
                     @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img class="arrow--left"
                         src="../public/icones/arrow_left.svg" alt="Flèche vers la gauche"></button>
 
-                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                <button class="carrousel_btn carrousel_btn--right" aria-label="Image suivante"
                     @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img class="arrow--right"
                         src="../public/icones/arrow_right.svg" alt="Flèche vers la droite"></button>
 
@@ -80,28 +80,28 @@
                         <figure>
                             <img class="carrousel__img" src="../public/img/filmography/fr/her.webp"
                                 alt="Affiche du film Her">
-                            <figcaption>Her</figcaption>
+                            <figcaption class="carrousel__display__title">Her</figcaption>
                         </figure>
                     </div>
                     <div id="screen-2" class="carrousel__display">
                         <figure>
                             <img class="carrousel__img" src="../public/img/filmography/fr/max.webp"
                                 alt="Affiche du film Max et les Maximonstres">
-                            <figcaption>Max et les Maximonstres</figcaption>
+                            <figcaption class="carrousel__display__title">Max et les Maximonstres</figcaption>
                         </figure>
                     </div>
                     <div id="screen-3" class="carrousel__display">
                         <figure>
                             <img class="carrousel__img" src="../public/img/filmography/fr/danslapeau.webp"
                                 alt="Affiche du film Dans la peau de John Malkovich">
-                            <figcaption>Dans la peau de John Malkovich</figcaption>
+                            <figcaption class="carrousel__display__title">Dans la peau de John Malkovich</figcaption>
                         </figure>
                     </div>
                     <div id="screen-4" class="carrousel__display">
                         <figure>
                             <img class="carrousel__img" src="../public/img/filmography/fr/adaptation.webp"
                                 alt="Affiche du film Adaptation">
-                            <figcaption>Adaptation</figcaption>
+                            <figcaption class="carrousel__display__title">Adaptation</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
             <h2>En détail :</h2>
             <ul class="filmo__details">
                 <li>
-                    <h3><a class="caroussel_link" href="#screen-2" :class="{actif:hrefCourant==='#screen-2'}">Max et les
+                    <h3><a class="caroussel__link" href="#screen-2" :class="{actif:hrefCourant==='#screen-2'}">Max et les
                             Maximonstres</a></h3>
                 </li>
                 <p class="article__text"> Ce film d'aventure fantastique est sorti en 2009.
@@ -125,7 +125,7 @@
                 </p>
 
                 <li>
-                    <h3><a class="caroussel_link" href="#screen-3" :class="{actif:hrefCourant==='#screen-3'}">Dans la
+                    <h3><a class="caroussel__link" href="#screen-3" :class="{actif:hrefCourant==='#screen-3'}">Dans la
                             peau de John Malkovich</a></h3>
                 </li>
                 <p class="article__text">Ce film de 1999 est une comédie dramatique et fantastique.
@@ -138,7 +138,7 @@
                 <p class="filmo__actors">Avec <em>John Cusack</em>,<em> Cameron Diaz</em>,<em> John Malkovich</em>.</p>
 
                 <li>
-                    <h3><a class="caroussel_link" href="#screen-4"
+                    <h3><a class="caroussel__link" href="#screen-4"
                             :class="{actif:hrefCourant==='#screen-4'}">Adaptation</a></h3>
                 </li>
                 <p class="article__text">Ce film est une comédie dramatique datant de 2003.
