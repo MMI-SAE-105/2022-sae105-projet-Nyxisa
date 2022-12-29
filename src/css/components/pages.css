@@ -69,24 +69,39 @@
 
 .other-projects__links {
     color: var(--green);
+    font-weight: var(--regular);
 }
 
-.laserbeam {
+.animation {
     background-color: var(--black);
-    height: 25px;
+    height: 50px;
     width: 100%;
     overflow: hidden;
 }
 
-.fromhell {
-    background-color: var(--purple);
-    background-image: radial-gradient(circle 10px, var(--black), rgb(100 50 160) 50%, var(--purple) 85%, var(--black));
-    height: 100%;
-    width: 25px;
+.animation__1 {
+    background-image: linear-gradient(90deg, var(--black), var(--purple) 85%, var(--black));
+    height: 33%;
+    -webkit-animation: 4s linear 0s infinite alternate animation;
+    animation: 4s linear 0s infinite alternate animation;
+}
 
-    -webkit-animation: 8s linear 0s infinite animation;
-    animation: 8s linear 0s infinite animation;
-    /* animation: moving 2s alternate infinite linear; */
+.animation__2 {
+    background-image: linear-gradient(90deg, var(--black), var(--purple) 85%, var(--black));
+    height: 33%;
+    -webkit-animation: 4s linear 0.2s infinite alternate animation;
+    animation: 4s linear 0.2s infinite alternate animation;
+}
+
+.animation__3 {
+    background-image: linear-gradient(90deg, var(--black), var(--purple) 85%, var(--black));
+    height: 33%;
+    -webkit-animation: 4s linear 0.4s infinite alternate animation;
+    animation: 4s linear 0.4s infinite alternate animation;
+}
+
+.display-none {
+    display: none;
 }
 
 @-webkit-keyframes animation {
@@ -107,21 +122,6 @@
     to {
         margin-left: 100%;
     }
-}
-
-/* @keyframes moving {
-    from {
-            transform: translateY(-30px);
-        }
-    
-        to {
-            transform: translateY(30px);
-        }
-} */
-
-
-.display-none {
-    display: none;
 }
 
 /* GLOSSARY */
@@ -163,5 +163,5 @@
 }
 
 .filmo__actors {
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
