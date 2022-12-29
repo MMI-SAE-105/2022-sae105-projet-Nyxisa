@@ -15,7 +15,7 @@ div::-webkit-scrollbar-thumb {
   border-radius: 15px;
 }
 
- .carrousel__img {
+.carrousel__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -46,7 +46,6 @@ div::-webkit-scrollbar-thumb {
   flex: none;
   scroll-snap-align: start;
   /* aligne les enfants par blocs */
-
 }
 
 .carrousel__display figure {
@@ -106,24 +105,23 @@ div::-webkit-scrollbar-thumb {
   padding: 5px;
 }
 
-.caroussel_lien {
+.caroussel_link {
   text-decoration: none;
   color: rgb(226, 226, 226);
 
 }
 
-.bidulechangeractif {
-  color: rgb(165, 116, 235);
-  font-size: larger;
+.actif {
+  color: var(--purple);
+  transition: all 0.5s ease-out 0.1s;
 }
 
-.arrow {
+.arrow {}
 
-}
-
-.arrow--left{
+.arrow--left {
   padding-right: 4px;
 }
+
 .arrow--right {
   padding-left: 4px;
 }
