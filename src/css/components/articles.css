@@ -159,6 +159,7 @@ blockquote::after {
     border-radius: 2px;
 }
 
-.annotation:hover {
+
+.annotation:hover, .article__text>a:hover {
         color: var(--green);
 }
