@@ -11,57 +11,57 @@
 </head>
 
 <body>
-<div class="header">
-    <header x-data="{menuIsOpen : false}">
-        <div class="header__items">
-            <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
-                aria-controls="mainNav" aria-label="menu">
-                <img src="../public/icones/menu_icon.svg" alt="Menu">
-            </button>
-            <a class="header__logo" href="index.html">
-                <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
-            <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
-            <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
-                <div class="header__flextitles--menu">
-                    <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                    <p class="header__pagetitle--menu">MENU</p>
-                </div>
-                <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                    x-transition:leave.duration.300ms>
-                    <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
-                    <li class="menu__item">
-                        ARTICLES
-                        <ul class="menu__list-articles">
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="book.html">► DES ANDROÏDES ET DES HOMMES</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="movie.html">► ENTRE AMOUR ET SOLITUDE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="song.html">► CŒUR ÉLECTRONIQUE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="place.html">► VIVRE DANS UNE MACHINE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="regret.html">► L'IMPACT DES RÉSEAUX SOCIAUX</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="about.html">À PROPOS</a></li>
-                    <li class="menu__item"><a href="contact.html">CONTACT</a></li>
-                    <li class="menu__language">
-                        <a class="menu__language__link" href="../en/index.html">EN
-                            <img class="menu__language__icon" src="../public/icones/language_icon.svg"
-                                alt="Site en anglais"></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <div class="header">
+        <header x-data="{menuIsOpen : false}">
+            <div class="header__items">
+                <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
+                    aria-controls="mainNav" aria-label="menu">
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a class="header__logo" href="index.html">
+                    <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
+                <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <p class="header__pagetitle--menu">MENU</p>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                        <li class="menu__item">
+                            ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="book.html">► DES ANDROÏDES ET DES HOMMES</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="movie.html">► ENTRE AMOUR ET SOLITUDE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="song.html">► CŒUR ÉLECTRONIQUE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="place.html">► VIVRE DANS UNE MACHINE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="regret.html">► L'IMPACT DES RÉSEAUX SOCIAUX</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="about.html">À PROPOS</a></li>
+                        <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu__language">
+                            <a class="menu__language__link" href="../en/index.html">EN
+                                <img class="menu__language__icon" src="../public/icones/language_icon.svg"
+                                    alt="Site en anglais"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="header__flextitles">
                 <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
                 <h4 class="header__pagetitle">REGRET</h4>
@@ -79,41 +79,48 @@
         <section class="article">
             <h1 class="article__main-title">L'IMPACT DES RÉSEAUX SOCIAUX</h1>
             <h2>L'anxiété ambiante</h2>
-            <p class="article__text">Le monde va mal, et les <strong>réseaux sociaux</strong> ne cessent de nous le rappeler.<br>
+            <p class="article__text">Le monde va mal, et les <strong>réseaux sociaux</strong> ne cessent de nous le
+                rappeler.<br>
                 Nous sommes constamment exposés à la dernière actualité, au dernier fait-divers,
                 et ce sont souvent les plus alarmants.
                 Quelques bonnes nouvelles surgissent par-ci par-là, mais on ne peut pas dire que
                 ce soit une majorité.</p>
-                <p class="article__text">Confronté à ce flux d'informations négatives, les jeunes peuvent se sentir
-                impuissants, voir <a href="https://fr.in-mind.org/fr/article/les-reseaux-sociaux-numeriques-sources-de-depression-danxiete-et-de-jalousie">profondément anxieux</a>.</p>
+            <p class="article__text">Confronté à ce flux d'informations négatives, les jeunes peuvent se sentir
+                impuissants, voir <a
+                    href="https://fr.in-mind.org/fr/article/les-reseaux-sociaux-numeriques-sources-de-depression-danxiete-et-de-jalousie">profondément
+                    anxieux</a>.</p>
             <img class="article__img" src="../public/img/articles/regret/dangers.webp"
-                    alt="Écran avec des signes d'avertissement, sur un fond ayant une multitude de symboles (œil, dislike, like, bulles de chat)">
+                alt="Écran avec des signes d'avertissement, sur un fond ayant une multitude de symboles (œil, dislike, like, bulles de chat)">
             <h2>Surplus de manichéisme</h2>
             <p class="article__text">D'autre part, les réseaux sociaux poussent à la rigidification idéologique.
                 Je pense en particulier à Twitter où tout le monde est divisé, convaincu par sa
                 propre opinion.
                 Même au sein des communautés qui s'y forment, tout est noir ou tout est blanc et
-                on n'hésite pas à «&nbsp;<a href="https://lecahier.com/pourquoi-le-cancel-culture-sur-twitter-est-toxique/">cancel</a>&nbsp;» quelqu'un s'il a un avis différent.</p>
-                <p class="article__text">Il y a un cruel manque d'écoute et de recul.
+                on n'hésite pas à «&nbsp;<a
+                    href="https://lecahier.com/pourquoi-le-cancel-culture-sur-twitter-est-toxique/">cancel</a>&nbsp;»
+                quelqu'un s'il a un avis différent.</p>
+            <p class="article__text">Il y a un cruel manque d'écoute et de recul.
                 Les échanges ressemblent davantage à des bagarres virtuelles ponctuées
                 d'insultes qu'à de réels débats.</p>
-                <img class="article__img" src="../public/img/articles/regret/twitter.webp"
-                    alt="Logo twitter détourné où la bouche de l'oiseau est celle d'un homme avec des dents pointues qui dit des choses choquantes">
+            <img class="article__img" src="../public/img/articles/regret/twitter.webp"
+                alt="Logo twitter détourné où la bouche de l'oiseau est celle d'un homme avec des dents pointues qui dit des choses choquantes">
             <h2>Le culte de la perfection</h2>
             <p class="article__text"> Un autre aspect, qui se retrouve plutôt sur des réseaux comme Instagram ou
                 TikTok
-                est celui de <a href="https://www.elle.be/fr/267374-pourquoi-instagram-nous-met-la-pression.html">l'importance de l'image</a>.
+                est celui de <a
+                    href="https://www.elle.be/fr/267374-pourquoi-instagram-nous-met-la-pression.html">l'importance de
+                    l'image</a>.
                 Cela touche principalement les jeunes femmes, à cause des standards de beauté
                 qui y sont encore davantage accentués.</p>
-                <p class="article__text">Sur ces réseaux, nous voyons défiler à longueur de journée des photos de
+            <p class="article__text">Sur ces réseaux, nous voyons défiler à longueur de journée des photos de
                 physiques parfaits, de vies rêvées.
                 La mise en scène constante nous fait croire que chacun a une vie encore plus
                 épanouissante que l'autre, se trouve dans un endroit incroyable, a les plus
                 beaux vêtements, une coiffure et un maquillage parfaits…<br>
                 Tout est pensé (et filtré, retouché) pour avoir l'air vrai et achevé sans
                 efforts lorsque la réalité est souvent toute autre.</p>
-                <img class="article__img" src="../public/img/articles/regret/girl.webp"
-                    alt="Femme tenant un téléphone devant son visage avec des pictogrammes de like, cœur et commentaire autour">
+            <img class="article__img" src="../public/img/articles/regret/girl.webp"
+                alt="Femme tenant un téléphone devant son visage avec des pictogrammes de like, cœur et commentaire autour">
             <p class="article__text">Cela nous ramène constamment à notre propre image, celle que l'on renvoie aux
                 autres.
                 Et une vie normale n'est absolument pas à la hauteur.
@@ -121,29 +128,33 @@
                 ce physique ou cette vie idéale, peu importe les efforts.
                 Cela peut aussi avoir un fort impact sur notre <strong>santé mentale</strong>, à force de
                 comparaison.</p>
-                <p class="article__text">Toutes ces photos qui font rêver finissent par ternir l'estime que nous avons
+            <p class="article__text">Toutes ces photos qui font rêver finissent par ternir l'estime que nous avons
                 pour nous même et pour notre vie.
                 Finalement, ce n'est qu'un miroir déformé de la réalité, la vie d'autrui est
                 totalement idéalisée au détriment de la nôtre.</p>
-                <img class="article__img" src="../public/img/articles/regret/alone.webp"
-                    alt="Dessin d'une personne triste devant un écran qui lui projette une lumière grise sur le visage">
+            <img class="article__img" src="../public/img/articles/regret/alone.webp"
+                alt="Dessin d'une personne triste devant un écran qui lui projette une lumière grise sur le visage">
             <h2>Vers une évolution&nbsp;?</h2>
-            <p class="article__text">Cela dit, des mouvements comme le <a href="https://www.cosmopolitan.fr/le-mouvement-body-posi-c-est-quoi-au-juste,2002861.asp">body positive</a> montrent peu à peu l'envers du
+            <p class="article__text">Cela dit, des mouvements comme le <a
+                    href="https://www.cosmopolitan.fr/le-mouvement-body-posi-c-est-quoi-au-juste,2002861.asp">body
+                    positive</a> montrent peu à peu l'envers du
                 décor
                 de toutes ces photos parfaites d'influenceurs et de célébrités.<br>
                 Et dans cette lignée, nous sommes incités à aimer notre corps et par extension,
                 la personne que l'on est.
                 L'acceptation et l'appréciation de soi sont les clés pour une meilleur
                 expérience sur Instagram, TikTok et même dans la vie réelle.</p>
-                <img class="article__img" src="../public/img/articles/regret/inclusive.webp"
-                    alt="Dessin de cinq femmes en sous-vêtement au physique diversifié">
+            <img class="article__img" src="../public/img/articles/regret/inclusive.webp"
+                alt="Dessin de cinq femmes en sous-vêtement au physique diversifié">
         </section>
         <div class="bottom-line">
             <div class="share">
                 <p class="share__text">PARTAGER SUR</p>
-                <a class="share__link" href="https://www.facebook.com/sharer/sharer.php?u=https://minduploadingexe.lisa-cingolani.fr/fr/regret.html">
-                <img src="../public/icones/facebook_icon.svg" alt="Logo Facebook"></a>
-                <a class="share__link" href="https://twitter.com/intent/tweet?url=https://minduploadingexe.lisa-cingolani.fr/fr/regret.html&text=L%27impact%20des%20r%C3%A9seaux%20sociaux%20-%20Mind_Uploading.exe">
+                <a class="share__link"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://minduploadingexe.lisa-cingolani.fr/fr/regret.html">
+                    <img src="../public/icones/facebook_icon.svg" alt="Logo Facebook"></a>
+                <a class="share__link"
+                    href="https://twitter.com/intent/tweet?url=https://minduploadingexe.lisa-cingolani.fr/fr/regret.html&text=L%27impact%20des%20r%C3%A9seaux%20sociaux%20-%20Mind_Uploading.exe">
                     <img src="../public/icones/twitter_icon.svg" alt="Logo Twitter"></a>
             </div>
             <div class="scroll-top">
@@ -152,30 +163,31 @@
             </div>
         </div>
     </main>
-<footer class="footer">
-    <div class="footer__text">
-        <p>Lisa Cingolani MM1 - A1</p>
-        <a class="footer__email" href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-    </div>
-    <div class="footer__blocks">
-        <p class="footer__legal">
-            Projet réalisé dans le cadre d'un exercice pédagogique au <a class="footer__link"
-                href="http://mmimontbeliard.com"><strong>département
-                    MMI de Montbéliard</strong></a>
-        </p>
-        <a class="footer__logo" href="http://mmimontbeliard.com">
-            <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
-        </a>
-        <nav class="footer__nav">
-            <div class="footer__btn" role="navigation">
-                <a class="footer__btn-item" href="about.html">À PROPOS </a>
-                <a class="footer__btn-item" href="contact.html">CONTACT </a>
-                <a class="footer__btn-item" href="otherprojects.html">AUTRES PROJETS
-                </a>
-            </div>
-        </nav>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="footer__text">
+            <p>Lisa Cingolani MM1 - A1</p>
+            <a class="footer__email"
+                href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        </div>
+        <div class="footer__blocks">
+            <p class="footer__legal">
+                Projet réalisé en 2022 dans le cadre d'un exercice pédagogique au <a class="footer__link"
+                    href="http://mmimontbeliard.com"><strong>département
+                        MMI de Montbéliard</strong></a>
+            </p>
+            <a class="footer__logo" href="http://mmimontbeliard.com">
+                <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+            </a>
+            <nav class="footer__nav">
+                <div class="footer__btn" role="navigation">
+                    <a class="footer__btn-item" href="about.html">À PROPOS </a>
+                    <a class="footer__btn-item" href="contact.html">CONTACT </a>
+                    <a class="footer__btn-item" href="otherprojects.html">AUTRES PROJETS
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -11,57 +11,57 @@
 </head>
 
 <body>
-<div class="header">
-    <header x-data="{menuIsOpen : false}">
-        <div class="header__items">
-            <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
-                aria-controls="mainNav" aria-label="menu">
-                <img src="../public/icones/menu_icon.svg" alt="Menu">
-            </button>
-            <a class="header__logo" href="index.html">
-                <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
-            <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
-            <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
-                <div class="header__flextitles--menu">
-                    <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                    <p class="header__pagetitle--menu">MENU</p>
-                </div>
-                <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                    x-transition:leave.duration.300ms>
-                    <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
-                    <li class="menu__item">
-                        ARTICLES
-                        <ul class="menu__list-articles">
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="book.html">► DES ANDROÏDES ET DES HOMMES</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="movie.html">► ENTRE AMOUR ET SOLITUDE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="song.html">► CŒUR ÉLECTRONIQUE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="place.html">► VIVRE DANS UNE MACHINE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a>
-                            </li>
-                            <li class="menu__article">
-                                <a class="menu__article-link" href="regret.html">► L'IMPACT DES RÉSEAUX SOCIAUX</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="about.html">À PROPOS</a></li>
-                    <li class="menu__item"><a href="contact.html">CONTACT</a></li>
-                    <li class="menu__language">
-                        <a class="menu__language__link" href="../en/index.html">EN
-                            <img class="menu__language__icon" src="../public/icones/language_icon.svg"
-                                alt="Site en anglais"></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <div class="header">
+        <header x-data="{menuIsOpen : false}">
+            <div class="header__items">
+                <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
+                    aria-controls="mainNav" aria-label="menu">
+                    <img src="../public/icones/menu_icon.svg" alt="Menu">
+                </button>
+                <a class="header__logo" href="index.html">
+                    <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
+                <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
+                    <div class="header__flextitles--menu">
+                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+                        <p class="header__pagetitle--menu">MENU</p>
+                    </div>
+                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                        x-transition:leave.duration.300ms>
+                        <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+                        <li class="menu__item">
+                            ARTICLES
+                            <ul class="menu__list-articles">
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="book.html">► DES ANDROÏDES ET DES HOMMES</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="movie.html">► ENTRE AMOUR ET SOLITUDE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="song.html">► CŒUR ÉLECTRONIQUE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="place.html">► VIVRE DANS UNE MACHINE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="regret.html">► L'IMPACT DES RÉSEAUX SOCIAUX</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="about.html">À PROPOS</a></li>
+                        <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu__language">
+                            <a class="menu__language__link" href="../en/index.html">EN
+                                <img class="menu__language__icon" src="../public/icones/language_icon.svg"
+                                    alt="Site en anglais"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="header__flextitles">
                 <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
                 <h4 class="header__pagetitle">LIEU</h4>
@@ -82,11 +82,15 @@
             <p class="article__text">Après la Seconde Guerre Mondiale, la France est dans un processus de
                 reconstruction.
                 Les familles modestes recherchent désormais des logements <strong>modernes</strong> et confortables.<br>
-                <a href="https://www.marseille-tourisme.com/decouvrez-marseille/culture-et-patrimoine/sites-et-monuments/cite-radieuse-le-corbusier/">La Cité Radieuse</a> constitue une des solutions à ce besoin.
+                <a
+                    href="https://www.marseille-tourisme.com/decouvrez-marseille/culture-et-patrimoine/sites-et-monuments/cite-radieuse-le-corbusier/">La
+                    Cité Radieuse</a> constitue une des solutions à ce besoin.
                 Des services et équipements communs sont mis à disposition des habitants, dans un cadre de vie
-                agréable.</p>
-                <p class="article__text">Avec cet édifice, <strong>Le Corbusier</strong> met au centre la vie en communauté.</p>
-            
+                agréable.
+            </p>
+            <p class="article__text">Avec cet édifice, <strong>Le Corbusier</strong> met au centre la vie en communauté.
+            </p>
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/construction.webp"
                     alt="Photo en noir et blanc de la Cité Radieuse en construction avec des échafaudages">
@@ -95,15 +99,18 @@
 
             <h2>Le Corbusier, un architecte radical</h2>
             <h3>Qui est-il&nbsp;?</h3>
-            <p class="article__text"><a href="https://www.linternaute.fr/biographie/art/1775218-le-corbusier-biographie-courte-dates-citations/">Le Corbusier</a>, de son vrai nom Charles-Édouard Jeanneret, est un architecte
+            <p class="article__text"><a
+                    href="https://www.linternaute.fr/biographie/art/1775218-le-corbusier-biographie-courte-dates-citations/">Le
+                    Corbusier</a>, de son vrai nom Charles-Édouard Jeanneret, est un architecte
                 franco-suisse du XXème siècle
                 (1887-1965).<br>
                 Il appartient au mouvement architectural du <a class="annotation"
                     href="glossary.html#brutalisme">brutalisme</a>.
                 Le <a class="annotation" href="glossary.html#bauhaus">Bauhaus</a> a fortement influencé ses idées.</p>
-                <p class="article__text">Bien qu'il soit parfois contesté, Le Corbusier reste une figure majeure de <strong>l'architecture</strong> pour son
+            <p class="article__text">Bien qu'il soit parfois contesté, Le Corbusier reste une figure majeure de
+                <strong>l'architecture</strong> pour son
                 inventivité.</p>
-           
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/lecorbusier.webp"
                     alt="Photo noir et blanc de Le Corbusier, dans la cinquantaine avec des grosses lunettes rondes">
@@ -117,7 +124,9 @@
             </figure>
             <h3>Ses principes </h3>
             <p class="article__text">Dans l'architecture de Le Corbusier, on retrouve des principes spécifiques.
-                Ils sont nommés les «&nbsp;<a href="https://fr.wikipedia.org/wiki/Cinq_points_de_l%27architecture_moderne">Cinq points d'une architecture nouvelle</a>&nbsp;» : </p>
+                Ils sont nommés les «&nbsp;<a
+                    href="https://fr.wikipedia.org/wiki/Cinq_points_de_l%27architecture_moderne">Cinq points d'une
+                    architecture nouvelle</a>&nbsp;» : </p>
             <ul class="article__text__list">
                 <li>L'élévation sur pilotis,</li>
                 <li>Le toit-terrasse plat,</li>
@@ -128,14 +137,17 @@
             <p class="article__text">Un autre principe important est le Modulor.
                 C'est une silhouette humaine de taille standard sur laquelle s'appuie Le Corbusier pour concevoir le
                 mobilier, la structure des habitations et le bâtiment dans son ensemble.</p>
-                <p class="article__text">Selon Le Corbusier, le bâtiment dont il est question dans cet article est une véritable «&nbsp;unité
+            <p class="article__text">Selon Le Corbusier, le bâtiment dont il est question dans cet article est une
+                véritable «&nbsp;unité
                 d'habitation&nbsp;».
                 Il conçoit cela comme une «&nbsp;machine à habiter&nbsp;».
-                En effet, il adhère aux principes du <a href="https://politiquedulogement.com/dictionnaire-du-logement/f/fonctionnalisme/">fonctionnalisme</a>, c'est-à-dire au fait qu'un bâtiment doit
+                En effet, il adhère aux principes du <a
+                    href="https://politiquedulogement.com/dictionnaire-du-logement/f/fonctionnalisme/">fonctionnalisme</a>,
+                c'est-à-dire au fait qu'un bâtiment doit
                 s'affranchir
                 d'éléments décoratifs inutiles.
                 Sa construction existe uniquement pour répondre parfaitement au besoin d'habiter.</p>
-            
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/modulor.webp"
                     alt="Lignes à différentes hauteurs avec des personnages dessinés dans différentes positions (debout, assis)">
@@ -143,18 +155,21 @@
             </figure>
             <h2>Les caractéristiques de la structure</h2>
             <p class="article__text">La Cité Radieuse a été construite assez rapidement, entre 1947 et 1952.
-                Elle se trouve dans le 8ème arrondissement de Marseille, sur le <a href="https://fr-street-view.pw/marseille/street/boulevard-michelet/">Boulevard Michelet</a>.</p>
-                <p class="article__text">Plutôt imposant, le bâtiment mesure 137 mètres de long pour 56 mètres de haut et 24 mètres de large.
+                Elle se trouve dans le 8ème arrondissement de Marseille, sur le <a
+                    href="https://fr-street-view.pw/marseille/street/boulevard-michelet/">Boulevard Michelet</a>.</p>
+            <p class="article__text">Plutôt imposant, le bâtiment mesure 137 mètres de long pour 56 mètres de haut et 24
+                mètres de large.
                 La structure en béton est montée sur un double rang de pilotis.
                 Cela lui donne paradoxalement une allure à la fois légère et massive.</p>
-                <p class="article__text">L'édifice abrite plus de 300 appartements de 23 types différents, sur 9 étages.
+            <p class="article__text">L'édifice abrite plus de 300 appartements de 23 types différents, sur 9 étages.
                 La majorité sont des <a class="annotation" href="glossary.html#duplex">duplex</a>, il y a donc en
                 réalité 18 niveaux.
                 Il y a aussi de véritables rues à l'intérieur, avec divers services et commerces.</p>
-                <p class="article__text">À l'extérieur, autour de ce que ses habitants appellent le «&nbsp;<a href="https://citeradieuse-marseille.com">village vertical autonome</a>&nbsp;», on
+            <p class="article__text">À l'extérieur, autour de ce que ses habitants appellent le «&nbsp;<a
+                    href="https://citeradieuse-marseille.com">village vertical autonome</a>&nbsp;», on
                 retrouve un
                 parc de 2.8 hectares.</p>
-            
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/outside.webp"
                     alt="Une partie du bâtiment derrière un arbre avec un rayon de soleil">
@@ -166,12 +181,15 @@
                 l'aide
                 de panneaux coulissants, pour adapter la surface à l'utilisation des habitants.
                 Tout est pensé pour être fonctionnel, confortable et toujours avec un design épuré.</p>
-                <p class="article__text"><a href="https://www.eosefrance.com/details-l+ergonomie+dans+la+conception+architecturale-219.html">L'ergonomie</a> est le maître mot de Le Corbusier.
+            <p class="article__text"><a
+                    href="https://www.eosefrance.com/details-l+ergonomie+dans+la+conception+architecturale-219.html">L'ergonomie</a>
+                est le maître mot de Le Corbusier.
                 Il se base sur son système du Modulor pour adapter l'architecture intérieure à l'humain.
                 Les pièces sont agencées intelligemment, il y a de nombreux rangements.
                 On voit aussi apparaître les premières cuisines toutes équipées.
-                Les appartements possèdent également une <a class="annotation" href="glossary.html#loggia">loggia</a>.</p>
-            
+                Les appartements possèdent également une <a class="annotation" href="glossary.html#loggia">loggia</a>.
+            </p>
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/inside.webp"
                     alt="L'intérieur d'un appartement meublé dans un style années 50">
@@ -218,10 +236,13 @@
                 devenu
                 le
                 <a href="https://mamo.fr">MaMo</a> (Marseille Modulor).
-                Le designer français <a href="https://www.ora-ito.com/profil/a-propos/">Ora-Ïto</a> est à l'initiative de ce lieu d'exposition d'<strong>art contemporain</strong>.</p>
-                <p class="article__text">Le paysage depuis le toit est panoramique, on peut y observer la mer, la ville et les collines
+                Le designer français <a href="https://www.ora-ito.com/profil/a-propos/">Ora-Ïto</a> est à l'initiative
+                de ce lieu d'exposition d'<strong>art contemporain</strong>.
+            </p>
+            <p class="article__text">Le paysage depuis le toit est panoramique, on peut y observer la mer, la ville et
+                les collines
                 environnantes.</p>
-            
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/toit.webp"
                     alt="Toit-terrasse du bâtiment surplombant un bassin">
@@ -230,11 +251,14 @@
             <h2>Un lieu emblématique</h2>
             <p class="article__text">En 1995, La Cité radieuse de Le Corbusier est classée monument historique.
                 Aujourd'hui, c'est le troisième monument le plus visité de Marseille.</p>
-                <p class="article__text">Elle a longtemps été surnommée «&nbsp;La Maison du fada&nbsp;» car Le Corbusier avait une vision très
+            <p class="article__text">Elle a longtemps été surnommée «&nbsp;La Maison du fada&nbsp;» car Le Corbusier
+                avait une vision très
                 <strong>avant-gardiste</strong>
-                pour les années 50.</p>
-                <p class="article__text">Désormais, la Cité Radieuse est appréciée à sa juste valeur, et ses habitants en sont ravis.</p>
-            
+                pour les années 50.
+            </p>
+            <p class="article__text">Désormais, la Cité Radieuse est appréciée à sa juste valeur, et ses habitants en
+                sont ravis.</p>
+
             <figure class="article__figure">
                 <img class="article__figure-img" src="../public/img/articles/place/panorama.webp"
                     alt="Vue sur la mer depuis l'intérieur du dernier étage, derrière un escalier en béton">
@@ -261,30 +285,31 @@
         </div>
 
     </main>
-<footer class="footer">
-    <div class="footer__text">
-        <p>Lisa Cingolani MM1 - A1</p>
-        <a class="footer__email" href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
-    </div>
-    <div class="footer__blocks">
-        <p class="footer__legal">
-            Projet réalisé dans le cadre d'un exercice pédagogique au <a class="footer__link"
-                href="http://mmimontbeliard.com"><strong>département
-                    MMI de Montbéliard</strong></a>
-        </p>
-        <a class="footer__logo" href="http://mmimontbeliard.com">
-            <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
-        </a>
-        <nav class="footer__nav">
-            <div class="footer__btn" role="navigation">
-                <a class="footer__btn-item" href="about.html">À PROPOS </a>
-                <a class="footer__btn-item" href="contact.html">CONTACT </a>
-                <a class="footer__btn-item" href="otherprojects.html">AUTRES PROJETS
-                </a>
-            </div>
-        </nav>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="footer__text">
+            <p>Lisa Cingolani MM1 - A1</p>
+            <a class="footer__email"
+                href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+        </div>
+        <div class="footer__blocks">
+            <p class="footer__legal">
+                Projet réalisé en 2022 dans le cadre d'un exercice pédagogique au <a class="footer__link"
+                    href="http://mmimontbeliard.com"><strong>département
+                        MMI de Montbéliard</strong></a>
+            </p>
+            <a class="footer__logo" href="http://mmimontbeliard.com">
+                <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+            </a>
+            <nav class="footer__nav">
+                <div class="footer__btn" role="navigation">
+                    <a class="footer__btn-item" href="about.html">À PROPOS </a>
+                    <a class="footer__btn-item" href="contact.html">CONTACT </a>
+                    <a class="footer__btn-item" href="otherprojects.html">AUTRES PROJETS
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
