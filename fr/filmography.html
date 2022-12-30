@@ -73,7 +73,7 @@
         <p class="page__text">Voici les différents films réalisés par Spike Jonze, l'auteur du film Her.</p>
 
         <div x-data="{hrefCourant: '#screen-1',}">
-            <div class="carrousel">
+            <div class="carrousel" aria-label="Galerie interactive des films de Spike Jonze">
                 <button class="carrousel_btn carrousel_btn--left" aria-label="Image précédente"
                     @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img class="arrow--left"
                         src="../public/icones/arrow_left.svg" alt="Flèche vers la gauche"></button>
@@ -115,7 +115,7 @@
                 </div>
 
             </div>
-            <h2>En détail :</h2>
+            <h2>En détail&nbsp;:</h2>
             <h3><a class="caroussel__link" href="#screen-2" :class="{actif:hrefCourant==='#screen-2'}">Max et les
                     Maximonstres</a></h3>
             <p class="article__text"> Ce film d'aventure fantastique est sorti en 2009.
