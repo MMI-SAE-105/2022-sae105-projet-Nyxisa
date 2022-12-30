@@ -4,23 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Mind_Uploading.exe</title>
+    <title>Home - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
 
 <body>
-    </header>
     <div class="header">
         <header x-data="{menuIsOpen : false}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
+                <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
                     aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Mind_Uploading.exe Logo"></a>
+                <a class="header__logo" href="index.html">
+                    <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe Logo"></a>
                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Search">
                 <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
@@ -30,27 +29,36 @@
                     <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
                         x-transition:leave.duration.300ms>
                         <li class="menu__item"><a href="index.html">HOME</a></li>
-                        <li class="menu__item">ARTICLES
+                        <li class="menu__item">
+                            ARTICLES
                             <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
-                                        AND MEN</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE
-                                        AND LONELINESS</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
-                                        HEART</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
-                                        MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
-                                        GENERATION</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
-                                        NETWORK'S IMPACT TODAY</a></li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="book.html">► OF ANDROIDS AND MEN</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="movie.html">► BETWEEN LOVE AND LONELINESS</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="song.html">► ELECTRONIC HEART</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="place.html">► LIVING IN A MACHINE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="hope.html">► A COMMITTED GENERATION</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="regret.html">► SOCIAL NETWORK'S IMPACT TODAY</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
-                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../fr/about.html" class="menu__language__link">FR<img
-                                    src="../public/icones/language_icon.svg" alt="Website in French"
-                                    class="menu__language__icon"></a></li>
+                        <li class="menu__item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu__language">
+                            <a class="menu__language__link" href="../fr/index.html">FR
+                                <img class="menu__language__icon" src="../public/icones/language_icon.svg"
+                                    alt="Website in French"></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -60,55 +68,63 @@
             </div>
         </header>
     </div>
-    <main>
-        <section>
-            <h1>ABOUT</h1>
-            <h4>“Culture is what remains when everything has been forgotten.”</h4>
-            <p>- Edouart Herriot</p>
-            <img src="../public/img/me_about.webp" alt="Website creator's avatar">
+
+
+    <main class="page__margin">
+        <section class="about__visual">
+            <div class="about__visual__text">
+                <h1 class="page__title">ABOUT</h1>
+                <q class="about__quote"> Culture is what remains when everything has been forgotten. </q>
+                <p class="about__quote-caption">- Edouart Herriot</p>
+            </div>
+            <img class="about__visual__img" src="../public/img/me_about.webp" alt="Website creator's avatar">
         </section>
-        <section>
-            <h3>Who am I?</h3>
-            <h4> My name is Lisa Cingolani and I am 20 years old. Currently a student, this website is a project I'm
-                doing as part of my education in multimedia and Internet. </h4>
-            <h3>What's the purpose?</h3>
-            <h4> This blog is intended for the person I will become in a few decades.
-                I have presented cultural elements that drew my attention and/or inspired me.</h4>
-            <h3>Further information</h3>
-            <h4> Mind_Uploading.exe is an imagined concept that, in my opinion, correspond to the problematic of the
-                subject.
-                Indeed, "Uploading" is an upload to a server and the ".exe" ending designates an executable file, like
+        <section class="about__gradient">
+            <h2>Who am I?</h2>
+            <p class="about__text">My name is Lisa Cingolani and I am 20 years old. Currently a student, this website is
+                a project I'm
+                doing as part of <strong>my education in multimedia and Internet</strong>.</p>
+            <h2>What's the purpose?</h2>
+            <p class="about__text">This blog is intended for the person I will become in a few decades.
+                I have presented cultural elements that drew my attention and/or inspired me.</p>
+            <h2>Further information</h2>
+            <p class="about__text"><strong>Mind_Uploading.exe</strong> is an imagined concept that, in my opinion,
+                correspond to the problematic of the
+                subject.</p>
+            <p class="article__text">Indeed, "Uploading" is an upload to a server and the ".exe" ending designates an
+                executable file, like
                 an application.
                 Therefore, the principle is simple. Using a software, you upload the contents of your mind, your memory,
                 at a given time.
                 This content is then exported to a server or any storage device.
-                This way, our memories and thoughts are not erased and are available at any time.
-                That's exactly what this blog is, my personal backup. </h4>
-            <h3>Have a good read on Mind_Uploading.exe ! </h3>
+            </p>
+            <p class="article__text">This way, our memories and thoughts are not erased and are available at any time.
+                That's exactly what this blog is, my <strong>personal backup</strong>.</p>
+            <h2>Have a good read on Mind_Uploading.exe! </h2>
         </section>
 
     </main>
     <footer class="footer">
         <div class="footer__text">
             <p>Lisa Cingolani MM1 - A1</p>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
-                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
+            <a class="footer__email"
+                href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
         </div>
         <div class="footer__blocks">
-            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of
-                Montbéliard</p>
-            <a href="http://mmimontbeliard.com" class="footer__logo">
-                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Montbéliard MMI Department Logo">
+            <p class="footer__legal">
+                Project carried out in 2022 as part of a pedagogical exercise in the <a class="footer__link"
+                    href="http://mmimontbeliard.com"><strong>MMI department of
+                        Montbéliard</strong></a>
+            </p>
+            <a class="footer__logo" href="http://mmimontbeliard.com">
+                <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Montbéliard MMI Department Logo">
             </a>
             <nav class="footer__nav">
-                <div class="footer__btn">
-                    <a href="about.html" class="footer__btn-item">ABOUT
-                    </a>
-                    <a href="contact.html" class="footer__btn-item">CONTACT
-                    </a>
-                    <a href="otherprojects.html" class="footer__btn-item">OTHER PROJECTS
-                    </a>
-                    <div>
+                <div class="footer__btn" role="navigation">
+                    <a class="footer__btn-item" href="about.html">ABOUT</a>
+                    <a class="footer__btn-item" href="contact.html">CONTACT</a>
+                    <a class="footer__btn-item" href="otherprojects.html">OTHER PROJECTS</a>
+                </div>
             </nav>
         </div>
     </footer>
