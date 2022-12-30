@@ -4,23 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Mind_Uploading.exe</title>
+    <title>Home - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
 
-<body>
-    </header>
+<body class="background">
     <div class="header">
         <header x-data="{menuIsOpen : false}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
+                <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
                     aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Mind_Uploading.exe Logo"></a>
+                <a class="header__logo" href="index.html">
+                    <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe Logo"></a>
                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Search">
                 <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
@@ -30,142 +29,234 @@
                     <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
                         x-transition:leave.duration.300ms>
                         <li class="menu__item"><a href="index.html">HOME</a></li>
-                        <li class="menu__item">ARTICLES
+                        <li class="menu__item">
+                            ARTICLES
                             <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
-                                        AND MEN</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE
-                                        AND LONELINESS</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
-                                        HEART</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
-                                        MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
-                                        GENERATION</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
-                                        NETWORK'S IMPACT TODAY</a></li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="book.html">► OF ANDROIDS AND MEN</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="movie.html">► BETWEEN LOVE AND LONELINESS</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="song.html">► ELECTRONIC HEART</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="place.html">► LIVING IN A MACHINE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="hope.html">► A COMMITTED GENERATION</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="regret.html">► SOCIAL NETWORK'S IMPACT TODAY</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
-                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../fr/timeline.html" class="menu__language__link">FR<img
-                                    src="../public/icones/language_icon.svg" alt="Website in French"
-                                    class="menu__language__icon"></a></li>
+                        <li class="menu__item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu__language">
+                            <a class="menu__language__link" href="../fr/index.html">FR
+                                <img class="menu__language__icon" src="../public/icones/language_icon.svg"
+                                    alt="Website in French"></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div class="header__flextitles">
                 <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-                <h4 class="header__pagetitle">TIMELINE</h4>
+                <h4 class="header__pagetitle">HOME</h4>
             </div>
         </header>
     </div>
-    <main>
+    <main class="page__margin">
         <section>
-            <h1>SIMILAR PLACES TIMELINE</h1>
-            <p>In France, the first social housing appeared during the reconstruction after the Second World War.
-                Le Corbusier was hired by the government to build five "housing units of conforming size".
-                These four exemplars are made from the same plans, although they have some differences.
+            <h1 class="page__title">FRISE DE LIEUX SIMILAIRES</h1>
+            <p class="page__text">En France, les premiers logements sociaux apparaissent lors de la reconstruction après
+                la Seconde Guerre
+                mondiale.
+            <p class="page__text">
+                Le Corbusier est alors embauché par l'État pour construire cinq «&nbsp;unités d'habitation de grandeur
+                conforme&nbsp;». <br>
+                Ces quatre exemplaires sont réalisés à partir des mêmes plans, bien qu'ils aient quelques différences.
             </p>
+            <div class="timeline">
+                <div class="timeline__level-1">
+                    <div class="timeline__line-container--first">
+                        <div class="timeline__line--first">
+                        </div>
+                    </div>
+                    <div class="timeline__level-2">
+                        <div class="timeline__level-3__date">
+                            <p class="place__date">1952
+                            </p>
+                        </div>
+                        <div class="timeline__level-3__content">
+                            <h4 class="place__name">Marseille (13)</h4>
+                            <ul class="timeline__level-4">
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Marseille01.webp"
+                                        alt="Façade Sud-Ouest de la Cité Radieuse ">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Marseille02.webp"
+                                        alt="Toit de la Cité Radieuse ">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Marseille03.webp"
+                                        alt="Couloir peu éclairé menant aux appartements de la Cité Radieuse">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__level-1">
 
-            <h5>1952</h5>
-            <h4>Marseille (13)</h4>
-            <li></li>
-            <ul>
-                <li>
-                    <img src="/public/img/timeline/Marseille01.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Marseille02.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Marseille03.webp" alt="">
-                </li>
-            </ul>
-            <h5>1955</h5>
-            <h4>Rezé (44)</h4>
-            <ul>
-                <li>
-                    <img src="/public/img/timeline/Reze01.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Reze02.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Reze03.webp" alt="">
-                </li>
-            </ul>
-            </li>
+                    <div class="timeline__line">
 
-            <h5>1957</h5>
-            <h4>Berlin (Germany)</h4>
-            <ul>
-                <li>
-                    <img src="/public/img/timeline/Berlin01.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Berlin02.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Berlin03.webp" alt="">
-                </li>
-            </ul>
-            <h5>1960</h5>
-            <h4>Briey (54)</h4>
-            <ul>
-                <li>
-                    <img src="/public/img/timeline/Briey01.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Briey02.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Briey03.webp" alt="">
-                </li>
-            </ul>
-            <h5>1967</h5>
-            <h4>Firminy (42)</h4>
-            <ul>
-                <li>
-                    <img src="/public/img/timeline/Firminy01.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Firminy02.webp" alt="">
-                </li>
-                <li>
-                    <img src="/public/img/timeline/Firminy03.webp" alt="">
-                </li>
-            </ul>
+                    </div>
+                    <div class="timeline__level-2">
+                        <div class="timeline__level-3__date">
+                            <p class="place__date">1955
+                            </p>
+                        </div>
+                        <div class="timeline__level-3__content">
+                            <h4 class="place__name">Rezé (44)</h4>
+                            <ul class="timeline__level-4">
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Reze01.webp"
+                                        alt="Façade de l'unité d'habitation de Rezé">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Reze02.webp"
+                                        alt="Mosaïque sur un pied en béton du bâtiment">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Reze03.webp"
+                                        alt="Toit de l'unité d'habitation de Rezé">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__level-1">
 
-            <h2>Did you know?</h2>
-            <p>The first laundromat in France is located in Firminy!</p>
+                    <div class="timeline__line">
+
+                    </div>
+                    <div class="timeline__level-2">
+
+                        <div class="timeline__level-3__date">
+                            <p class="place__date">1957
+                            </p>
+                        </div>
+                        <div class="timeline__level-3__content">
+                            <h4 class="place__name">Berlin (Allemagne)</h4>
+                            <ul class="timeline__level-4">
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Berlin01.webp"
+                                        alt="Façade de l'unité d'habitation de Berlin">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Berlin02.webp"
+                                        alt="Couloir très lumineux et moderne">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Berlin03.webp"
+                                        alt="Hall d'entrée moderne avec panneau explicatif bleu">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__level-1">
+                    <div class="timeline__line">
+                    </div>
+
+                    <div class="timeline__level-2">
+
+                        <div class="timeline__level-3__date">
+                            <p class="place__date">1960
+                            </p>
+                        </div>
+                        <div class="timeline__level-3__content">
+                            <h4 class="place__name">Briey (54)</h4>
+                            <ul class="timeline__level-4">
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Briey01.webp"
+                                        alt="Façade de l'unité d'habitation de Briey">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Briey02.webp"
+                                        alt="Bâtiment au loin derrière un bosquet">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Briey03.webp"
+                                        alt="Intérieur d'un appartement au mobilier d'époque">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__level-1">
+                    <div class="timeline__line-container--last">
+                        <div class="timeline__line--last">
+                        </div>
+                    </div>
+                    <div class="timeline__level-2">
+
+                        <div class="timeline__level-3__date">
+                            <p class="place__date">1967
+                            </p>
+                        </div>
+                        <div class="timeline__level-3__content">
+                            <h4 class="place__name">Firminy (42)</h4>
+                            <ul class="timeline__level-4">
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Firminy01.webp"
+                                        alt="Façade de l'unité d'habitation de Firminy derrière un arbre">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Firminy02.webp"
+                                        alt="Couloir moderne et coloré">
+                                </li>
+                                <li>
+                                    <img class="place__img" src="/public/img/timeline/Firminy03.webp"
+                                        alt="Toit plat en béton">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="page__title-h2">Le saviez-vous&nbsp;?</h2>
+            <p>La première laverie automatique de France se trouve à Firminy
+                !</p>
         </section>
 
     </main>
-    <footer class="footer">
-        <div class="footer__text">
-            <p>Lisa Cingolani MM1 - A1</p>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
-                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
-        </div>
-        <div class="footer__blocks">
-            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of
-                Montbéliard</p>
-            <a href="http://mmimontbeliard.com" class="footer__logo">
-                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Montbéliard MMI Department Logo">
-            </a>
-            <nav class="footer__nav">
-                <div class="footer__btn">
-                    <a href="about.html" class="footer__btn-item">ABOUT
-                    </a>
-                    <a href="contact.html" class="footer__btn-item">CONTACT
-                    </a>
-                    <a href="otherprojects.html" class="footer__btn-item">OTHER PROJECTS
-                    </a>
-                    <div>
-            </nav>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footer__text">
+        <p>Lisa Cingolani MM1 - A1</p>
+        <a class="footer__email" href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+    </div>
+    <div class="footer__blocks">
+        <p class="footer__legal">
+            Project carried out in 2022 as part of a pedagogical exercise in the <a class="footer__link"
+                href="http://mmimontbeliard.com"><strong>MMI department of
+                    Montbéliard</strong></a>
+        </p>
+        <a class="footer__logo" href="http://mmimontbeliard.com">
+            <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Montbéliard MMI Department Logo">
+        </a>
+        <nav class="footer__nav">
+            <div class="footer__btn" role="navigation">
+                <a class="footer__btn-item" href="about.html">ABOUT</a>
+                <a class="footer__btn-item" href="contact.html">CONTACT</a>
+                <a class="footer__btn-item" href="otherprojects.html">OTHER PROJECTS</a>
+            </div>
+        </nav>
+    </div>
+</footer>
 </body>
 
 </html>

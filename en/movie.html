@@ -2,88 +2,264 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mind_Uploading.exe</title>
-    <link rel="stylesheet" href="../src/css/styles.css">
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="icon" href="../public/icones/exe_logo.svg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Mind_Uploading.exe</title>
+        <link rel="stylesheet" href="../src/css/styles.css">
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
-</header>
 
-<body>
-    <div class="header">
-        <header x-data="{menuIsOpen : false}">
-            <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
-                    aria-controls="mainNav" aria-label="menu">
-                    <img src="../public/icones/menu_icon.svg" alt="Menu">
-                </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Mind_Uploading.exe Logo"></a>
-                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Search">
-                <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
-                    <div class="header__flextitles--menu">
-                        <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
-                        <p class="header__pagetitle--menu">MENU</p>
-                    </div>
-                    <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
-                        x-transition:leave.duration.300ms>
-                        <li class="menu__item"><a href="index.html">HOME</a></li>
-                        <li class="menu__item">ARTICLES
-                            <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
-                                        AND MEN</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE
-                                        AND LONELINESS</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
-                                        HEART</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
-                                        MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
-                                        GENERATION</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
-                                        NETWORK'S IMPACT TODAY</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
-                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../fr/movie.html" class="menu__language__link">FR<img
-                                    src="../public/icones/language_icon.svg" alt="Website in French"
-                                    class="menu__language__icon"></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__flextitles">
-                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-                <h4 class="header__pagetitle">MOVIE</h4>
-            </div>
-        </header>
-    </div>
-    <footer class="footer">
+<body class="background">
+        <div class="header">
+                <header x-data="{menuIsOpen : false}">
+                        <div class="header__items">
+                                <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
+                                        aria-controls="mainNav" aria-label="menu">
+                                        <img src="../public/icones/menu_icon.svg" alt="Menu">
+                                </button>
+                                <a class="header__logo" href="index.html">
+                                        <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe Logo"></a>
+                                <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Search">
+                                <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
+                                        <div class="header__flextitles--menu">
+                                                <a class="header__maintitle--menu"
+                                                        href="index.html">Mind_Uploading.exe</a>
+                                                <p class="header__pagetitle--menu">MENU</p>
+                                        </div>
+                                        <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+                                                x-transition:leave.duration.300ms>
+                                                <li class="menu__item"><a href="index.html">HOME</a></li>
+                                                <li class="menu__item">
+                                                        ARTICLES
+                                                        <ul class="menu__list-articles">
+                                                                <li class="menu__article">
+                                                                        <a class="menu__article-link" href="book.html">►
+                                                                                OF ANDROIDS AND MEN</a>
+                                                                </li>
+                                                                <li class="menu__article">
+                                                                        <a class="menu__article-link"
+                                                                                href="movie.html">► BETWEEN LOVE AND
+                                                                                LONELINESS</a>
+                                                                </li>
+                                                                <li class="menu__article">
+                                                                        <a class="menu__article-link" href="song.html">►
+                                                                                ELECTRONIC HEART</a>
+                                                                </li>
+                                                                <li class="menu__article">
+                                                                        <a class="menu__article-link"
+                                                                                href="place.html">► LIVING IN A
+                                                                                MACHINE</a>
+                                                                </li>
+                                                                <li class="menu__article">
+                                                                        <a class="menu__article-link" href="hope.html">►
+                                                                                A COMMITTED GENERATION</a>
+                                                                </li>
+                                                                <li class="menu__article">
+                                                                        <a class="menu__article-link"
+                                                                                href="regret.html">► SOCIAL NETWORK'S
+                                                                                IMPACT TODAY</a>
+                                                                </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="menu__item"><a href="about.html">ABOUT</a></li>
+                                                <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                                                <li class="menu__language">
+                                                        <a class="menu__language__link" href="../fr/index.html">FR
+                                                                <img class="menu__language__icon"
+                                                                        src="../public/icones/language_icon.svg"
+                                                                        alt="Website in French"></a>
+                                                </li>
+                                        </ul>
+                                </nav>
+                        </div>
+                        <div class="header__flextitles">
+                                <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+                                <h4 class="header__pagetitle">HOME</h4>
+                        </div>
+                </header>
+        </div>
+<main>
+        <div class="visual">
+                <div class="visual__size">
+                        <img class="visual__img" src="../public/img/articles/movie/mainpic.webp"
+                                alt="Joachin Phoenix dans le film Her">
+                </div>
+                <span class="visual__reading-time">Temps de lecture : 2 minutes</span>
+        </div>
+        <section class="article">
+                <h1 class="article__main-title">ENTRE AMOUR ET SOLITUDE</h1>
+                <h2>Un bâtiment construit dans un contexte particulier</h2>
+                <p class="article__text"> Her est un film de <strong>science-fiction</strong> et d'anticipation sorti en
+                        2013 et
+                        réalisé
+                        par <a href="https://fr.wikipedia.org/wiki/Spike_Jonze">Spike
+                                Jonze</a>.</p>
+                <p class="article__text"> Il se déroule dans un futur proche, une société moderne et
+                        <strong>ultra-connectée</strong>.
+                </p>
+                <p class="article__text"> Le personnage principal, Théodore (incarné par <a
+                                href="https://www.allocine.fr/personne/fichepersonne_gen_cpersonne=21376.html">Joachin
+                                Phoenix</a>), est un homme
+                        solitaire
+                        et
+                        sensible.
+                        Séparé de sa femme Catherine depuis plusieurs mois, il éprouve un fort besoin de
+                        compagnie.</p>
+
+                <figure class="article__figure">
+                        <img class="article__figure-img" src="../public/img/articles/movie/theodore.webp"
+                                alt="Théodore marchant dans une grande ville">
+                        <figcaption class="article__figure-legend">Théodore Twombly</figcaption>
+                </figure>
+
+                <h2>Le début d'une histoire</h2>
+                <p class="article__text">Lorsqu'il se retrouve face à une publicité pour un nouveau système
+                        d'exploitation avec
+                        <a
+                                href="https://www.huffingtonpost.fr/life/article/intelligence-artificielle-her-pourrait-elle-exister_34213.html">intelligence
+                                artificielle</a>, il décide de l'acheter.
+                </p>
+                <figure class="article__figure">
+                        <img class="article__figure-img" src="../public/img/articles/movie/installation.webp"
+                                alt="Théodore assis devant un ordinateur">
+                        <figcaption class="article__figure-legend">L'installation du système d'exploitation
+                        </figcaption>
+                </figure>
+                <p class="article__text"> Au début surpris, il va faire peu à peu la connaissance de Samantha,
+                        son OS
+                        qui n'a pas de
+                        corps
+                        mais un esprit très vif.
+                        La voix de Samantha est interprétée par <a href="https://www.imdb.com/name/nm0424060/">Scarlett
+                                Johansson</a>, qu'on ne verra d'ailleurs
+                        jamais à
+                        l'écran car l'OS n'a pas de présence physique.</p>
+                <p class="article__text">Theodore et Samantha vont rapidement devenir très complices.
+                        <strong>L'intelligence artificielle</strong> s'adapte parfaitement à Théodore et a une
+                        personnalité très
+                        riche.
+                </p>
+
+                <figure class="article__figure">
+                        <img class="article__figure-img" src="../public/img/articles/movie/illustration.webp"
+                                alt="Formes et symboles sur fond orange">
+                        <figcaption class="article__figure-legend">Illustration reprenant le visuel de l'OS
+                        </figcaption>
+                </figure>
+                <p class="article__text">Cependant, avec ce rapprochement va arriver de nombreux questionnements
+                        de la
+                        part de
+                        Samantha.</p>
+                <p class="article__text">De plus, Théodore va se rendre compte que l'amour de Samantha ne lui est pas
+                        uniquement
+                        destiné.
+                        En effet, elle communique simultanément avec des milliers de personnes.
+                        Et parmi celles-ci, quelques centaines d'autres partagent aussi son cœur.
+                        Cela anéanti complétement Théodore.</p>
+
+
+                <h2>Des relations altérées</h2>
+                <p class="article__text"> Théodore travaille dans une agence qui propose de rédiger des lettres
+                        «
+                        manuscrites ».
+                        Une lettre est censée être quelque chose de très personnel.
+                        Or ici, on embauche quelqu'un pour les écrire à notre place, qui plus est, sur
+                        ordinateur.<br>
+                        D'ailleurs, Théodore écrit des lettres depuis si longtemps qu'il connaît les proches de
+                        ses
+                        clients parfois mieux qu'eux.</p>
+                <p class="article__text">Cette situation est assez cocasse, les relations humaines sont complétement
+                        dénaturées
+                        et les
+                        <strong>ordinateurs</strong> sont utilisés même pour effectuer une tâche essentiellement
+                        humaine.
+                </p>
+
+                <figure class="article__figure">
+                        <img class="article__figure-img" src="../public/img/articles/movie/work.webp"
+                                alt="Théodore assis devant un bureau">
+                        <figcaption class="article__figure-legend">Théodore au bureau de l'agence</figcaption>
+                </figure>
+                <h2>Un bref retour à la réalité</h2>
+                <p class="article__text">Lorsque Théodore allume son ordinateur, il se rend compte que son
+                        système
+                        d'exploitation,
+                        donc
+                        Samantha, n'est pas disponible.
+                        Il regarde sur son téléphone et là, même chose, Samantha a disparu.
+                        Il se précipite alors dehors et court sans s'arrêter, complétement paniqué.<br>
+                        Après quelques instants, Samantha est de retour : elle était simplement en train de
+                        faire une
+                        mise à jour.</p>
+                <p class="article__text">On voit ici la fragilité de cette relation, qui peut vaciller et même
+                        disparaître à tout
+                        moment
+                        avec une mise à jour ou un simple bug.</p>
+
+                <h2>Le rappel de l'importance de l'autre</h2>
+                <p class="article__text">Lorsque Samantha part dans «&nbsp;un espace au-delà du monde physique&nbsp;»,
+                        Théodore va
+                        être amené à
+                        reconsidérer sa vie ainsi que ses relations avec ses proches.</p>
+                <p class="article__text">Il écrit une lettre d'excuse et de remerciements à son ex-femme Catherine.
+                        Cela rappelle son métier, mais cette fois il écrit une lettre vraiment personnelle.<br>
+                        Également, il se rapproche de son amie de longue date, Amy.
+                        La scène de fin nous montre ces deux personnages appréciant la compagnie (réelle) de
+                        l'un et de
+                        l'autre.</p>
+                <figure class="article__figure">
+                        <img class="article__figure-img" src="../public/img/articles/movie/friends.webp"
+                                alt="Théodore et Amy assis sur un toit avec la ville éclairée au loin">
+                        <figcaption class="article__figure-legend">Scène finale avec Théodore et Amy
+                        </figcaption>
+                </figure>
+                <div class="article__btn">
+                        <a class="article__btn-link" href="filmography.html">FILMOGRAPHIE DU RÉALISATEUR</a>
+                </div>
+        </section>
+        <div class="bottom-line">
+                <div class="share">
+                        <p class="share__text">PARTAGER SUR</p>
+                        <a class="share__link"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://minduploadingexe.lisa-cingolani.fr/fr/movie.html">
+                                <img src="../public/icones/facebook_icon.svg" alt="Logo Facebook"></a>
+                        <a class="share__link"
+                                href="https://twitter.com/intent/tweet?url=https://minduploadingexe.lisa-cingolani.fr/fr/movie.html&text=Entre%20amour%20et%20solitude%20-%20Mind_Uploading.exe">
+                                <img src="../public/icones/twitter_icon.svg" alt="Logo Twitter"></a>
+                </div>
+                <div class="scroll-top">
+                        <a href="#top"><img class="scroll-top__img" src="/public/icones/top_icon.svg"
+                                        alt="Retourner en haut de la page"></a>
+                </div>
+        </div>
+
+</main>
+<footer class="footer">
         <div class="footer__text">
-            <p>Lisa Cingolani MM1 - A1</p>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
-                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
+                <p>Lisa Cingolani MM1 - A1</p>
+                <a class="footer__email"
+                        href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
         </div>
         <div class="footer__blocks">
-            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of
-                Montbéliard</p>
-            <a href="http://mmimontbeliard.com" class="footer__logo">
-                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Montbéliard MMI Department Logo">
-            </a>
-            <nav class="footer__nav">
-                <div class="footer__btn">
-                    <a href="about.html" class="footer__btn-item">ABOUT
-                    </a>
-                    <a href="contact.html" class="footer__btn-item">CONTACT
-                    </a>
-                    <a href="otherprojects.html" class="footer__btn-item">OTHER PROJECTS
-                    </a>
-                    <div>
-            </nav>
+                <p class="footer__legal">
+                        Project carried out in 2022 as part of a pedagogical exercise in the <a class="footer__link"
+                                href="http://mmimontbeliard.com"><strong>MMI department of
+                                        Montbéliard</strong></a>
+                </p>
+                <a class="footer__logo" href="http://mmimontbeliard.com">
+                        <img class="footer__logo" src="../public/icones/mmi_logo.svg"
+                                alt="Montbéliard MMI Department Logo">
+                </a>
+                <nav class="footer__nav">
+                        <div class="footer__btn" role="navigation">
+                                <a class="footer__btn-item" href="about.html">ABOUT</a>
+                                <a class="footer__btn-item" href="contact.html">CONTACT</a>
+                                <a class="footer__btn-item" href="otherprojects.html">OTHER PROJECTS</a>
+                        </div>
+                </nav>
         </div>
-    </footer>
+</footer>
 </body>
 
 </html>

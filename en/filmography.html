@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmography - Mind_Uploading.exe</title>
+    <title>Home - Mind_Uploading.exe</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="icon" href="../public/icones/exe_logo.svg">
 </head>
 
-<body>
-    </header>
+<body class="background">
     <div class="header">
         <header x-data="{menuIsOpen : false}">
             <div class="header__items">
-                <button @click="menuIsOpen= ! menuIsOpen" class="header__menubtn" aria-expanded="true"
+                <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true"
                     aria-controls="mainNav" aria-label="menu">
                     <img src="../public/icones/menu_icon.svg" alt="Menu">
                 </button>
-                <a href="index.html" class="header__logo"> <img src="../public/icones/exe_logo.svg"
-                        alt="Mind_Uploading.exe Logo"></a>
+                <a class="header__logo" href="index.html">
+                    <img src="../public/icones/exe_logo.svg" alt="Mind_Uploading.exe Logo"></a>
                 <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Search">
                 <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
                     <div class="header__flextitles--menu">
@@ -30,108 +29,151 @@
                     <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
                         x-transition:leave.duration.300ms>
                         <li class="menu__item"><a href="index.html">HOME</a></li>
-                        <li class="menu__item">ARTICLES
+                        <li class="menu__item">
+                            ARTICLES
                             <ul class="menu__list-articles">
-                                <li class="menu__article"><a href="book.html" class="menu__article-link">► OF ANDROIDS
-                                        AND MEN</a></li>
-                                <li class="menu__article"><a href="movie.html" class="menu__article-link">► BETWEEN LOVE
-                                        AND LONELINESS</a></li>
-                                <li class="menu__article"><a href="song.html" class="menu__article-link">► ELECTRONIC
-                                        HEART</a></li>
-                                <li class="menu__article"><a href="place.html" class="menu__article-link">► LIVING IN A
-                                        MACHINE</a></li>
-                                <li class="menu__article"><a href="hope.html" class="menu__article-link">► A COMMITTED
-                                        GENERATION</a></li>
-                                <li class="menu__article"><a href="regret.html" class="menu__article-link">► SOCIAL
-                                        NETWORK'S IMPACT TODAY</a></li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="book.html">► OF ANDROIDS AND MEN</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="movie.html">► BETWEEN LOVE AND LONELINESS</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="song.html">► ELECTRONIC HEART</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="place.html">► LIVING IN A MACHINE</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="hope.html">► A COMMITTED GENERATION</a>
+                                </li>
+                                <li class="menu__article">
+                                    <a class="menu__article-link" href="regret.html">► SOCIAL NETWORK'S IMPACT TODAY</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <a href="about.html">ABOUT</a> </li>
-                        <li class="menu__item"> <a href="contact.html">CONTACT</a> </li>
-                        <li class="menu__language"> <a href="../fr/filmography.html" class="menu__language__link">FR<img
-                                    src="../public/icones/language_icon.svg" alt="Website in French"
-                                    class="menu__language__icon"></a></li>
+                        <li class="menu__item"><a href="about.html">ABOUT</a></li>
+                        <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu__language">
+                            <a class="menu__language__link" href="../fr/index.html">FR
+                                <img class="menu__language__icon" src="../public/icones/language_icon.svg"
+                                    alt="Website in French"></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div class="header__flextitles">
                 <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
-                <h4 class="header__pagetitle">FILMOGRAPHY</h4>
+                <h4 class="header__pagetitle">HOME</h4>
             </div>
         </header>
     </div>
-    <main>
-        <h1>FILMOGRAPHY</h1>
-        <h2>There are the different films directed by Spike Jonze, the author of the film Her.</h2>
+    <main class="page__margin">
+        <h1 class="page__title">FILMOGRAPHIE</h1>
+        <p class="page__text">Voici les différents films réalisés par Spike Jonze, l'auteur du film Her.</p>
 
-        <section aria-label="Galerie des films de Spike Jonze">
-            <div class="carousel" data-carousel>
-                <button class="carousel__buttonbef" data-carousel-button="prev">&#8656;</button>
-                <button class="carousel__buttonaft" data-carousel-button="next">&#8658;</button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #1">
-                    </li>
-                    <li class="slide">
-                        <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
-                    </li>
-                    <li class="slide">
-                        <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
-                    </li>
-                </ul>
+        <div x-data="{hrefCourant: '#screen-1',}">
+            <div class="carrousel">
+                <button class="carrousel_btn carrousel_btn--left" aria-label="Image précédente"
+                    @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img class="arrow--left"
+                        src="../public/icones/arrow_left.svg" alt="Flèche vers la gauche"></button>
+
+                <button class="carrousel_btn carrousel_btn--right" aria-label="Image suivante"
+                    @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img class="arrow--right"
+                        src="../public/icones/arrow_right.svg" alt="Flèche vers la droite"></button>
+
+                <div class="carrousel__top-display" x-ref="top"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.top.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="screen-1" class="carrousel__display">
+                        <figure>
+                            <img class="carrousel__img" src="../public/img/filmography/fr/her.webp"
+                                alt="Affiche du film Her">
+                            <figcaption class="carrousel__display__title">Her</figcaption>
+                        </figure>
+                    </div>
+                    <div id="screen-2" class="carrousel__display">
+                        <figure>
+                            <img class="carrousel__img" src="../public/img/filmography/fr/max.webp"
+                                alt="Affiche du film Max et les Maximonstres">
+                            <figcaption class="carrousel__display__title">Max et les Maximonstres</figcaption>
+                        </figure>
+                    </div>
+                    <div id="screen-3" class="carrousel__display">
+                        <figure>
+                            <img class="carrousel__img" src="../public/img/filmography/fr/danslapeau.webp"
+                                alt="Affiche du film Dans la peau de John Malkovich">
+                            <figcaption class="carrousel__display__title">Dans la peau de John Malkovich</figcaption>
+                        </figure>
+                    </div>
+                    <div id="screen-4" class="carrousel__display">
+                        <figure>
+                            <img class="carrousel__img" src="../public/img/filmography/fr/adaptation.webp"
+                                alt="Affiche du film Adaptation">
+                            <figcaption class="carrousel__display__title">Adaptation</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
             </div>
-        </section>
-
-        <ul>
-            <li>Where the Wild Things are</li>
-            <p>This fantasy adventure film was released in 2009.
-                Max is a little boy who has trouble dealing with his emotions.
-                After a family argument, he decides to run away to an imaginary island.
-                He will meet the Maximonsters, and become their king.
-                This experience will make him realize that he must change his attitude towards the world.
+            <h2>En détail :</h2>
+            <h3><a class="caroussel__link" href="#screen-2" :class="{actif:hrefCourant==='#screen-2'}">Max et les
+                    Maximonstres</a></h3>
+            <p class="article__text"> Ce film d'aventure fantastique est sorti en 2009.
+                Max, un petit garçon qui a du mal à gérer ses émotions, décide de s'enfuir sur une île imaginaire
+                après
+                une
+                dispute familiale. Il va faire la rencontre des Maximonstres, et devenir leur roi. Cette expérience
+                va
+                lui
+                faire prendre conscience qu'il doit changer d'attitude vis-à-vis du monde.</p>
+            <p class="filmo__actors">Avec <em>Max Records</em>, <em>Catherine Keener</em>, <em>Mark Ruffalo</em>.
             </p>
-            <p>With Max Records, Catherine Keener, Mark Ruffalo.</p>
 
-            <li>Being John Malkovich</li>
-            <p>This 1999 film is a dramatic and fantastic comedy.
-                Craig Schwartz has just been hired in the Lester company.
-                In his office, he finds a door, leading to the unconscious of John Malkovich for fifteen minutes.
-                This discovery will change his life.
-            </p>
-            <p>With John Cusack, Cameron Diaz, John Malkovich.</p>
+            <h3><a class="caroussel__link" href="#screen-3" :class="{actif:hrefCourant==='#screen-3'}">Dans la
+                    peau de John Malkovich</a></h3>
+            <p class="article__text">Ce film de 1999 est une comédie dramatique et fantastique.
+                Craig Schwartz vient d'être embauché dans l'entreprise Lester.
+                Il va trouver dans son bureau une porte conduisant dans l'inconscient de John Malkovich pour une
+                durée
+                de
+                quinze minutes.
+                Cette découverte va changer sa vie.</p>
+            <p class="filmo__actors">Avec <em>John Cusack</em>,<em> Cameron Diaz</em>,<em> John Malkovich</em>.</p>
 
-            <li>Adaptation</li>
-            <p>This film is a comedy-drama from 2003.
-                While working on the adaptation on screen of an original book, screenwriter Charlie Kaufman has to face
-                a major existential crisis.
-            </p>
-            <p>With Nicolas Cage, Tilda Swinton, Meryl Streep.</p>
-        </ul>
+            <h3><a class="caroussel__link" href="#screen-4" :class="{actif:hrefCourant==='#screen-4'}">Adaptation</a>
+            </h3>
+            <p class="article__text">Ce film est une comédie dramatique datant de 2003.
+                Alors qu'il se voit confier l'adaptation d'un livre original à l'écran, le scénariste Charlie
+                Kaufman
+                doit
+                faire face à une crise existentielle majeure.</p>
+            <p class="filmo__actors">Avec <em>Nicolas Cage</em>, <em>Tilda Swinton</em>, <em>Meryl Streep</em>.</p>
+        </div>
+
     </main>
-    <footer class="footer">
-        <div class="footer__text">
-            <p>Lisa Cingolani MM1 - A1</p>
-            <a href="mailto:lisa.cingolani@edu.univ-fcomte.fr"
-                class="footer__email">lisa.cingolani@edu.univ-fcomte.fr</a>
-        </div>
-        <div class="footer__blocks">
-            <p class="footer__legal">Project carried out as part of a pedagogical exercise in the MMI department of
-                Montbéliard</p>
-            <a href="http://mmimontbeliard.com" class="footer__logo">
-                <img src="../public/icones/mmi_logo.svg" class="footer__logo" alt="Montbéliard MMI Department Logo">
-            </a>
-            <nav class="footer__nav">
-                <div class="footer__btn">
-                    <a href="about.html" class="footer__btn-item">ABOUT
-                    </a>
-                    <a href="contact.html" class="footer__btn-item">CONTACT
-                    </a>
-                    <a href="otherprojects.html" class="footer__btn-item">OTHER PROJECTS
-                    </a>
-                    <div>
-            </nav>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footer__text">
+        <p>Lisa Cingolani MM1 - A1</p>
+        <a class="footer__email" href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+    </div>
+    <div class="footer__blocks">
+        <p class="footer__legal">
+            Project carried out in 2022 as part of a pedagogical exercise in the <a class="footer__link"
+                href="http://mmimontbeliard.com"><strong>MMI department of
+                    Montbéliard</strong></a>
+        </p>
+        <a class="footer__logo" href="http://mmimontbeliard.com">
+            <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Montbéliard MMI Department Logo">
+        </a>
+        <nav class="footer__nav">
+            <div class="footer__btn" role="navigation">
+                <a class="footer__btn-item" href="about.html">ABOUT</a>
+                <a class="footer__btn-item" href="contact.html">CONTACT</a>
+                <a class="footer__btn-item" href="otherprojects.html">OTHER PROJECTS</a>
+            </div>
+        </nav>
+    </div>
+</footer>
 </body>
 
 </html>
