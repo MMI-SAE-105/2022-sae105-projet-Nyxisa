@@ -22,12 +22,14 @@
 
 .header__logo {
   margin: 30px 10px 5px 15px;
+  width: 100px;
 }
 
 .header__iconsb {
   padding: 5px;
   margin: 30px 10px 5px;
   height: 100%;
+  width: 40px;
 }
 
 .header__flextitles {
