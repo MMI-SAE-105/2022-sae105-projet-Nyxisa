@@ -31,8 +31,6 @@
     height: 120px;
 }
 
-
-
 .articlecard__img {
     width: 120px;
     border-radius: 50%;
@@ -52,11 +50,11 @@
 .articlecard__buttonline {
     max-width: fit-content;
 }
+
 .articlecard__buttontext {
     text-decoration: none;
     color: var(--black);
     font-size: var(--button);
     font-weight: var(--semi-bold);
     margin-right: 1.5px;
-
 }
