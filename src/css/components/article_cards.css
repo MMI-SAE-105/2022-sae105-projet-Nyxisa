@@ -50,6 +50,8 @@
 
 .articlecard__buttonline {
     max-width: fit-content;
+    width: 25px;
+    height: 2px;
 }
 
 .articlecard__buttontext {

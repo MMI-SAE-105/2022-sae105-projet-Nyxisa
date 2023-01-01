@@ -51,11 +51,12 @@
     padding: 3px;
     border-radius: 2px;
     align-items: center;
-
 }
 
 .mainarticle__buttonline {
     max-width: fit-content;
+    width: 25px;
+    height: 2px;
 }
 
 .mainarticle__buttontext {
