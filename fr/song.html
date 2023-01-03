@@ -215,20 +215,28 @@
                                         Punk</a>) sont à écouter.
                         </p>
                         <div class="video">
-                                <video width=400 height=200 id="player" controls muted
-                                        class="cld-video-player cld-video-player-skin-dark cld-fluid" aria-label="Game Of Love - Daft Punk">
-                                </video>
-
-                                <script
-                                        src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js">
-                                        </script>
                                 <script>
-                                        var cld = cloudinary.videoPlayer('player', {
-                                                cloud_name: 'dixi51lng',
-                                                sourceTypes: ['hls', 'dash', 'webm/vp9', 'mp4/h265', 'mp4']
+                                        const player = cld.videoPlayer('player', {
+                                                fluid: true,
+                                                controls: true,
+                                                muted: false,
+                                                fontFace: 'Audiowide',
+                                                colors: {
+                                                        accent: '#37db90',
+                                                        text: '#a97dfa'
+                                                },
+                                                logoOnclickUrl: 'https://minduploadingexe.lisa-cingolani.fr/index.html',
+                                                logoImageUrl: 'https://res.cloudinary.com/dixi51lng/image/fetch/h_25/https://minduploadingexe.lisa-cingolani.fr/public/icones/exe_logo.svg',
+                                                autoplayMode: 'on-scroll',
+                                                autoplay: true
                                         });
-                                        cld.source('https://res.cloudinary.com/dixi51lng/video/upload/v1672099604/Project%20-%20Mind_Uploading.exe/Daft_Punk-Game_Of_Love.mp4');
-                                </script>
+
+                                        player.source('https://res.cloudinary.com/dixi51lng/video/upload/v1672099604/Project%20-%20Mind_Uploading.exe/Daft_Punk-Game_Of_Love.mp4');</script>
+                                <iframe src="https://player.cloudinary.com/embed/?public_id=https%3A%2F%2Fres.cloudinary.com%2Fdixi51lng%2Fvideo%2Fupload%2Fv1672099604%2FProject%2520-%2520Mind_Uploading.exe%2FDaft_Punk-Game_Of_Love.mp4&cloud_name=dixi51lng&player[muted]=false&player[fontFace]=Audiowide&player[colors][accent]=%2337db90&player[colors][text]=%23a97dfa&player[logoOnclickUrl]=https%3A%2F%2Fminduploadingexe.lisa-cingolani.fr%2Findex.html&player[logoImageUrl]=https%3A%2F%2Fres.cloudinary.com%2Fdixi51lng%2Fimage%2Ffetch%2Fh_25%2Fhttps%3A%2F%2Fminduploadingexe.lisa-cingolani.fr%2Fpublic%2Ficones%2Fexe_logo.svg&player[autoplayMode]=on-scroll&player[autoplay]=true"
+                                        width="640" height="360"
+                                        style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+                                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                                        allowfullscreen frameborder="0"></iframe>
                         </div>
                         <div class="article__btn">
                                 <a class="article__btn-link" href="https://www.youtube.com/watch?v=ajGKWk0auOc">ÉCOUTER
