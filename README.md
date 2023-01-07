@@ -1,7 +1,7 @@
 - NOM : Cingolani
 - PRÉNOM : Lisa
 - URL du site :  https://minduploadingexe.lisa-cingolani.fr
-- URL FIGMA : https://www.figma.com/file/tUvhuCgVgL2JNIe7bcmcWG/Maquettes-projet-individuel-%E2%80%94-Lisa-CINGOLANI-A1?node-id=802%3A789&t=mJ8zq7Q1fbgbN1ba-1
+- URL FIGMA : https://www.figma.com/file/tUvhuCgVgL2JNIe7bcmcWG/Maquettes-projet-individuel-%E2%80%94-Lisa-CINGOLANI-A1?node-id=0%3A1&t=UYL8YDcVkH0haYAa-1
 
 # Structure de départ pour le projet individuel.
 
