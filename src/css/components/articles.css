@@ -129,7 +129,6 @@ blockquote::after {
 .share__text {
     font-family: var(--font-bold);
     font-size: var(--button);
-
 }
 
 .scroll-top {
@@ -160,6 +159,7 @@ blockquote::after {
 }
 
 
-.annotation:hover, .article__text>a:hover {
-        color: var(--green);
+.annotation:hover,
+.article__text>a:hover {
+    color: var(--green);
 }

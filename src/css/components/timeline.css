@@ -20,7 +20,7 @@
 }
 
 .timeline__level-3__date {
- display: flex;
+  display: flex;
   align-self: center;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .timeline__line-container--first {
-display: flex;
+  display: flex;
   align-items: flex-end;
 }
 
@@ -67,7 +67,7 @@ display: flex;
 }
 
 .timeline__line-container--last {
-display: flex;
+  display: flex;
   align-items: flex-start;
 }
 

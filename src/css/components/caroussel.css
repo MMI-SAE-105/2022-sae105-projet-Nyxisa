@@ -59,11 +59,10 @@
 }
 
 .caroussel__link {
-  color:var(--white);
+  color: var(--white);
 }
 
 .actif {
   color: var(--purple);
   transition: all 0.3s ease-out 0.1s;
 }
-

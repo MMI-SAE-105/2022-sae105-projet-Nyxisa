@@ -38,10 +38,10 @@
     float: left;
 }
 
-.articlecard__button{
+.articlecard__button {
     display: flex;
     gap: 5px;
-    max-width:fit-content;
+    max-width: fit-content;
     background-color: var(--white);
     cursor: pointer;
     padding: 3px;

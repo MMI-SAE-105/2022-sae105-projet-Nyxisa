@@ -11,9 +11,9 @@
   --white: rgba(255, 255, 255, 1);
 
   /* Text-size styles */
- 
+
   --title: 1rem;
-  --pagetitle:0.720rem;
+  --pagetitle: 0.720rem;
   --h1: 0.813rem;
   --h2: 1rem;
   --h3: 1rem;
@@ -27,9 +27,9 @@
   --menu2: 0.625rem;
 
   /* Font weight */
-  --light:300;
-  --regular:400;
-  --medium:500;
-  --semi-bold:600;
-  --bold:700;
- }
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+}

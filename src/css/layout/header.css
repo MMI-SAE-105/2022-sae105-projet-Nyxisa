@@ -60,11 +60,11 @@
 }
 
 .header__pagetitle--filmo {
-    width: 100%;
-      font-size: 0.6rem;
-      font-family: var(--font-bold);
-      color: var(--purple);
-      background-color: var(--black);
-      z-index: 0;
-      text-align: center;
+  width: 100%;
+  font-size: 0.6rem;
+  font-family: var(--font-bold);
+  color: var(--purple);
+  background-color: var(--black);
+  z-index: 0;
+  text-align: center;
 }
